@@ -1,4 +1,4 @@
-# TinkoffApi\Class3DSApi
+# RoxlTBankApi\Class3DSApi
 
 All URIs are relative to https://securepay.tinkoff.ru, except if the operation defines another base path.
 
@@ -11,7 +11,7 @@ All URIs are relative to https://securepay.tinkoff.ru, except if the operation d
 ## `submit3DSAuthorization()`
 
 ```php
-submit3DSAuthorization($md, $pa_res, $payment_id, $terminal_key, $token): \TinkoffApi\Model\Submit3DSAuthorization200Response
+submit3DSAuthorization($md, $pa_res, $payment_id, $terminal_key, $token): \RoxlTBankApi\Model\Submit3DSAuthorization200Response
 ```
 
 Подтвердить прохождение 3DS v1.0
@@ -26,7 +26,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new TinkoffApi\Api\Class3DSApi(
+$apiInstance = new RoxlTBankApi\Api\Class3DSApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -57,7 +57,7 @@ try {
 
 ### Return type
 
-[**\TinkoffApi\Model\Submit3DSAuthorization200Response**](../Model/Submit3DSAuthorization200Response.md)
+[**\RoxlTBankApi\Model\Submit3DSAuthorization200Response**](../Model/Submit3DSAuthorization200Response.md)
 
 ### Authorization
 
@@ -75,7 +75,7 @@ No authorization required
 ## `submit3DSAuthorizationV2()`
 
 ```php
-submit3DSAuthorizationV2($payment_id, $terminal_key, $token): \TinkoffApi\Model\Submit3DSAuthorizationV2200Response
+submit3DSAuthorizationV2($payment_id, $terminal_key, $token): \RoxlTBankApi\Model\Submit3DSAuthorizationV2200Response
 ```
 
 Подтвердить прохождение 3DS v2.1
@@ -90,7 +90,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new TinkoffApi\Api\Class3DSApi(
+$apiInstance = new RoxlTBankApi\Api\Class3DSApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -117,7 +117,7 @@ try {
 
 ### Return type
 
-[**\TinkoffApi\Model\Submit3DSAuthorizationV2200Response**](../Model/Submit3DSAuthorizationV2200Response.md)
+[**\RoxlTBankApi\Model\Submit3DSAuthorizationV2200Response**](../Model/Submit3DSAuthorizationV2200Response.md)
 
 ### Authorization
 

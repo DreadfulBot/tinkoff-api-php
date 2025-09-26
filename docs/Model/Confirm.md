@@ -9,8 +9,8 @@ Name | Type | Description | Notes
 **token** | **string** | Подпись запроса — хэш &#x60;SHA-256&#x60;. |
 **ip** | **string** | IP-адрес клиента. | [optional]
 **amount** | **float** | Сумма в копейках. Если не передан, используется &#x60;Amount&#x60;, переданный в методе **Init**. | [optional]
-**receipt** | [**\TinkoffApi\Model\ConfirmReceipt**](ConfirmReceipt.md) |  | [optional]
-**shops** | [**\TinkoffApi\Model\Shops[]**](Shops.md) | Обязательный для маркетплейсов. JSON-объект с данными маркетплейса. | [optional]
+**receipt** | [**\RoxlTBankApi\Model\ConfirmReceipt**](ConfirmReceipt.md) |  | [optional]
+**shops** | [**\RoxlTBankApi\Model\Shops[]**](Shops.md) | Обязательный для маркетплейсов. JSON-объект с данными маркетплейса. | [optional]
 **route** | **string** | Способ платежа. | [optional]
 **source** | **string** | Источник платежа. | [optional]
 

@@ -4,7 +4,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**params** | [**\TinkoffApi\Model\SberPaylink200ResponseParams**](SberPaylink200ResponseParams.md) |  |
+**params** | [**\RoxlTBankApi\Model\SberPaylink200ResponseParams**](SberPaylink200ResponseParams.md) |  |
 **success** | **bool** | Успешность прохождения запроса — &#x60;true&#x60;/&#x60;false&#x60;. |
 **error_code** | **string** | Код ошибки. &#x60;0&#x60; в случае успеха. |
 **message** | **string** | Краткое описание ошибки. | [optional]

@@ -18,6 +18,6 @@ Name | Type | Description | Notes
 **pan** | **string** | Замаскированный номер карты или телефона. | [optional]
 **exp_date** | **string** | Срок действия карты в формате &#x60;MMYY&#x60;, где &#x60;YY&#x60; — две последние цифры года. | [optional]
 **token** | **string** | Подпись запроса. Формируется по такому же принципу, как и в случае запросов в Т‑Бизнес. | [optional]
-**data** | [**\TinkoffApi\Model\DataNotification**](.md) |  | [optional]
+**data** | [**\RoxlTBankApi\Model\DataNotification**](.md) |  | [optional]
 
 [[Back to Model list]](../../README.md#models) [[Back to API list]](../../README.md#endpoints) [[Back to README]](../../README.md)

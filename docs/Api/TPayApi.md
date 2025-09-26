@@ -1,4 +1,4 @@
-# TinkoffApi\TPayApi
+# RoxlTBankApi\TPayApi
 
 All URIs are relative to https://securepay.tinkoff.ru, except if the operation defines another base path.
 
@@ -12,7 +12,7 @@ All URIs are relative to https://securepay.tinkoff.ru, except if the operation d
 ## `link()`
 
 ```php
-link($payment_id, $version): \TinkoffApi\Model\Link200Response
+link($payment_id, $version): \RoxlTBankApi\Model\Link200Response
 ```
 
 Получить ссылку
@@ -27,7 +27,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new TinkoffApi\Api\TPayApi(
+$apiInstance = new RoxlTBankApi\Api\TPayApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -52,7 +52,7 @@ try {
 
 ### Return type
 
-[**\TinkoffApi\Model\Link200Response**](../Model/Link200Response.md)
+[**\RoxlTBankApi\Model\Link200Response**](../Model/Link200Response.md)
 
 ### Authorization
 
@@ -85,7 +85,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new TinkoffApi\Api\TPayApi(
+$apiInstance = new RoxlTBankApi\Api\TPayApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -126,7 +126,7 @@ No authorization required
 ## `status()`
 
 ```php
-status($terminal_key): \TinkoffApi\Model\Status200Response
+status($terminal_key): \RoxlTBankApi\Model\Status200Response
 ```
 
 Определить возможность проведения платежа
@@ -141,7 +141,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new TinkoffApi\Api\TPayApi(
+$apiInstance = new RoxlTBankApi\Api\TPayApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -164,7 +164,7 @@ try {
 
 ### Return type
 
-[**\TinkoffApi\Model\Status200Response**](../Model/Status200Response.md)
+[**\RoxlTBankApi\Model\Status200Response**](../Model/Status200Response.md)
 
 ### Authorization
 
