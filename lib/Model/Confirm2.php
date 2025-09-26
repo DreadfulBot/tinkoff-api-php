@@ -5,7 +5,7 @@
  * PHP version 8.1
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  TinkoffApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace TinkoffApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \TinkoffApi\ObjectSerializer;
 
 /**
  * Confirm2 Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  TinkoffApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -65,7 +65,7 @@ class Confirm2 implements ModelInterface, ArrayAccess, \JsonSerializable
         'error_code' => 'string',
         'message' => 'string',
         'details' => 'string',
-        'params' => '\OpenAPI\Client\Model\ItemsParams[]'
+        'params' => '\TinkoffApi\Model\ItemsParams[]'
     ];
 
     /**
@@ -668,7 +668,7 @@ class Confirm2 implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets params
      *
-     * @return \OpenAPI\Client\Model\ItemsParams[]|null
+     * @return \TinkoffApi\Model\ItemsParams[]|null
      */
     public function getParams()
     {
@@ -678,7 +678,7 @@ class Confirm2 implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets params
      *
-     * @param \OpenAPI\Client\Model\ItemsParams[]|null $params Детали для платежей в рассрочку.
+     * @param \TinkoffApi\Model\ItemsParams[]|null $params Детали для платежей в рассрочку.
      *
      * @return self
      */

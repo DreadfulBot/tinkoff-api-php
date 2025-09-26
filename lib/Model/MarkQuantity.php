@@ -5,7 +5,7 @@
  * PHP version 8.1
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  TinkoffApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,17 +26,17 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace TinkoffApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \TinkoffApi\ObjectSerializer;
 
 /**
  * MarkQuantity Class Doc Comment
  *
  * @category Class
  * @description Реквизит «дробное количество маркированного товара». Передается, только если расчет осуществляется  за маркированный товар — соответствующий код в поле  &#x60;paymentObject&#x60;, и значение в поле &#x60;measurementUnit&#x60;  равно &#x60;0&#x60;.  &#x60;MarkQuantity&#x60; не является обязательным объектом, в том числе для товаров с маркировкой. Этот объект можно передавать,   если товар с маркировкой. То есть даже при ФФД 1.2 этот объект не является обязательным.    Пример:  &#x60;&#x60;&#x60;       {       \&quot;numenator\&quot;: \&quot;1\&quot;       \&quot;denominator\&quot; \&quot;2\&quot;         } &#x60;&#x60;&#x60;
- * @package  OpenAPI\Client
+ * @package  TinkoffApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>

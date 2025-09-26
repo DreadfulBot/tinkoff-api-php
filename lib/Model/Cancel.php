@@ -5,7 +5,7 @@
  * PHP version 8.1
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  TinkoffApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace TinkoffApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \TinkoffApi\ObjectSerializer;
 
 /**
  * Cancel Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  TinkoffApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -62,8 +62,8 @@ class Cancel implements ModelInterface, ArrayAccess, \JsonSerializable
         'token' => 'string',
         'ip' => 'string',
         'amount' => 'float',
-        'receipt' => '\OpenAPI\Client\Model\CancelReceipt',
-        'shops' => '\OpenAPI\Client\Model\ShopsCancel[]',
+        'receipt' => '\TinkoffApi\Model\CancelReceipt',
+        'shops' => '\TinkoffApi\Model\ShopsCancel[]',
         'qr_member_id' => 'string',
         'route' => 'string',
         'source' => 'string',
@@ -558,7 +558,7 @@ class Cancel implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets receipt
      *
-     * @return \OpenAPI\Client\Model\CancelReceipt|null
+     * @return \TinkoffApi\Model\CancelReceipt|null
      */
     public function getReceipt()
     {
@@ -568,7 +568,7 @@ class Cancel implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets receipt
      *
-     * @param \OpenAPI\Client\Model\CancelReceipt|null $receipt receipt
+     * @param \TinkoffApi\Model\CancelReceipt|null $receipt receipt
      *
      * @return self
      */
@@ -585,7 +585,7 @@ class Cancel implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets shops
      *
-     * @return \OpenAPI\Client\Model\ShopsCancel[]|null
+     * @return \TinkoffApi\Model\ShopsCancel[]|null
      */
     public function getShops()
     {
@@ -595,7 +595,7 @@ class Cancel implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets shops
      *
-     * @param \OpenAPI\Client\Model\ShopsCancel[]|null $shops Обязательный для маркетплейсов. JSON-объект с данными маркетплейса.
+     * @param \TinkoffApi\Model\ShopsCancel[]|null $shops Обязательный для маркетплейсов. JSON-объект с данными маркетплейса.
      *
      * @return self
      */

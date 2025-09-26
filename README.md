@@ -464,7 +464,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new OpenAPI\Client\Api\DefaultApi(
+$apiInstance = new TinkoffApi\Api\DefaultApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -472,7 +472,7 @@ $apiInstance = new OpenAPI\Client\Api\DefaultApi(
 $md = 'md_example'; // string | Уникальный идентификатор транзакции в системе Банка (возвращается в ответе на FinishAuthorize)
 $pa_req = 'pa_req_example'; // string | Результат аутентификации 3-D Secure (возвращается в ответе на FinishAuthorize)
 $term_url = 'term_url_example'; // string | Адрес перенаправления после аутентификации 3-D Secure (URL обработчик на стороне Мерчанта, принимающий результаты прохождения 3-D Secure)
-$creq = new \OpenAPI\Client\Model\ChallengeRequestCReq(); // \OpenAPI\Client\Model\ChallengeRequestCReq
+$creq = new \TinkoffApi\Model\ChallengeRequestCReq(); // \TinkoffApi\Model\ChallengeRequestCReq
 
 try {
     $result = $apiInstance->aCSUrl($md, $pa_req, $term_url, $creq);

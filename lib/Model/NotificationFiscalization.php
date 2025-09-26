@@ -5,7 +5,7 @@
  * PHP version 8.1
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  TinkoffApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,17 +26,17 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace TinkoffApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \TinkoffApi\ObjectSerializer;
 
 /**
  * NotificationFiscalization Class Doc Comment
  *
  * @category Class
  * @description **Уведомление о фискализации**  Если используется подключенная онлайн касса, по результату фискализации будет отправлено уведомление с фискальными данными.
- * @package  OpenAPI\Client
+ * @package  TinkoffApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -73,7 +73,7 @@ class NotificationFiscalization implements ModelInterface, ArrayAccess, \JsonSer
         'ecr_reg_number' => 'string',
         'fiscal_document_number' => 'int',
         'fiscal_document_attribute' => 'int',
-        'receipt' => '\OpenAPI\Client\Model\NotificationFiscalizationReceipt',
+        'receipt' => '\TinkoffApi\Model\NotificationFiscalizationReceipt',
         'type' => 'string',
         'token' => 'string',
         'ofd' => 'string',
@@ -895,7 +895,7 @@ class NotificationFiscalization implements ModelInterface, ArrayAccess, \JsonSer
     /**
      * Gets receipt
      *
-     * @return \OpenAPI\Client\Model\NotificationFiscalizationReceipt|null
+     * @return \TinkoffApi\Model\NotificationFiscalizationReceipt|null
      */
     public function getReceipt()
     {
@@ -905,7 +905,7 @@ class NotificationFiscalization implements ModelInterface, ArrayAccess, \JsonSer
     /**
      * Sets receipt
      *
-     * @param \OpenAPI\Client\Model\NotificationFiscalizationReceipt|null $receipt receipt
+     * @param \TinkoffApi\Model\NotificationFiscalizationReceipt|null $receipt receipt
      *
      * @return self
      */

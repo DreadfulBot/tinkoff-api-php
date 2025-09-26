@@ -1,4 +1,4 @@
-# OpenAPI\Client\MirPayApi
+# TinkoffApi\MirPayApi
 
 All URIs are relative to https://securepay.tinkoff.ru, except if the operation defines another base path.
 
@@ -10,7 +10,7 @@ All URIs are relative to https://securepay.tinkoff.ru, except if the operation d
 ## `getDeepLink()`
 
 ```php
-getDeepLink($get_deep_link): \OpenAPI\Client\Model\GetDeepLinkResponse
+getDeepLink($get_deep_link): \TinkoffApi\Model\GetDeepLinkResponse
 ```
 
 Получить DeepLink
@@ -25,12 +25,12 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new OpenAPI\Client\Api\MirPayApi(
+$apiInstance = new TinkoffApi\Api\MirPayApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$get_deep_link = new \OpenAPI\Client\Model\GetDeepLink(); // \OpenAPI\Client\Model\GetDeepLink
+$get_deep_link = new \TinkoffApi\Model\GetDeepLink(); // \TinkoffApi\Model\GetDeepLink
 
 try {
     $result = $apiInstance->getDeepLink($get_deep_link);
@@ -44,11 +44,11 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **get_deep_link** | [**\OpenAPI\Client\Model\GetDeepLink**](../Model/GetDeepLink.md)|  | |
+| **get_deep_link** | [**\TinkoffApi\Model\GetDeepLink**](../Model/GetDeepLink.md)|  | |
 
 ### Return type
 
-[**\OpenAPI\Client\Model\GetDeepLinkResponse**](../Model/GetDeepLinkResponse.md)
+[**\TinkoffApi\Model\GetDeepLinkResponse**](../Model/GetDeepLinkResponse.md)
 
 ### Authorization
 

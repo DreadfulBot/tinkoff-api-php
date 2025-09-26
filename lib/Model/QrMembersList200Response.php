@@ -5,7 +5,7 @@
  * PHP version 8.1
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  TinkoffApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace TinkoffApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \TinkoffApi\ObjectSerializer;
 
 /**
  * QrMembersList200Response Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  TinkoffApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,7 +57,7 @@ class QrMembersList200Response implements ModelInterface, ArrayAccess, \JsonSeri
       * @var string[]
       */
     protected static $openAPITypes = [
-        'members' => '\OpenAPI\Client\Model\Member[]',
+        'members' => '\TinkoffApi\Model\Member[]',
         'order_id' => 'string',
         'success' => 'bool',
         'error_code' => 'string',
@@ -337,7 +337,7 @@ class QrMembersList200Response implements ModelInterface, ArrayAccess, \JsonSeri
     /**
      * Gets members
      *
-     * @return \OpenAPI\Client\Model\Member[]|null
+     * @return \TinkoffApi\Model\Member[]|null
      */
     public function getMembers()
     {
@@ -347,7 +347,7 @@ class QrMembersList200Response implements ModelInterface, ArrayAccess, \JsonSeri
     /**
      * Sets members
      *
-     * @param \OpenAPI\Client\Model\Member[]|null $members Массив списка участников. Возвращается, только если возврат возможен.
+     * @param \TinkoffApi\Model\Member[]|null $members Массив списка участников. Возвращается, только если возврат возможен.
      *
      * @return self
      */

@@ -19,7 +19,7 @@ Name | Type | Description | Notes
 **ecr_reg_number** | **string** | Регистрационный номер ККТ. | [optional]
 **fiscal_document_number** | **int** | Фискальный номер документа. | [optional]
 **fiscal_document_attribute** | **int** | Фискальный признак документа. | [optional]
-**receipt** | [**\OpenAPI\Client\Model\NotificationFiscalizationReceipt**](NotificationFiscalizationReceipt.md) |  | [optional]
+**receipt** | [**\TinkoffApi\Model\NotificationFiscalizationReceipt**](NotificationFiscalizationReceipt.md) |  | [optional]
 **type** | **string** | Признак расчета. | [optional]
 **token** | **string** | Подпись запроса. Формируется по такому же принципу, как и в случае запросов в Т‑Бизнес. | [optional]
 **ofd** | **string** | Наименование оператора фискальных данных. | [optional]

@@ -5,7 +5,7 @@
  * PHP version 8.1
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  TinkoffApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace TinkoffApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \TinkoffApi\ObjectSerializer;
 
 /**
  * CheckOrder2 Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  TinkoffApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -63,7 +63,7 @@ class CheckOrder2 implements ModelInterface, ArrayAccess, \JsonSerializable
         'error_code' => 'string',
         'message' => 'string',
         'details' => 'string',
-        'payments' => '\OpenAPI\Client\Model\PaymentsCheckOrder[]'
+        'payments' => '\TinkoffApi\Model\PaymentsCheckOrder[]'
     ];
 
     /**
@@ -519,7 +519,7 @@ class CheckOrder2 implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets payments
      *
-     * @return \OpenAPI\Client\Model\PaymentsCheckOrder[]
+     * @return \TinkoffApi\Model\PaymentsCheckOrder[]
      */
     public function getPayments()
     {
@@ -529,7 +529,7 @@ class CheckOrder2 implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets payments
      *
-     * @param \OpenAPI\Client\Model\PaymentsCheckOrder[] $payments payments
+     * @param \TinkoffApi\Model\PaymentsCheckOrder[] $payments payments
      *
      * @return self
      */

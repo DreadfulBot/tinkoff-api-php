@@ -5,7 +5,7 @@
  * PHP version 8.1
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  TinkoffApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace TinkoffApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \TinkoffApi\ObjectSerializer;
 
 /**
  * FinishAuthorizeFULL Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  TinkoffApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -63,7 +63,7 @@ class FinishAuthorizeFULL implements ModelInterface, ArrayAccess, \JsonSerializa
         'ip' => 'string',
         'send_email' => 'bool',
         'source' => 'string',
-        'data' => '\OpenAPI\Client\Model\FinishAuthorizeFULLDATA',
+        'data' => '\TinkoffApi\Model\FinishAuthorizeFULLDATA',
         'info_email' => 'string',
         'encrypted_payment_data' => 'string',
         'card_data' => 'string',
@@ -630,7 +630,7 @@ class FinishAuthorizeFULL implements ModelInterface, ArrayAccess, \JsonSerializa
     /**
      * Gets data
      *
-     * @return \OpenAPI\Client\Model\FinishAuthorizeFULLDATA|null
+     * @return \TinkoffApi\Model\FinishAuthorizeFULLDATA|null
      */
     public function getData()
     {
@@ -640,7 +640,7 @@ class FinishAuthorizeFULL implements ModelInterface, ArrayAccess, \JsonSerializa
     /**
      * Sets data
      *
-     * @param \OpenAPI\Client\Model\FinishAuthorizeFULLDATA|null $data data
+     * @param \TinkoffApi\Model\FinishAuthorizeFULLDATA|null $data data
      *
      * @return self
      */

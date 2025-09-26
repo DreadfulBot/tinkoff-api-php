@@ -5,7 +5,7 @@
  * PHP version 8.1
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  TinkoffApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,17 +26,17 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace TinkoffApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \TinkoffApi\ObjectSerializer;
 
 /**
  * ReceiptFFD122 Class Doc Comment
  *
  * @category Class
  * @description Объект с информацией о видах суммы платежа
- * @package  OpenAPI\Client
+ * @package  TinkoffApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -59,14 +59,14 @@ class ReceiptFFD122 implements ModelInterface, ArrayAccess, \JsonSerializable
       */
     protected static $openAPITypes = [
         'ffd_version' => 'string',
-        'client_info' => '\OpenAPI\Client\Model\ClientInfo',
+        'client_info' => '\TinkoffApi\Model\ClientInfo',
         'taxation' => 'string',
         'email' => 'string',
         'phone' => 'string',
         'customer' => 'string',
         'customer_inn' => 'string',
-        'items' => '\OpenAPI\Client\Model\ItemsFFD12[]',
-        'payments' => '\OpenAPI\Client\Model\Payments[]'
+        'items' => '\TinkoffApi\Model\ItemsFFD12[]',
+        'payments' => '\TinkoffApi\Model\Payments[]'
     ];
 
     /**
@@ -416,7 +416,7 @@ class ReceiptFFD122 implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets client_info
      *
-     * @return \OpenAPI\Client\Model\ClientInfo|null
+     * @return \TinkoffApi\Model\ClientInfo|null
      */
     public function getClientInfo()
     {
@@ -426,7 +426,7 @@ class ReceiptFFD122 implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets client_info
      *
-     * @param \OpenAPI\Client\Model\ClientInfo|null $client_info client_info
+     * @param \TinkoffApi\Model\ClientInfo|null $client_info client_info
      *
      * @return self
      */
@@ -596,7 +596,7 @@ class ReceiptFFD122 implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets items
      *
-     * @return \OpenAPI\Client\Model\ItemsFFD12[]|null
+     * @return \TinkoffApi\Model\ItemsFFD12[]|null
      */
     public function getItems()
     {
@@ -606,7 +606,7 @@ class ReceiptFFD122 implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets items
      *
-     * @param \OpenAPI\Client\Model\ItemsFFD12[]|null $items Массив, содержащий в себе информацию о товарах.
+     * @param \TinkoffApi\Model\ItemsFFD12[]|null $items Массив, содержащий в себе информацию о товарах.
      *
      * @return self
      */
@@ -623,7 +623,7 @@ class ReceiptFFD122 implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets payments
      *
-     * @return \OpenAPI\Client\Model\Payments[]|null
+     * @return \TinkoffApi\Model\Payments[]|null
      */
     public function getPayments()
     {
@@ -633,7 +633,7 @@ class ReceiptFFD122 implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets payments
      *
-     * @param \OpenAPI\Client\Model\Payments[]|null $payments Объект c информацией о видах суммы платежа. * Если объект не передан, будет автоматически указана итоговая сумма чека с видом оплаты  «Безналичный». * Если передан объект `receipt.Payments`, значение в `Electronic` должно быть равно итоговому значению Amount в методе **Init**. При этом сумма введенных значений по всем видам оплат, включая `Electronic`, должна быть равна сумме (`Amount`) всех товаров, переданных в объекте `receipt.Items`.
+     * @param \TinkoffApi\Model\Payments[]|null $payments Объект c информацией о видах суммы платежа. * Если объект не передан, будет автоматически указана итоговая сумма чека с видом оплаты  «Безналичный». * Если передан объект `receipt.Payments`, значение в `Electronic` должно быть равно итоговому значению Amount в методе **Init**. При этом сумма введенных значений по всем видам оплат, включая `Electronic`, должна быть равна сумме (`Amount`) всех товаров, переданных в объекте `receipt.Items`.
      *
      * @return self
      */

@@ -5,7 +5,7 @@
  * PHP version 8.1
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  TinkoffApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace TinkoffApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \TinkoffApi\ObjectSerializer;
 
 /**
  * SendClosingReceipt Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  TinkoffApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -59,7 +59,7 @@ class SendClosingReceipt implements ModelInterface, ArrayAccess, \JsonSerializab
     protected static $openAPITypes = [
         'terminal_key' => 'string',
         'payment_id' => 'string',
-        'receipt' => '\OpenAPI\Client\Model\SendClosingReceiptReceipt',
+        'receipt' => '\TinkoffApi\Model\SendClosingReceiptReceipt',
         'token' => 'string'
     ];
 
@@ -379,7 +379,7 @@ class SendClosingReceipt implements ModelInterface, ArrayAccess, \JsonSerializab
     /**
      * Gets receipt
      *
-     * @return \OpenAPI\Client\Model\SendClosingReceiptReceipt
+     * @return \TinkoffApi\Model\SendClosingReceiptReceipt
      */
     public function getReceipt()
     {
@@ -389,7 +389,7 @@ class SendClosingReceipt implements ModelInterface, ArrayAccess, \JsonSerializab
     /**
      * Sets receipt
      *
-     * @param \OpenAPI\Client\Model\SendClosingReceiptReceipt $receipt receipt
+     * @param \TinkoffApi\Model\SendClosingReceiptReceipt $receipt receipt
      *
      * @return self
      */

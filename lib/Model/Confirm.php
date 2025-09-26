@@ -5,7 +5,7 @@
  * PHP version 8.1
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  TinkoffApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace TinkoffApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \TinkoffApi\ObjectSerializer;
 
 /**
  * Confirm Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  TinkoffApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -62,8 +62,8 @@ class Confirm implements ModelInterface, ArrayAccess, \JsonSerializable
         'token' => 'string',
         'ip' => 'string',
         'amount' => 'float',
-        'receipt' => '\OpenAPI\Client\Model\ConfirmReceipt',
-        'shops' => '\OpenAPI\Client\Model\Shops[]',
+        'receipt' => '\TinkoffApi\Model\ConfirmReceipt',
+        'shops' => '\TinkoffApi\Model\Shops[]',
         'route' => 'string',
         'source' => 'string'
     ];
@@ -548,7 +548,7 @@ class Confirm implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets receipt
      *
-     * @return \OpenAPI\Client\Model\ConfirmReceipt|null
+     * @return \TinkoffApi\Model\ConfirmReceipt|null
      */
     public function getReceipt()
     {
@@ -558,7 +558,7 @@ class Confirm implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets receipt
      *
-     * @param \OpenAPI\Client\Model\ConfirmReceipt|null $receipt receipt
+     * @param \TinkoffApi\Model\ConfirmReceipt|null $receipt receipt
      *
      * @return self
      */
@@ -575,7 +575,7 @@ class Confirm implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets shops
      *
-     * @return \OpenAPI\Client\Model\Shops[]|null
+     * @return \TinkoffApi\Model\Shops[]|null
      */
     public function getShops()
     {
@@ -585,7 +585,7 @@ class Confirm implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets shops
      *
-     * @param \OpenAPI\Client\Model\Shops[]|null $shops Обязательный для маркетплейсов. JSON-объект с данными маркетплейса.
+     * @param \TinkoffApi\Model\Shops[]|null $shops Обязательный для маркетплейсов. JSON-объект с данными маркетплейса.
      *
      * @return self
      */

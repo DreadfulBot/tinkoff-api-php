@@ -5,7 +5,7 @@
  * PHP version 8.1
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  TinkoffApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,17 +26,17 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace TinkoffApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \TinkoffApi\ObjectSerializer;
 
 /**
  * AttachCardDATA Class Doc Comment
  *
  * @category Class
  * @description В объекте передаются дополнительные параметры в формате &#x60;ключ:значение&#x60;. Например, меняем на JSON-объект, который содержит дополнительные параметры в виде &#x60;ключ:значение&#x60;.  Если ключи или значения содержат в себе специальные символы, получившееся значение должно быть закодировано функцией &#x60;urlencode&#x60;. Максимальная длина для каждого передаваемого параметра: * ключ — 20 знаков, * значение — 100 знаков.   Максимальное количество пар &#x60;ключ:значение&#x60; — не больше 20.  &gt;**Важно** Для 3DS второй версии в &#x60;DATA&#x60; передаются параметры, описанные в объекте &#x60;3DSv2&#x60;. В &#x60;HttpHeaders&#x60; запроса обязательны заголовки &#x60;User-Agent&#x60; и &#x60;Accept&#x60;.
- * @package  OpenAPI\Client
+ * @package  TinkoffApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>

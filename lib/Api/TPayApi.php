@@ -4,7 +4,7 @@
  * PHP version 8.1
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  TinkoffApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -25,7 +25,7 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Api;
+namespace TinkoffApi\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -36,17 +36,17 @@ use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
 use Psr\Http\Message\RequestInterface;
 use Psr\Http\Message\ResponseInterface;
-use OpenAPI\Client\ApiException;
-use OpenAPI\Client\Configuration;
-use OpenAPI\Client\FormDataProcessor;
-use OpenAPI\Client\HeaderSelector;
-use OpenAPI\Client\ObjectSerializer;
+use TinkoffApi\ApiException;
+use TinkoffApi\Configuration;
+use TinkoffApi\FormDataProcessor;
+use TinkoffApi\HeaderSelector;
+use TinkoffApi\ObjectSerializer;
 
 /**
  * TPayApi Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  TinkoffApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -140,9 +140,9 @@ class TPayApi
      * @param  string $version Версия T‑Pay, доступная на терминале: * 2.0 (T‑Pay) (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['link'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \TinkoffApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\Link200Response
+     * @return \TinkoffApi\Model\Link200Response
      */
     public function link($payment_id, $version, string $contentType = self::contentTypes['link'][0])
     {
@@ -159,9 +159,9 @@ class TPayApi
      * @param  string $version Версия T‑Pay, доступная на терминале: * 2.0 (T‑Pay) (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['link'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \TinkoffApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\Link200Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \TinkoffApi\Model\Link200Response, HTTP status code, HTTP response headers (array of strings)
      */
     public function linkWithHttpInfo($payment_id, $version, string $contentType = self::contentTypes['link'][0])
     {
@@ -193,7 +193,7 @@ class TPayApi
             switch($statusCode) {
                 case 200:
                     return $this->handleResponseWithDataType(
-                        '\OpenAPI\Client\Model\Link200Response',
+                        '\TinkoffApi\Model\Link200Response',
                         $request,
                         $response,
                     );
@@ -215,7 +215,7 @@ class TPayApi
             }
 
             return $this->handleResponseWithDataType(
-                '\OpenAPI\Client\Model\Link200Response',
+                '\TinkoffApi\Model\Link200Response',
                 $request,
                 $response,
             );
@@ -224,7 +224,7 @@ class TPayApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\Link200Response',
+                        '\TinkoffApi\Model\Link200Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -272,7 +272,7 @@ class TPayApi
      */
     public function linkAsyncWithHttpInfo($payment_id, $version, string $contentType = self::contentTypes['link'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\Link200Response';
+        $returnType = '\TinkoffApi\Model\Link200Response';
         $request = $this->linkRequest($payment_id, $version, $contentType);
 
         return $this->client
@@ -427,7 +427,7 @@ class TPayApi
      * @param  float $payment_id Уникальный идентификатор транзакции в системе Т‑Бизнес. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['qR'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \TinkoffApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return \SplFileObject
      */
@@ -445,7 +445,7 @@ class TPayApi
      * @param  float $payment_id Уникальный идентификатор транзакции в системе Т‑Бизнес. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['qR'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \TinkoffApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return array of \SplFileObject, HTTP status code, HTTP response headers (array of strings)
      */
@@ -695,9 +695,9 @@ class TPayApi
      * @param  string $terminal_key Платежный ключ, выдается мерчанту при заведении терминала. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['status'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \TinkoffApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\Status200Response
+     * @return \TinkoffApi\Model\Status200Response
      */
     public function status($terminal_key, string $contentType = self::contentTypes['status'][0])
     {
@@ -713,9 +713,9 @@ class TPayApi
      * @param  string $terminal_key Платежный ключ, выдается мерчанту при заведении терминала. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['status'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \TinkoffApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\Status200Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \TinkoffApi\Model\Status200Response, HTTP status code, HTTP response headers (array of strings)
      */
     public function statusWithHttpInfo($terminal_key, string $contentType = self::contentTypes['status'][0])
     {
@@ -747,7 +747,7 @@ class TPayApi
             switch($statusCode) {
                 case 200:
                     return $this->handleResponseWithDataType(
-                        '\OpenAPI\Client\Model\Status200Response',
+                        '\TinkoffApi\Model\Status200Response',
                         $request,
                         $response,
                     );
@@ -769,7 +769,7 @@ class TPayApi
             }
 
             return $this->handleResponseWithDataType(
-                '\OpenAPI\Client\Model\Status200Response',
+                '\TinkoffApi\Model\Status200Response',
                 $request,
                 $response,
             );
@@ -778,7 +778,7 @@ class TPayApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\Status200Response',
+                        '\TinkoffApi\Model\Status200Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -824,7 +824,7 @@ class TPayApi
      */
     public function statusAsyncWithHttpInfo($terminal_key, string $contentType = self::contentTypes['status'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\Status200Response';
+        $returnType = '\TinkoffApi\Model\Status200Response';
         $request = $this->statusRequest($terminal_key, $contentType);
 
         return $this->client

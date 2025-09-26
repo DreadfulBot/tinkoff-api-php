@@ -5,7 +5,7 @@
  * PHP version 8.1
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  TinkoffApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace TinkoffApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \TinkoffApi\ObjectSerializer;
 
 /**
  * GetQrBankListResponse Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  TinkoffApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -60,7 +60,7 @@ class GetQrBankListResponse implements ModelInterface, ArrayAccess, \JsonSeriali
         'success' => 'bool',
         'error_code' => 'string',
         'message' => 'string',
-        'bank_list' => '\OpenAPI\Client\Model\BankList[]'
+        'bank_list' => '\TinkoffApi\Model\BankList[]'
     ];
 
     /**
@@ -403,7 +403,7 @@ class GetQrBankListResponse implements ModelInterface, ArrayAccess, \JsonSeriali
     /**
      * Gets bank_list
      *
-     * @return \OpenAPI\Client\Model\BankList[]
+     * @return \TinkoffApi\Model\BankList[]
      */
     public function getBankList()
     {
@@ -413,7 +413,7 @@ class GetQrBankListResponse implements ModelInterface, ArrayAccess, \JsonSeriali
     /**
      * Sets bank_list
      *
-     * @param \OpenAPI\Client\Model\BankList[] $bank_list Список банков от НСПК.
+     * @param \TinkoffApi\Model\BankList[] $bank_list Список банков от НСПК.
      *
      * @return self
      */

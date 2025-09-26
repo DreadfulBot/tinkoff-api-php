@@ -1,4 +1,4 @@
-# OpenAPI\Client\SberPayApi
+# TinkoffApi\SberPayApi
 
 All URIs are relative to https://securepay.tinkoff.ru, except if the operation defines another base path.
 
@@ -26,7 +26,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new OpenAPI\Client\Api\SberPayApi(
+$apiInstance = new TinkoffApi\Api\SberPayApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -67,7 +67,7 @@ No authorization required
 ## `sberPaylink()`
 
 ```php
-sberPaylink($payment_id): \OpenAPI\Client\Model\SberPaylink200Response
+sberPaylink($payment_id): \TinkoffApi\Model\SberPaylink200Response
 ```
 
 Получить ссылку
@@ -82,7 +82,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new OpenAPI\Client\Api\SberPayApi(
+$apiInstance = new TinkoffApi\Api\SberPayApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -105,7 +105,7 @@ try {
 
 ### Return type
 
-[**\OpenAPI\Client\Model\SberPaylink200Response**](../Model/SberPaylink200Response.md)
+[**\TinkoffApi\Model\SberPaylink200Response**](../Model/SberPaylink200Response.md)
 
 ### Authorization
 

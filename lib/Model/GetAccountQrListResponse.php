@@ -5,7 +5,7 @@
  * PHP version 8.1
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  TinkoffApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace TinkoffApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \TinkoffApi\ObjectSerializer;
 
 /**
  * GetAccountQrListResponse Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  TinkoffApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -61,7 +61,7 @@ class GetAccountQrListResponse implements ModelInterface, ArrayAccess, \JsonSeri
         'success' => 'bool',
         'error_code' => 'string',
         'message' => 'string',
-        'account_tokens' => '\OpenAPI\Client\Model\GetAccountQrListResponseAccountTokensInner[]'
+        'account_tokens' => '\TinkoffApi\Model\GetAccountQrListResponseAccountTokensInner[]'
     ];
 
     /**
@@ -461,7 +461,7 @@ class GetAccountQrListResponse implements ModelInterface, ArrayAccess, \JsonSeri
     /**
      * Gets account_tokens
      *
-     * @return \OpenAPI\Client\Model\GetAccountQrListResponseAccountTokensInner[]|null
+     * @return \TinkoffApi\Model\GetAccountQrListResponseAccountTokensInner[]|null
      */
     public function getAccountTokens()
     {
@@ -471,7 +471,7 @@ class GetAccountQrListResponse implements ModelInterface, ArrayAccess, \JsonSeri
     /**
      * Sets account_tokens
      *
-     * @param \OpenAPI\Client\Model\GetAccountQrListResponseAccountTokensInner[]|null $account_tokens Список привязанных счетов покупателя по магазину.
+     * @param \TinkoffApi\Model\GetAccountQrListResponseAccountTokensInner[]|null $account_tokens Список привязанных счетов покупателя по магазину.
      *
      * @return self
      */

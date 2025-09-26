@@ -5,7 +5,7 @@
  * PHP version 8.1
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  TinkoffApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace TinkoffApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \TinkoffApi\ObjectSerializer;
 
 /**
  * ACSUrlResponseV2 Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  TinkoffApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,7 +57,7 @@ class ACSUrlResponseV2 implements ModelInterface, ArrayAccess, \JsonSerializable
       * @var string[]
       */
     protected static $openAPITypes = [
-        'cres' => '\OpenAPI\Client\Model\ChallengeRequestCReq1'
+        'cres' => '\TinkoffApi\Model\ChallengeRequestCReq1'
     ];
 
     /**
@@ -295,7 +295,7 @@ class ACSUrlResponseV2 implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets cres
      *
-     * @return \OpenAPI\Client\Model\ChallengeRequestCReq1
+     * @return \TinkoffApi\Model\ChallengeRequestCReq1
      */
     public function getCres()
     {
@@ -305,7 +305,7 @@ class ACSUrlResponseV2 implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets cres
      *
-     * @param \OpenAPI\Client\Model\ChallengeRequestCReq1 $cres cres
+     * @param \TinkoffApi\Model\ChallengeRequestCReq1 $cres cres
      *
      * @return self
      */

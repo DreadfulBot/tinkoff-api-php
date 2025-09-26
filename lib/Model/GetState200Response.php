@@ -5,7 +5,7 @@
  * PHP version 8.1
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  TinkoffApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace TinkoffApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \TinkoffApi\ObjectSerializer;
 
 /**
  * GetState200Response Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  TinkoffApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -66,7 +66,7 @@ class GetState200Response implements ModelInterface, ArrayAccess, \JsonSerializa
         'error_code' => 'string',
         'message' => 'string',
         'details' => 'string',
-        'params' => '\OpenAPI\Client\Model\ItemsParams[]'
+        'params' => '\TinkoffApi\Model\ItemsParams[]'
     ];
 
     /**
@@ -661,7 +661,7 @@ class GetState200Response implements ModelInterface, ArrayAccess, \JsonSerializa
     /**
      * Gets params
      *
-     * @return \OpenAPI\Client\Model\ItemsParams[]|null
+     * @return \TinkoffApi\Model\ItemsParams[]|null
      */
     public function getParams()
     {
@@ -671,7 +671,7 @@ class GetState200Response implements ModelInterface, ArrayAccess, \JsonSerializa
     /**
      * Sets params
      *
-     * @param \OpenAPI\Client\Model\ItemsParams[]|null $params Информация по способу оплаты или деталям для платежей в рассрочку.
+     * @param \TinkoffApi\Model\ItemsParams[]|null $params Информация по способу оплаты или деталям для платежей в рассрочку.
      *
      * @return self
      */

@@ -5,7 +5,7 @@
  * PHP version 8.1
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  TinkoffApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace TinkoffApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \TinkoffApi\ObjectSerializer;
 
 /**
  * GetConfirmOperation200Response Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  TinkoffApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -60,7 +60,7 @@ class GetConfirmOperation200Response implements ModelInterface, ArrayAccess, \Js
         'success' => 'bool',
         'error_code' => 'string',
         'message' => 'string',
-        'payment_id_list' => '\OpenAPI\Client\Model\PaymentIdListForGCO[]'
+        'payment_id_list' => '\TinkoffApi\Model\PaymentIdListForGCO[]'
     ];
 
     /**
@@ -403,7 +403,7 @@ class GetConfirmOperation200Response implements ModelInterface, ArrayAccess, \Js
     /**
      * Gets payment_id_list
      *
-     * @return \OpenAPI\Client\Model\PaymentIdListForGCO[]
+     * @return \TinkoffApi\Model\PaymentIdListForGCO[]
      */
     public function getPaymentIdList()
     {
@@ -413,7 +413,7 @@ class GetConfirmOperation200Response implements ModelInterface, ArrayAccess, \Js
     /**
      * Sets payment_id_list
      *
-     * @param \OpenAPI\Client\Model\PaymentIdListForGCO[] $payment_id_list payment_id_list
+     * @param \TinkoffApi\Model\PaymentIdListForGCO[] $payment_id_list payment_id_list
      *
      * @return self
      */

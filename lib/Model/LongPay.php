@@ -5,7 +5,7 @@
  * PHP version 8.1
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  TinkoffApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,17 +26,17 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace TinkoffApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \TinkoffApi\ObjectSerializer;
 
 /**
  * LongPay Class Doc Comment
  *
  * @category Class
  * @description Расширенный набор параметров авиабилета передается при создании платежа (метод **Init**) в параметре &#x60;DATA&#x60;.
- * @package  OpenAPI\Client
+ * @package  TinkoffApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -58,9 +58,9 @@ class LongPay implements ModelInterface, ArrayAccess, \JsonSerializable
       * @var string[]
       */
     protected static $openAPITypes = [
-        '_' => '\OpenAPI\Client\Model\LongPay1',
-        '_' => '\OpenAPI\Client\Model\LongPay2',
-        '_' => '\OpenAPI\Client\Model\LongPay3'
+        '_' => '\TinkoffApi\Model\LongPay1',
+        '_' => '\TinkoffApi\Model\LongPay2',
+        '_' => '\TinkoffApi\Model\LongPay3'
     ];
 
     /**
@@ -307,7 +307,7 @@ class LongPay implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets _
      *
-     * @return \OpenAPI\Client\Model\LongPay1|null
+     * @return \TinkoffApi\Model\LongPay1|null
      */
     public function get()
     {
@@ -317,7 +317,7 @@ class LongPay implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets _
      *
-     * @param \OpenAPI\Client\Model\LongPay1|null $_ _
+     * @param \TinkoffApi\Model\LongPay1|null $_ _
      *
      * @return self
      */
@@ -334,7 +334,7 @@ class LongPay implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets _
      *
-     * @return \OpenAPI\Client\Model\LongPay2|null
+     * @return \TinkoffApi\Model\LongPay2|null
      */
     public function get()
     {
@@ -344,7 +344,7 @@ class LongPay implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets _
      *
-     * @param \OpenAPI\Client\Model\LongPay2|null $_ _
+     * @param \TinkoffApi\Model\LongPay2|null $_ _
      *
      * @return self
      */
@@ -361,7 +361,7 @@ class LongPay implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets _
      *
-     * @return \OpenAPI\Client\Model\LongPay3|null
+     * @return \TinkoffApi\Model\LongPay3|null
      */
     public function get()
     {
@@ -371,7 +371,7 @@ class LongPay implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets _
      *
-     * @param \OpenAPI\Client\Model\LongPay3|null $_ _
+     * @param \TinkoffApi\Model\LongPay3|null $_ _
      *
      * @return self
      */

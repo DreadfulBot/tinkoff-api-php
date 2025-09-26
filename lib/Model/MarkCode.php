@@ -5,7 +5,7 @@
  * PHP version 8.1
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  TinkoffApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,17 +26,17 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace TinkoffApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \TinkoffApi\ObjectSerializer;
 
 /**
  * MarkCode Class Doc Comment
  *
  * @category Class
  * @description Код маркировки в машиночитаемой форме, представленный в виде одного из видов кодов, формируемых в соответствии с требованиями, предусмотренными правилами, для нанесения на потребительскую упаковку, или на товары, или на товарный ярлык   Включается в чек, если предметом расчета является товар, подлежащий обязательной маркировке средством идентификации — соответствующий  код в поле &#x60;paymentObject&#x60;.   С 01.09.2025 для чеков с маркированными товарами обязательна передача часовой зоны места расчета (тег 1011). По умолчанию — Москва. Для изменения напишите на acq_help@tbank.ru.
- * @package  OpenAPI\Client
+ * @package  TinkoffApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>

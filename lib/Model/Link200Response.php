@@ -5,7 +5,7 @@
  * PHP version 8.1
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  TinkoffApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace TinkoffApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \TinkoffApi\ObjectSerializer;
 
 /**
  * Link200Response Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  TinkoffApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,7 +57,7 @@ class Link200Response implements ModelInterface, ArrayAccess, \JsonSerializable
       * @var string[]
       */
     protected static $openAPITypes = [
-        'params' => '\OpenAPI\Client\Model\Link200ResponseParams',
+        'params' => '\TinkoffApi\Model\Link200ResponseParams',
         'success' => 'bool',
         'error_code' => 'string',
         'message' => 'string',
@@ -333,7 +333,7 @@ class Link200Response implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets params
      *
-     * @return \OpenAPI\Client\Model\Link200ResponseParams
+     * @return \TinkoffApi\Model\Link200ResponseParams
      */
     public function getParams()
     {
@@ -343,7 +343,7 @@ class Link200Response implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets params
      *
-     * @param \OpenAPI\Client\Model\Link200ResponseParams $params params
+     * @param \TinkoffApi\Model\Link200ResponseParams $params params
      *
      * @return self
      */

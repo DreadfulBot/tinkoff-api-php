@@ -4,7 +4,7 @@
  * PHP version 8.1
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  TinkoffApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -25,7 +25,7 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Api;
+namespace TinkoffApi\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -36,17 +36,17 @@ use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
 use Psr\Http\Message\RequestInterface;
 use Psr\Http\Message\ResponseInterface;
-use OpenAPI\Client\ApiException;
-use OpenAPI\Client\Configuration;
-use OpenAPI\Client\FormDataProcessor;
-use OpenAPI\Client\HeaderSelector;
-use OpenAPI\Client\ObjectSerializer;
+use TinkoffApi\ApiException;
+use TinkoffApi\Configuration;
+use TinkoffApi\FormDataProcessor;
+use TinkoffApi\HeaderSelector;
+use TinkoffApi\ObjectSerializer;
 
 /**
  * Class3DSApi Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  TinkoffApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -140,9 +140,9 @@ class Class3DSApi
      * @param  string|null $token Подпись запроса. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['submit3DSAuthorization'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \TinkoffApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\Submit3DSAuthorization200Response
+     * @return \TinkoffApi\Model\Submit3DSAuthorization200Response
      */
     public function submit3DSAuthorization($md, $pa_res, $payment_id = null, $terminal_key = null, $token = null, string $contentType = self::contentTypes['submit3DSAuthorization'][0])
     {
@@ -162,9 +162,9 @@ class Class3DSApi
      * @param  string|null $token Подпись запроса. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['submit3DSAuthorization'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \TinkoffApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\Submit3DSAuthorization200Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \TinkoffApi\Model\Submit3DSAuthorization200Response, HTTP status code, HTTP response headers (array of strings)
      */
     public function submit3DSAuthorizationWithHttpInfo($md, $pa_res, $payment_id = null, $terminal_key = null, $token = null, string $contentType = self::contentTypes['submit3DSAuthorization'][0])
     {
@@ -196,7 +196,7 @@ class Class3DSApi
             switch($statusCode) {
                 case 200:
                     return $this->handleResponseWithDataType(
-                        '\OpenAPI\Client\Model\Submit3DSAuthorization200Response',
+                        '\TinkoffApi\Model\Submit3DSAuthorization200Response',
                         $request,
                         $response,
                     );
@@ -218,7 +218,7 @@ class Class3DSApi
             }
 
             return $this->handleResponseWithDataType(
-                '\OpenAPI\Client\Model\Submit3DSAuthorization200Response',
+                '\TinkoffApi\Model\Submit3DSAuthorization200Response',
                 $request,
                 $response,
             );
@@ -227,7 +227,7 @@ class Class3DSApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\Submit3DSAuthorization200Response',
+                        '\TinkoffApi\Model\Submit3DSAuthorization200Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -281,7 +281,7 @@ class Class3DSApi
      */
     public function submit3DSAuthorizationAsyncWithHttpInfo($md, $pa_res, $payment_id = null, $terminal_key = null, $token = null, string $contentType = self::contentTypes['submit3DSAuthorization'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\Submit3DSAuthorization200Response';
+        $returnType = '\TinkoffApi\Model\Submit3DSAuthorization200Response';
         $request = $this->submit3DSAuthorizationRequest($md, $pa_res, $payment_id, $terminal_key, $token, $contentType);
 
         return $this->client
@@ -444,9 +444,9 @@ class Class3DSApi
      * @param  string $token Подпись запроса. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['submit3DSAuthorizationV2'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \TinkoffApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\Submit3DSAuthorizationV2200Response
+     * @return \TinkoffApi\Model\Submit3DSAuthorizationV2200Response
      */
     public function submit3DSAuthorizationV2($payment_id, $terminal_key, $token, string $contentType = self::contentTypes['submit3DSAuthorizationV2'][0])
     {
@@ -464,9 +464,9 @@ class Class3DSApi
      * @param  string $token Подпись запроса. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['submit3DSAuthorizationV2'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \TinkoffApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\Submit3DSAuthorizationV2200Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \TinkoffApi\Model\Submit3DSAuthorizationV2200Response, HTTP status code, HTTP response headers (array of strings)
      */
     public function submit3DSAuthorizationV2WithHttpInfo($payment_id, $terminal_key, $token, string $contentType = self::contentTypes['submit3DSAuthorizationV2'][0])
     {
@@ -498,7 +498,7 @@ class Class3DSApi
             switch($statusCode) {
                 case 200:
                     return $this->handleResponseWithDataType(
-                        '\OpenAPI\Client\Model\Submit3DSAuthorizationV2200Response',
+                        '\TinkoffApi\Model\Submit3DSAuthorizationV2200Response',
                         $request,
                         $response,
                     );
@@ -520,7 +520,7 @@ class Class3DSApi
             }
 
             return $this->handleResponseWithDataType(
-                '\OpenAPI\Client\Model\Submit3DSAuthorizationV2200Response',
+                '\TinkoffApi\Model\Submit3DSAuthorizationV2200Response',
                 $request,
                 $response,
             );
@@ -529,7 +529,7 @@ class Class3DSApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\Submit3DSAuthorizationV2200Response',
+                        '\TinkoffApi\Model\Submit3DSAuthorizationV2200Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -579,7 +579,7 @@ class Class3DSApi
      */
     public function submit3DSAuthorizationV2AsyncWithHttpInfo($payment_id, $terminal_key, $token, string $contentType = self::contentTypes['submit3DSAuthorizationV2'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\Submit3DSAuthorizationV2200Response';
+        $returnType = '\TinkoffApi\Model\Submit3DSAuthorizationV2200Response';
         $request = $this->submit3DSAuthorizationV2Request($payment_id, $terminal_key, $token, $contentType);
 
         return $this->client

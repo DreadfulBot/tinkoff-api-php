@@ -5,7 +5,7 @@
  * PHP version 8.1
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  TinkoffApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace TinkoffApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \TinkoffApi\ObjectSerializer;
 
 /**
  * ItemsFFD105 Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  TinkoffApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -66,8 +66,8 @@ class ItemsFFD105 implements ModelInterface, ArrayAccess, \JsonSerializable
         'tax' => 'string',
         'ean13' => 'string',
         'shop_code' => 'string',
-        'agent_data' => '\OpenAPI\Client\Model\AgentData',
-        'supplier_info' => '\OpenAPI\Client\Model\SupplierInfo'
+        'agent_data' => '\TinkoffApi\Model\AgentData',
+        'supplier_info' => '\TinkoffApi\Model\SupplierInfo'
     ];
 
     /**
@@ -790,7 +790,7 @@ class ItemsFFD105 implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets agent_data
      *
-     * @return \OpenAPI\Client\Model\AgentData|null
+     * @return \TinkoffApi\Model\AgentData|null
      */
     public function getAgentData()
     {
@@ -800,7 +800,7 @@ class ItemsFFD105 implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets agent_data
      *
-     * @param \OpenAPI\Client\Model\AgentData|null $agent_data agent_data
+     * @param \TinkoffApi\Model\AgentData|null $agent_data agent_data
      *
      * @return self
      */
@@ -817,7 +817,7 @@ class ItemsFFD105 implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets supplier_info
      *
-     * @return \OpenAPI\Client\Model\SupplierInfo|null
+     * @return \TinkoffApi\Model\SupplierInfo|null
      */
     public function getSupplierInfo()
     {
@@ -827,7 +827,7 @@ class ItemsFFD105 implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets supplier_info
      *
-     * @param \OpenAPI\Client\Model\SupplierInfo|null $supplier_info supplier_info
+     * @param \TinkoffApi\Model\SupplierInfo|null $supplier_info supplier_info
      *
      * @return self
      */

@@ -5,7 +5,7 @@
  * PHP version 8.1
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  TinkoffApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace TinkoffApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \TinkoffApi\ObjectSerializer;
 
 /**
  * GetTerminalPayMethodsResponse Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  TinkoffApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -62,7 +62,7 @@ class GetTerminalPayMethodsResponse implements ModelInterface, ArrayAccess, \Jso
         'message' => 'string',
         'details' => 'string',
         'terminal_info' => 'object',
-        'terminal_info_paymethods' => '\OpenAPI\Client\Model\Paymethod[]',
+        'terminal_info_paymethods' => '\TinkoffApi\Model\Paymethod[]',
         'terminal_info_add_card_scheme' => 'bool',
         'terminal_info_token_required' => 'bool',
         'terminal_info_init_token_required' => 'bool'
@@ -501,7 +501,7 @@ class GetTerminalPayMethodsResponse implements ModelInterface, ArrayAccess, \Jso
     /**
      * Gets terminal_info_paymethods
      *
-     * @return \OpenAPI\Client\Model\Paymethod[]|null
+     * @return \TinkoffApi\Model\Paymethod[]|null
      */
     public function getTerminalInfoPaymethods()
     {
@@ -511,7 +511,7 @@ class GetTerminalPayMethodsResponse implements ModelInterface, ArrayAccess, \Jso
     /**
      * Sets terminal_info_paymethods
      *
-     * @param \OpenAPI\Client\Model\Paymethod[]|null $terminal_info_paymethods Перечень доступных методов оплаты.
+     * @param \TinkoffApi\Model\Paymethod[]|null $terminal_info_paymethods Перечень доступных методов оплаты.
      *
      * @return self
      */

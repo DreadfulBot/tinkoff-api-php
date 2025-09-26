@@ -5,7 +5,7 @@
  * PHP version 8.1
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  TinkoffApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace TinkoffApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \TinkoffApi\ObjectSerializer;
 
 /**
  * InitFULL Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  TinkoffApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -70,9 +70,9 @@ class InitFULL implements ModelInterface, ArrayAccess, \JsonSerializable
         'success_url' => 'string',
         'fail_url' => 'string',
         'redirect_due_date' => 'mixed',
-        'data' => '\OpenAPI\Client\Model\InitFULLDATA',
-        'receipt' => '\OpenAPI\Client\Model\InitFULLReceipt',
-        'shops' => '\OpenAPI\Client\Model\Shops[]',
+        'data' => '\TinkoffApi\Model\InitFULLDATA',
+        'receipt' => '\TinkoffApi\Model\InitFULLReceipt',
+        'shops' => '\TinkoffApi\Model\Shops[]',
         'descriptor' => 'string'
     ];
 
@@ -858,7 +858,7 @@ class InitFULL implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets data
      *
-     * @return \OpenAPI\Client\Model\InitFULLDATA|null
+     * @return \TinkoffApi\Model\InitFULLDATA|null
      */
     public function getData()
     {
@@ -868,7 +868,7 @@ class InitFULL implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets data
      *
-     * @param \OpenAPI\Client\Model\InitFULLDATA|null $data data
+     * @param \TinkoffApi\Model\InitFULLDATA|null $data data
      *
      * @return self
      */
@@ -885,7 +885,7 @@ class InitFULL implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets receipt
      *
-     * @return \OpenAPI\Client\Model\InitFULLReceipt|null
+     * @return \TinkoffApi\Model\InitFULLReceipt|null
      */
     public function getReceipt()
     {
@@ -895,7 +895,7 @@ class InitFULL implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets receipt
      *
-     * @param \OpenAPI\Client\Model\InitFULLReceipt|null $receipt receipt
+     * @param \TinkoffApi\Model\InitFULLReceipt|null $receipt receipt
      *
      * @return self
      */
@@ -912,7 +912,7 @@ class InitFULL implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets shops
      *
-     * @return \OpenAPI\Client\Model\Shops[]|null
+     * @return \TinkoffApi\Model\Shops[]|null
      */
     public function getShops()
     {
@@ -922,7 +922,7 @@ class InitFULL implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets shops
      *
-     * @param \OpenAPI\Client\Model\Shops[]|null $shops JSON-объект с данными маркетплейса. Обязателен для маркетплейсов.
+     * @param \TinkoffApi\Model\Shops[]|null $shops JSON-объект с данными маркетплейса. Обязателен для маркетплейсов.
      *
      * @return self
      */

@@ -9,7 +9,7 @@ Name | Type | Description | Notes
 **message** | **string** | Краткое описание ошибки. | [optional]
 **details** | **string** | Подробное описание ошибки. | [optional]
 **terminal_info** | **object** | Характеристики терминала. |
-**terminal_info_paymethods** | [**\OpenAPI\Client\Model\Paymethod[]**](Paymethod.md) | Перечень доступных методов оплаты. | [optional]
+**terminal_info_paymethods** | [**\TinkoffApi\Model\Paymethod[]**](Paymethod.md) | Перечень доступных методов оплаты. | [optional]
 **terminal_info_add_card_scheme** | **bool** | Признак возможности сохранения карт. |
 **terminal_info_token_required** | **bool** | Признак необходимости подписания токеном. |
 **terminal_info_init_token_required** | **bool** | Признак необходимости подписания токеном запроса **Init**. |

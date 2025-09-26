@@ -5,7 +5,7 @@
  * PHP version 8.1
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  TinkoffApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,17 +26,17 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace TinkoffApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \TinkoffApi\ObjectSerializer;
 
 /**
  * Payments Class Doc Comment
  *
  * @category Class
  * @description Детали платежа.   Если объект не передан, автоматически указывается итоговая сумма чека с видом оплаты «Безналичный».    Если передан объект &#x60;receipt.Payments&#x60;, значение в &#x60;Electronic&#x60; должно быть равно итоговому значению &#x60;Amount&#x60; в методе **Init**. При этом сумма введенных значений по всем видам оплат, включая &#x60;Electronic&#x60;, должна быть равна сумме (**Amount**) всех товаров, переданных в объекте &#x60;receipt.Items&#x60;.
- * @package  OpenAPI\Client
+ * @package  TinkoffApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>

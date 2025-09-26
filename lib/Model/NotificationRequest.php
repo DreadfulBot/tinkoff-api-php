@@ -5,7 +5,7 @@
  * PHP version 8.1
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  TinkoffApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace TinkoffApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \TinkoffApi\ObjectSerializer;
 
 /**
  * NotificationRequest Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  TinkoffApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -71,7 +71,7 @@ class NotificationRequest implements ModelInterface, ArrayAccess, \JsonSerializa
         'pan' => 'string',
         'exp_date' => 'string',
         'token' => 'string',
-        'data' => '\OpenAPI\Client\Model\DataNotification',
+        'data' => '\TinkoffApi\Model\DataNotification',
         'customer_key' => 'string',
         'request_key' => 'string',
         'error_message' => 'string',
@@ -82,7 +82,7 @@ class NotificationRequest implements ModelInterface, ArrayAccess, \JsonSerializa
         'ecr_reg_number' => 'string',
         'fiscal_document_number' => 'int',
         'fiscal_document_attribute' => 'int',
-        'receipt' => '\OpenAPI\Client\Model\NotificationFiscalizationReceipt',
+        'receipt' => '\TinkoffApi\Model\NotificationFiscalizationReceipt',
         'type' => 'string',
         'ofd' => 'string',
         'url' => 'string',
@@ -975,7 +975,7 @@ class NotificationRequest implements ModelInterface, ArrayAccess, \JsonSerializa
     /**
      * Gets data
      *
-     * @return \OpenAPI\Client\Model\DataNotification|null
+     * @return \TinkoffApi\Model\DataNotification|null
      */
     public function getData()
     {
@@ -985,7 +985,7 @@ class NotificationRequest implements ModelInterface, ArrayAccess, \JsonSerializa
     /**
      * Sets data
      *
-     * @param \OpenAPI\Client\Model\DataNotification|null $data data
+     * @param \TinkoffApi\Model\DataNotification|null $data data
      *
      * @return self
      */
@@ -1276,7 +1276,7 @@ class NotificationRequest implements ModelInterface, ArrayAccess, \JsonSerializa
     /**
      * Gets receipt
      *
-     * @return \OpenAPI\Client\Model\NotificationFiscalizationReceipt|null
+     * @return \TinkoffApi\Model\NotificationFiscalizationReceipt|null
      */
     public function getReceipt()
     {
@@ -1286,7 +1286,7 @@ class NotificationRequest implements ModelInterface, ArrayAccess, \JsonSerializa
     /**
      * Sets receipt
      *
-     * @param \OpenAPI\Client\Model\NotificationFiscalizationReceipt|null $receipt receipt
+     * @param \TinkoffApi\Model\NotificationFiscalizationReceipt|null $receipt receipt
      *
      * @return self
      */

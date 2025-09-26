@@ -5,7 +5,7 @@
  * PHP version 8.1
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  TinkoffApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace TinkoffApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \TinkoffApi\ObjectSerializer;
 
 /**
  * AttachCard Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  TinkoffApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -60,7 +60,7 @@ class AttachCard implements ModelInterface, ArrayAccess, \JsonSerializable
         'terminal_key' => 'string',
         'request_key' => 'string',
         'card_data' => 'string',
-        'data' => '\OpenAPI\Client\Model\AttachCardDATA',
+        'data' => '\TinkoffApi\Model\AttachCardDATA',
         'token' => 'string'
     ];
 
@@ -421,7 +421,7 @@ class AttachCard implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets data
      *
-     * @return \OpenAPI\Client\Model\AttachCardDATA|null
+     * @return \TinkoffApi\Model\AttachCardDATA|null
      */
     public function getData()
     {
@@ -431,7 +431,7 @@ class AttachCard implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets data
      *
-     * @param \OpenAPI\Client\Model\AttachCardDATA|null $data data
+     * @param \TinkoffApi\Model\AttachCardDATA|null $data data
      *
      * @return self
      */

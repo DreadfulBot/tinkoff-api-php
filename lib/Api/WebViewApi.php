@@ -4,7 +4,7 @@
  * PHP version 8.1
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  TinkoffApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -25,7 +25,7 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Api;
+namespace TinkoffApi\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -36,17 +36,17 @@ use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
 use Psr\Http\Message\RequestInterface;
 use Psr\Http\Message\ResponseInterface;
-use OpenAPI\Client\ApiException;
-use OpenAPI\Client\Configuration;
-use OpenAPI\Client\FormDataProcessor;
-use OpenAPI\Client\HeaderSelector;
-use OpenAPI\Client\ObjectSerializer;
+use TinkoffApi\ApiException;
+use TinkoffApi\Configuration;
+use TinkoffApi\FormDataProcessor;
+use TinkoffApi\HeaderSelector;
+use TinkoffApi\ObjectSerializer;
 
 /**
  * WebViewApi Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  TinkoffApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -136,12 +136,12 @@ class WebViewApi
      *
      * Получить статус заказа
      *
-     * @param  \OpenAPI\Client\Model\CheckOrder $check_order check_order (required)
+     * @param  \TinkoffApi\Model\CheckOrder $check_order check_order (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['checkOrder'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \TinkoffApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\CheckOrder2
+     * @return \TinkoffApi\Model\CheckOrder2
      */
     public function checkOrder($check_order, string $contentType = self::contentTypes['checkOrder'][0])
     {
@@ -154,12 +154,12 @@ class WebViewApi
      *
      * Получить статус заказа
      *
-     * @param  \OpenAPI\Client\Model\CheckOrder $check_order (required)
+     * @param  \TinkoffApi\Model\CheckOrder $check_order (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['checkOrder'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \TinkoffApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\CheckOrder2, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \TinkoffApi\Model\CheckOrder2, HTTP status code, HTTP response headers (array of strings)
      */
     public function checkOrderWithHttpInfo($check_order, string $contentType = self::contentTypes['checkOrder'][0])
     {
@@ -191,7 +191,7 @@ class WebViewApi
             switch($statusCode) {
                 case 200:
                     return $this->handleResponseWithDataType(
-                        '\OpenAPI\Client\Model\CheckOrder2',
+                        '\TinkoffApi\Model\CheckOrder2',
                         $request,
                         $response,
                     );
@@ -213,7 +213,7 @@ class WebViewApi
             }
 
             return $this->handleResponseWithDataType(
-                '\OpenAPI\Client\Model\CheckOrder2',
+                '\TinkoffApi\Model\CheckOrder2',
                 $request,
                 $response,
             );
@@ -222,7 +222,7 @@ class WebViewApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\CheckOrder2',
+                        '\TinkoffApi\Model\CheckOrder2',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -239,7 +239,7 @@ class WebViewApi
      *
      * Получить статус заказа
      *
-     * @param  \OpenAPI\Client\Model\CheckOrder $check_order (required)
+     * @param  \TinkoffApi\Model\CheckOrder $check_order (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['checkOrder'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -260,7 +260,7 @@ class WebViewApi
      *
      * Получить статус заказа
      *
-     * @param  \OpenAPI\Client\Model\CheckOrder $check_order (required)
+     * @param  \TinkoffApi\Model\CheckOrder $check_order (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['checkOrder'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -268,7 +268,7 @@ class WebViewApi
      */
     public function checkOrderAsyncWithHttpInfo($check_order, string $contentType = self::contentTypes['checkOrder'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\CheckOrder2';
+        $returnType = '\TinkoffApi\Model\CheckOrder2';
         $request = $this->checkOrderRequest($check_order, $contentType);
 
         return $this->client
@@ -310,7 +310,7 @@ class WebViewApi
     /**
      * Create request for operation 'checkOrder'
      *
-     * @param  \OpenAPI\Client\Model\CheckOrder $check_order (required)
+     * @param  \TinkoffApi\Model\CheckOrder $check_order (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['checkOrder'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -403,12 +403,12 @@ class WebViewApi
      *
      * Получить статуса платежа
      *
-     * @param  \OpenAPI\Client\Model\GetStateFULL $get_state_full get_state_full (required)
+     * @param  \TinkoffApi\Model\GetStateFULL $get_state_full get_state_full (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getState'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \TinkoffApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\GetState200Response
+     * @return \TinkoffApi\Model\GetState200Response
      */
     public function getState($get_state_full, string $contentType = self::contentTypes['getState'][0])
     {
@@ -421,12 +421,12 @@ class WebViewApi
      *
      * Получить статуса платежа
      *
-     * @param  \OpenAPI\Client\Model\GetStateFULL $get_state_full (required)
+     * @param  \TinkoffApi\Model\GetStateFULL $get_state_full (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getState'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \TinkoffApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\GetState200Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \TinkoffApi\Model\GetState200Response, HTTP status code, HTTP response headers (array of strings)
      */
     public function getStateWithHttpInfo($get_state_full, string $contentType = self::contentTypes['getState'][0])
     {
@@ -458,7 +458,7 @@ class WebViewApi
             switch($statusCode) {
                 case 200:
                     return $this->handleResponseWithDataType(
-                        '\OpenAPI\Client\Model\GetState200Response',
+                        '\TinkoffApi\Model\GetState200Response',
                         $request,
                         $response,
                     );
@@ -480,7 +480,7 @@ class WebViewApi
             }
 
             return $this->handleResponseWithDataType(
-                '\OpenAPI\Client\Model\GetState200Response',
+                '\TinkoffApi\Model\GetState200Response',
                 $request,
                 $response,
             );
@@ -489,7 +489,7 @@ class WebViewApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\GetState200Response',
+                        '\TinkoffApi\Model\GetState200Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -506,7 +506,7 @@ class WebViewApi
      *
      * Получить статуса платежа
      *
-     * @param  \OpenAPI\Client\Model\GetStateFULL $get_state_full (required)
+     * @param  \TinkoffApi\Model\GetStateFULL $get_state_full (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getState'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -527,7 +527,7 @@ class WebViewApi
      *
      * Получить статуса платежа
      *
-     * @param  \OpenAPI\Client\Model\GetStateFULL $get_state_full (required)
+     * @param  \TinkoffApi\Model\GetStateFULL $get_state_full (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getState'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -535,7 +535,7 @@ class WebViewApi
      */
     public function getStateAsyncWithHttpInfo($get_state_full, string $contentType = self::contentTypes['getState'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\GetState200Response';
+        $returnType = '\TinkoffApi\Model\GetState200Response';
         $request = $this->getStateRequest($get_state_full, $contentType);
 
         return $this->client
@@ -577,7 +577,7 @@ class WebViewApi
     /**
      * Create request for operation 'getState'
      *
-     * @param  \OpenAPI\Client\Model\GetStateFULL $get_state_full (required)
+     * @param  \TinkoffApi\Model\GetStateFULL $get_state_full (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getState'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -670,12 +670,12 @@ class WebViewApi
      *
      * Инициировать платеж
      *
-     * @param  \OpenAPI\Client\Model\InitFULL $init_full init_full (required)
+     * @param  \TinkoffApi\Model\InitFULL $init_full init_full (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['init'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \TinkoffApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\Response
+     * @return \TinkoffApi\Model\Response
      */
     public function init($init_full, string $contentType = self::contentTypes['init'][0])
     {
@@ -688,12 +688,12 @@ class WebViewApi
      *
      * Инициировать платеж
      *
-     * @param  \OpenAPI\Client\Model\InitFULL $init_full (required)
+     * @param  \TinkoffApi\Model\InitFULL $init_full (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['init'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \TinkoffApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \TinkoffApi\Model\Response, HTTP status code, HTTP response headers (array of strings)
      */
     public function initWithHttpInfo($init_full, string $contentType = self::contentTypes['init'][0])
     {
@@ -725,7 +725,7 @@ class WebViewApi
             switch($statusCode) {
                 case 200:
                     return $this->handleResponseWithDataType(
-                        '\OpenAPI\Client\Model\Response',
+                        '\TinkoffApi\Model\Response',
                         $request,
                         $response,
                     );
@@ -747,7 +747,7 @@ class WebViewApi
             }
 
             return $this->handleResponseWithDataType(
-                '\OpenAPI\Client\Model\Response',
+                '\TinkoffApi\Model\Response',
                 $request,
                 $response,
             );
@@ -756,7 +756,7 @@ class WebViewApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\Response',
+                        '\TinkoffApi\Model\Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -773,7 +773,7 @@ class WebViewApi
      *
      * Инициировать платеж
      *
-     * @param  \OpenAPI\Client\Model\InitFULL $init_full (required)
+     * @param  \TinkoffApi\Model\InitFULL $init_full (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['init'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -794,7 +794,7 @@ class WebViewApi
      *
      * Инициировать платеж
      *
-     * @param  \OpenAPI\Client\Model\InitFULL $init_full (required)
+     * @param  \TinkoffApi\Model\InitFULL $init_full (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['init'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -802,7 +802,7 @@ class WebViewApi
      */
     public function initAsyncWithHttpInfo($init_full, string $contentType = self::contentTypes['init'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\Response';
+        $returnType = '\TinkoffApi\Model\Response';
         $request = $this->initRequest($init_full, $contentType);
 
         return $this->client
@@ -844,7 +844,7 @@ class WebViewApi
     /**
      * Create request for operation 'init'
      *
-     * @param  \OpenAPI\Client\Model\InitFULL $init_full (required)
+     * @param  \TinkoffApi\Model\InitFULL $init_full (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['init'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException

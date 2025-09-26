@@ -9,8 +9,8 @@ Name | Type | Description | Notes
 **token** | **string** | Подпись запроса — хэш &#x60;SHA-256&#x60;. |
 **ip** | **string** | IP-адрес клиента. | [optional]
 **amount** | **float** | Сумма в копейках. Если не передан, используется &#x60;Amount&#x60;, переданный в методе **Init**.   При отмене статуса &#x60;NEW&#x60; поле &#x60;Amount&#x60; игнорируется, даже если оно заполнено. Отмена производится на полную сумму. | [optional]
-**receipt** | [**\OpenAPI\Client\Model\CancelReceipt**](CancelReceipt.md) |  | [optional]
-**shops** | [**\OpenAPI\Client\Model\ShopsCancel[]**](ShopsCancel.md) | Обязательный для маркетплейсов. JSON-объект с данными маркетплейса. | [optional]
+**receipt** | [**\TinkoffApi\Model\CancelReceipt**](CancelReceipt.md) |  | [optional]
+**shops** | [**\TinkoffApi\Model\ShopsCancel[]**](ShopsCancel.md) | Обязательный для маркетплейсов. JSON-объект с данными маркетплейса. | [optional]
 **qr_member_id** | **string** | Код банка в классификации СБП, в который нужно выполнить возврат. Смотрите параметр &#x60;MemberId&#x60; методе [**QrMembersList**](#tag/Oplata-cherez-SBP/paths/~1QrMembersList/post). | [optional]
 **route** | **string** | Способ платежа. | [optional]
 **source** | **string** | Источник платежа. | [optional]

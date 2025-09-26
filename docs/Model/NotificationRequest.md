@@ -18,7 +18,7 @@ Name | Type | Description | Notes
 **pan** | **string** | Замаскированный номер карты. | [optional]
 **exp_date** | **string** | Срок действия карты в формате &#x60;MMYY&#x60;, где &#x60;YY&#x60; — две последние цифры года. | [optional]
 **token** | **string** | Подпись запроса. Формируется по такому же принципу, как и в случае запросов в Т‑Бизнес. |
-**data** | [**\OpenAPI\Client\Model\DataNotification**](.md) |  | [optional]
+**data** | [**\TinkoffApi\Model\DataNotification**](.md) |  | [optional]
 **customer_key** | **string** | Идентификатор клиента в системе мерчанта. | [optional]
 **request_key** | **string** | Идентификатор запроса на привязку счета. |
 **error_message** | **string** | Описание ошибки, если она произошла. | [optional]
@@ -29,7 +29,7 @@ Name | Type | Description | Notes
 **ecr_reg_number** | **string** | Регистрационный номер ККТ. | [optional]
 **fiscal_document_number** | **int** | Фискальный номер документа. | [optional]
 **fiscal_document_attribute** | **int** | Фискальный признак документа. | [optional]
-**receipt** | [**\OpenAPI\Client\Model\NotificationFiscalizationReceipt**](NotificationFiscalizationReceipt.md) |  | [optional]
+**receipt** | [**\TinkoffApi\Model\NotificationFiscalizationReceipt**](NotificationFiscalizationReceipt.md) |  | [optional]
 **type** | **string** | Признак расчета. | [optional]
 **ofd** | **string** | Наименование оператора фискальных данных. | [optional]
 **url** | **string** | URL-адрес с копией чека. | [optional]

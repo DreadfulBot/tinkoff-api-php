@@ -5,7 +5,7 @@
  * PHP version 8.1
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  TinkoffApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,17 +26,17 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace TinkoffApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \TinkoffApi\ObjectSerializer;
 
 /**
  * ReceiptFFD12 Class Doc Comment
  *
  * @category Class
  * @description Объект с информацией о видах суммы платежа. Если объект не передан, автоматически указывается итоговая сумма чека с видом оплаты «Безналичная».
- * @package  OpenAPI\Client
+ * @package  TinkoffApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -59,14 +59,14 @@ class ReceiptFFD12 implements ModelInterface, ArrayAccess, \JsonSerializable
       */
     protected static $openAPITypes = [
         'ffd_version' => 'string',
-        'client_info' => '\OpenAPI\Client\Model\ClientInfo',
+        'client_info' => '\TinkoffApi\Model\ClientInfo',
         'taxation' => 'string',
         'email' => 'string',
         'phone' => 'string',
         'customer' => 'string',
         'customer_inn' => 'string',
-        'items' => '\OpenAPI\Client\Model\ItemsFFD12[]',
-        'payments' => '\OpenAPI\Client\Model\Payments'
+        'items' => '\TinkoffApi\Model\ItemsFFD12[]',
+        'payments' => '\TinkoffApi\Model\Payments'
     ];
 
     /**
@@ -423,7 +423,7 @@ class ReceiptFFD12 implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets client_info
      *
-     * @return \OpenAPI\Client\Model\ClientInfo|null
+     * @return \TinkoffApi\Model\ClientInfo|null
      */
     public function getClientInfo()
     {
@@ -433,7 +433,7 @@ class ReceiptFFD12 implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets client_info
      *
-     * @param \OpenAPI\Client\Model\ClientInfo|null $client_info client_info
+     * @param \TinkoffApi\Model\ClientInfo|null $client_info client_info
      *
      * @return self
      */
@@ -603,7 +603,7 @@ class ReceiptFFD12 implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets items
      *
-     * @return \OpenAPI\Client\Model\ItemsFFD12[]
+     * @return \TinkoffApi\Model\ItemsFFD12[]
      */
     public function getItems()
     {
@@ -613,7 +613,7 @@ class ReceiptFFD12 implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets items
      *
-     * @param \OpenAPI\Client\Model\ItemsFFD12[] $items Массив, содержащий в себе информацию о товарах (не более 100 позиций).   Атрибуты, предусмотренные в протоколе для отправки чеков по маркируемым товарам, не являются обязательными для товаров без маркировки. Если используется ФФД 1.2, но реализуемый товар не подлежит маркировке, поля можно не отправлять или отправить со значением null.
+     * @param \TinkoffApi\Model\ItemsFFD12[] $items Массив, содержащий в себе информацию о товарах (не более 100 позиций).   Атрибуты, предусмотренные в протоколе для отправки чеков по маркируемым товарам, не являются обязательными для товаров без маркировки. Если используется ФФД 1.2, но реализуемый товар не подлежит маркировке, поля можно не отправлять или отправить со значением null.
      *
      * @return self
      */
@@ -630,7 +630,7 @@ class ReceiptFFD12 implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets payments
      *
-     * @return \OpenAPI\Client\Model\Payments|null
+     * @return \TinkoffApi\Model\Payments|null
      */
     public function getPayments()
     {
@@ -640,7 +640,7 @@ class ReceiptFFD12 implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets payments
      *
-     * @param \OpenAPI\Client\Model\Payments|null $payments payments
+     * @param \TinkoffApi\Model\Payments|null $payments payments
      *
      * @return self
      */

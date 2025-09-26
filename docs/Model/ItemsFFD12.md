@@ -4,8 +4,8 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**agent_data** | [**\OpenAPI\Client\Model\AgentData**](.md) |  | [optional]
-**supplier_info** | [**\OpenAPI\Client\Model\SupplierInfo**](.md) |  | [optional]
+**agent_data** | [**\TinkoffApi\Model\AgentData**](.md) |  | [optional]
+**supplier_info** | [**\TinkoffApi\Model\SupplierInfo**](.md) |  | [optional]
 **name** | **string** | &#x60;Тег ФФД: 1030&#x60;   Наименование товара. |
 **price** | **float** | &#x60;Тег ФФД: 1079&#x60;   Цена в копейках. |
 **quantity** | **float** | &#x60;Тег ФФД: 1023&#x60;   Количество или вес товара. * Максимальное количество символов — 8, где целая часть — не больше 5 знаков, дробная — не больше 3 знаков для Атол и 2 знаков для CloudPayments. * Значение &#x60;1&#x60;, если передан объект &#x60;MarkCode&#x60;. |
@@ -19,8 +19,8 @@ Name | Type | Description | Notes
 **declaration_number** | **string** | &#x60;Тег ФФД: 1231&#x60;   Номер таможенной декларации. | [optional]
 **measurement_unit** | **string** | &#x60;Тег ФФД: 2108&#x60;   Единицы измерения.   Возможные варианты описаны в разделе&lt;a href&#x3D;\&quot;https://www.tbank.ru/kassa/dev/payments/#tag/Opisanie-dopolnitelnyh-obuektov\&quot; target&#x3D;\&quot;_blank\&quot;&gt; дополнительных объектов&lt;/a&gt;. Также возможна передача произвольных значений.  &#x60;MeasurementUnit&#x60; обязателен, если версия ФД онлайн-кассы — 1.2. |
 **mark_processing_mode** | **string** | &#x60;Тег ФФД: 2102&#x60;   Режим обработки кода маркировки. Должен принимать значение, равное &#x60;0&#x60;. Включается в чек , если предметом расчета  является товар, подлежащий обязательной маркировке средством идентификации — соответствующий код в поле &#x60;paymentObject&#x60;. | [optional]
-**mark_code** | [**\OpenAPI\Client\Model\MarkCode**](MarkCode.md) |  | [optional]
-**mark_quantity** | [**\OpenAPI\Client\Model\MarkQuantity**](.md) |  | [optional]
-**sectoral_item_props** | [**\OpenAPI\Client\Model\SectoralItemProps[]**](SectoralItemProps.md) | Отраслевой реквизит предмета расчета. Указывается только для товаров подлежащих обязательной маркировке средством идентификации. Включение этого реквизита предусмотрено НПА отраслевого регулирования для соответствующей товарной группы. | [optional]
+**mark_code** | [**\TinkoffApi\Model\MarkCode**](MarkCode.md) |  | [optional]
+**mark_quantity** | [**\TinkoffApi\Model\MarkQuantity**](.md) |  | [optional]
+**sectoral_item_props** | [**\TinkoffApi\Model\SectoralItemProps[]**](SectoralItemProps.md) | Отраслевой реквизит предмета расчета. Указывается только для товаров подлежащих обязательной маркировке средством идентификации. Включение этого реквизита предусмотрено НПА отраслевого регулирования для соответствующей товарной группы. | [optional]
 
 [[Back to Model list]](../../README.md#models) [[Back to API list]](../../README.md#endpoints) [[Back to README]](../../README.md)

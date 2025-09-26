@@ -5,7 +5,7 @@
  * PHP version 8.1
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  TinkoffApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,17 +26,17 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace TinkoffApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \TinkoffApi\ObjectSerializer;
 
 /**
  * NotificationAddCard Class Doc Comment
  *
  * @category Class
  * @description **Уведомления о привязке**  Уведомления магазину о статусе выполнения метода привязки карты — **AttachCard**. После успешного выполнения метода **AttachCard** Т‑Бизнес отправляет POST-запрос с информацией о привязке карты. Уведомление отправляется на ресурс мерчанта на адрес &#x60;Notification URL&#x60; синхронно и ожидает ответа в течение 10 секунд.  После получения ответа или не получения его за заданное время сервис переадресует клиента на &#x60;Success AddCard URL&#x60;  или &#x60;Fail AddCard URL&#x60; — в зависимости от результата привязки карты. В случае успешной обработки нотификации мерчант должен вернуть ответ с телом сообщения &#x60;OK&#x60; — без тегов, заглавными английскими буквами.  Если тело сообщения отлично от &#x60;OK&#x60;, любая нотификация считается неуспешной, и сервис будет повторно отправлять нотификацию раз в час в течение 24 часов. Если за это время нотификация так и не доставлена, она складывается в дамп.
- * @package  OpenAPI\Client
+ * @package  TinkoffApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>

@@ -5,7 +5,7 @@
  * PHP version 8.1
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  TinkoffApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace TinkoffApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \TinkoffApi\ObjectSerializer;
 
 /**
  * GetQrBankList Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  TinkoffApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -59,7 +59,7 @@ class GetQrBankList implements ModelInterface, ArrayAccess, \JsonSerializable
     protected static $openAPITypes = [
         'terminal_key' => 'string',
         'scenario_type' => 'string',
-        'device' => '\OpenAPI\Client\Model\GetQrBankListDevice',
+        'device' => '\TinkoffApi\Model\GetQrBankListDevice',
         'token' => 'string'
     ];
 
@@ -422,7 +422,7 @@ class GetQrBankList implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets device
      *
-     * @return \OpenAPI\Client\Model\GetQrBankListDevice
+     * @return \TinkoffApi\Model\GetQrBankListDevice
      */
     public function getDevice()
     {
@@ -432,7 +432,7 @@ class GetQrBankList implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets device
      *
-     * @param \OpenAPI\Client\Model\GetQrBankListDevice $device device
+     * @param \TinkoffApi\Model\GetQrBankListDevice $device device
      *
      * @return self
      */

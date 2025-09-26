@@ -4,7 +4,7 @@
  * PHP version 8.1
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  TinkoffApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -25,7 +25,7 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Api;
+namespace TinkoffApi\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -36,17 +36,17 @@ use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
 use Psr\Http\Message\RequestInterface;
 use Psr\Http\Message\ResponseInterface;
-use OpenAPI\Client\ApiException;
-use OpenAPI\Client\Configuration;
-use OpenAPI\Client\FormDataProcessor;
-use OpenAPI\Client\HeaderSelector;
-use OpenAPI\Client\ObjectSerializer;
+use TinkoffApi\ApiException;
+use TinkoffApi\Configuration;
+use TinkoffApi\FormDataProcessor;
+use TinkoffApi\HeaderSelector;
+use TinkoffApi\ObjectSerializer;
 
 /**
  * DefaultApi Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  TinkoffApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -130,12 +130,12 @@ class DefaultApi
      *
      * Проверить доступность методов на SDK
      *
-     * @param  \OpenAPI\Client\Model\GetTerminalPayMethods $get_terminal_pay_methods get_terminal_pay_methods (required)
+     * @param  \TinkoffApi\Model\GetTerminalPayMethods $get_terminal_pay_methods get_terminal_pay_methods (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getTerminalPayMethods'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \TinkoffApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\GetTerminalPayMethodsResponse
+     * @return \TinkoffApi\Model\GetTerminalPayMethodsResponse
      */
     public function getTerminalPayMethods($get_terminal_pay_methods, string $contentType = self::contentTypes['getTerminalPayMethods'][0])
     {
@@ -148,12 +148,12 @@ class DefaultApi
      *
      * Проверить доступность методов на SDK
      *
-     * @param  \OpenAPI\Client\Model\GetTerminalPayMethods $get_terminal_pay_methods (required)
+     * @param  \TinkoffApi\Model\GetTerminalPayMethods $get_terminal_pay_methods (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getTerminalPayMethods'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \TinkoffApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\GetTerminalPayMethodsResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \TinkoffApi\Model\GetTerminalPayMethodsResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function getTerminalPayMethodsWithHttpInfo($get_terminal_pay_methods, string $contentType = self::contentTypes['getTerminalPayMethods'][0])
     {
@@ -185,7 +185,7 @@ class DefaultApi
             switch($statusCode) {
                 case 200:
                     return $this->handleResponseWithDataType(
-                        '\OpenAPI\Client\Model\GetTerminalPayMethodsResponse',
+                        '\TinkoffApi\Model\GetTerminalPayMethodsResponse',
                         $request,
                         $response,
                     );
@@ -207,7 +207,7 @@ class DefaultApi
             }
 
             return $this->handleResponseWithDataType(
-                '\OpenAPI\Client\Model\GetTerminalPayMethodsResponse',
+                '\TinkoffApi\Model\GetTerminalPayMethodsResponse',
                 $request,
                 $response,
             );
@@ -216,7 +216,7 @@ class DefaultApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\GetTerminalPayMethodsResponse',
+                        '\TinkoffApi\Model\GetTerminalPayMethodsResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -233,7 +233,7 @@ class DefaultApi
      *
      * Проверить доступность методов на SDK
      *
-     * @param  \OpenAPI\Client\Model\GetTerminalPayMethods $get_terminal_pay_methods (required)
+     * @param  \TinkoffApi\Model\GetTerminalPayMethods $get_terminal_pay_methods (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getTerminalPayMethods'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -254,7 +254,7 @@ class DefaultApi
      *
      * Проверить доступность методов на SDK
      *
-     * @param  \OpenAPI\Client\Model\GetTerminalPayMethods $get_terminal_pay_methods (required)
+     * @param  \TinkoffApi\Model\GetTerminalPayMethods $get_terminal_pay_methods (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getTerminalPayMethods'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -262,7 +262,7 @@ class DefaultApi
      */
     public function getTerminalPayMethodsAsyncWithHttpInfo($get_terminal_pay_methods, string $contentType = self::contentTypes['getTerminalPayMethods'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\GetTerminalPayMethodsResponse';
+        $returnType = '\TinkoffApi\Model\GetTerminalPayMethodsResponse';
         $request = $this->getTerminalPayMethodsRequest($get_terminal_pay_methods, $contentType);
 
         return $this->client
@@ -304,7 +304,7 @@ class DefaultApi
     /**
      * Create request for operation 'getTerminalPayMethods'
      *
-     * @param  \OpenAPI\Client\Model\GetTerminalPayMethods $get_terminal_pay_methods (required)
+     * @param  \TinkoffApi\Model\GetTerminalPayMethods $get_terminal_pay_methods (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getTerminalPayMethods'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException

@@ -5,7 +5,7 @@
  * PHP version 8.1
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  TinkoffApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,17 +26,17 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace TinkoffApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \TinkoffApi\ObjectSerializer;
 
 /**
  * NotificationPayment Class Doc Comment
  *
  * @category Class
  * @description **Уведомление о платеже**
- * @package  OpenAPI\Client
+ * @package  TinkoffApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -72,7 +72,7 @@ class NotificationPayment implements ModelInterface, ArrayAccess, \JsonSerializa
         'pan' => 'string',
         'exp_date' => 'string',
         'token' => 'string',
-        'data' => '\OpenAPI\Client\Model\DataNotification'
+        'data' => '\TinkoffApi\Model\DataNotification'
     ];
 
     /**
@@ -807,7 +807,7 @@ class NotificationPayment implements ModelInterface, ArrayAccess, \JsonSerializa
     /**
      * Gets data
      *
-     * @return \OpenAPI\Client\Model\DataNotification|null
+     * @return \TinkoffApi\Model\DataNotification|null
      */
     public function getData()
     {
@@ -817,7 +817,7 @@ class NotificationPayment implements ModelInterface, ArrayAccess, \JsonSerializa
     /**
      * Sets data
      *
-     * @param \OpenAPI\Client\Model\DataNotification|null $data data
+     * @param \TinkoffApi\Model\DataNotification|null $data data
      *
      * @return self
      */

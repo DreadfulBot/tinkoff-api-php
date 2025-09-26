@@ -5,7 +5,7 @@
  * PHP version 8.1
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  TinkoffApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace TinkoffApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \TinkoffApi\ObjectSerializer;
 
 /**
  * Status200Response Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  TinkoffApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,7 +57,7 @@ class Status200Response implements ModelInterface, ArrayAccess, \JsonSerializabl
       * @var string[]
       */
     protected static $openAPITypes = [
-        'params' => '\OpenAPI\Client\Model\Status200ResponseParams',
+        'params' => '\TinkoffApi\Model\Status200ResponseParams',
         'success' => 'bool',
         'error_code' => 'string',
         'message' => 'string',
@@ -333,7 +333,7 @@ class Status200Response implements ModelInterface, ArrayAccess, \JsonSerializabl
     /**
      * Gets params
      *
-     * @return \OpenAPI\Client\Model\Status200ResponseParams
+     * @return \TinkoffApi\Model\Status200ResponseParams
      */
     public function getParams()
     {
@@ -343,7 +343,7 @@ class Status200Response implements ModelInterface, ArrayAccess, \JsonSerializabl
     /**
      * Sets params
      *
-     * @param \OpenAPI\Client\Model\Status200ResponseParams $params params
+     * @param \TinkoffApi\Model\Status200ResponseParams $params params
      *
      * @return self
      */

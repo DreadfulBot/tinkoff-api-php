@@ -5,7 +5,7 @@
  * PHP version 8.1
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  TinkoffApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace TinkoffApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \TinkoffApi\ObjectSerializer;
 
 /**
  * ItemsFFD12 Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  TinkoffApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,8 +57,8 @@ class ItemsFFD12 implements ModelInterface, ArrayAccess, \JsonSerializable
       * @var string[]
       */
     protected static $openAPITypes = [
-        'agent_data' => '\OpenAPI\Client\Model\AgentData',
-        'supplier_info' => '\OpenAPI\Client\Model\SupplierInfo',
+        'agent_data' => '\TinkoffApi\Model\AgentData',
+        'supplier_info' => '\TinkoffApi\Model\SupplierInfo',
         'name' => 'string',
         'price' => 'float',
         'quantity' => 'float',
@@ -72,9 +72,9 @@ class ItemsFFD12 implements ModelInterface, ArrayAccess, \JsonSerializable
         'declaration_number' => 'string',
         'measurement_unit' => 'string',
         'mark_processing_mode' => 'string',
-        'mark_code' => '\OpenAPI\Client\Model\MarkCode',
-        'mark_quantity' => '\OpenAPI\Client\Model\MarkQuantity',
-        'sectoral_item_props' => '\OpenAPI\Client\Model\SectoralItemProps[]'
+        'mark_code' => '\TinkoffApi\Model\MarkCode',
+        'mark_quantity' => '\TinkoffApi\Model\MarkQuantity',
+        'sectoral_item_props' => '\TinkoffApi\Model\SectoralItemProps[]'
     ];
 
     /**
@@ -603,7 +603,7 @@ class ItemsFFD12 implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets agent_data
      *
-     * @return \OpenAPI\Client\Model\AgentData|null
+     * @return \TinkoffApi\Model\AgentData|null
      */
     public function getAgentData()
     {
@@ -613,7 +613,7 @@ class ItemsFFD12 implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets agent_data
      *
-     * @param \OpenAPI\Client\Model\AgentData|null $agent_data agent_data
+     * @param \TinkoffApi\Model\AgentData|null $agent_data agent_data
      *
      * @return self
      */
@@ -630,7 +630,7 @@ class ItemsFFD12 implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets supplier_info
      *
-     * @return \OpenAPI\Client\Model\SupplierInfo|null
+     * @return \TinkoffApi\Model\SupplierInfo|null
      */
     public function getSupplierInfo()
     {
@@ -640,7 +640,7 @@ class ItemsFFD12 implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets supplier_info
      *
-     * @param \OpenAPI\Client\Model\SupplierInfo|null $supplier_info supplier_info
+     * @param \TinkoffApi\Model\SupplierInfo|null $supplier_info supplier_info
      *
      * @return self
      */
@@ -1054,7 +1054,7 @@ class ItemsFFD12 implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets mark_code
      *
-     * @return \OpenAPI\Client\Model\MarkCode|null
+     * @return \TinkoffApi\Model\MarkCode|null
      */
     public function getMarkCode()
     {
@@ -1064,7 +1064,7 @@ class ItemsFFD12 implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets mark_code
      *
-     * @param \OpenAPI\Client\Model\MarkCode|null $mark_code mark_code
+     * @param \TinkoffApi\Model\MarkCode|null $mark_code mark_code
      *
      * @return self
      */
@@ -1081,7 +1081,7 @@ class ItemsFFD12 implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets mark_quantity
      *
-     * @return \OpenAPI\Client\Model\MarkQuantity|null
+     * @return \TinkoffApi\Model\MarkQuantity|null
      */
     public function getMarkQuantity()
     {
@@ -1091,7 +1091,7 @@ class ItemsFFD12 implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets mark_quantity
      *
-     * @param \OpenAPI\Client\Model\MarkQuantity|null $mark_quantity mark_quantity
+     * @param \TinkoffApi\Model\MarkQuantity|null $mark_quantity mark_quantity
      *
      * @return self
      */
@@ -1108,7 +1108,7 @@ class ItemsFFD12 implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets sectoral_item_props
      *
-     * @return \OpenAPI\Client\Model\SectoralItemProps[]|null
+     * @return \TinkoffApi\Model\SectoralItemProps[]|null
      */
     public function getSectoralItemProps()
     {
@@ -1118,7 +1118,7 @@ class ItemsFFD12 implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets sectoral_item_props
      *
-     * @param \OpenAPI\Client\Model\SectoralItemProps[]|null $sectoral_item_props Отраслевой реквизит предмета расчета. Указывается только для товаров подлежащих обязательной маркировке средством идентификации. Включение этого реквизита предусмотрено НПА отраслевого регулирования для соответствующей товарной группы.
+     * @param \TinkoffApi\Model\SectoralItemProps[]|null $sectoral_item_props Отраслевой реквизит предмета расчета. Указывается только для товаров подлежащих обязательной маркировке средством идентификации. Включение этого реквизита предусмотрено НПА отраслевого регулирования для соответствующей товарной группы.
      *
      * @return self
      */
