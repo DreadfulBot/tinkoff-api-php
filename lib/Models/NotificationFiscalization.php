@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  Roxl\TBankApi
+ * @package  ArtSchekoff\TBankApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,17 +26,17 @@
  * Do not edit the class manually.
  */
 
-namespace Roxl\TBankApi\Models;
+namespace ArtSchekoff\TBankApi\Models;
 
 use \ArrayAccess;
-use \Roxl\TBankApi\ObjectSerializer;
+use \ArtSchekoff\TBankApi\ObjectSerializer;
 
 /**
  * NotificationFiscalization Class Doc Comment
  *
  * @category Class
  * @description **Уведомление о фискализации**  Если используется подключенная онлайн касса, по результату фискализации будет отправлено уведомление с фискальными данными.
- * @package  Roxl\TBankApi
+ * @package  ArtSchekoff\TBankApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -73,7 +73,7 @@ class NotificationFiscalization implements ModelInterface, ArrayAccess, \JsonSer
         'ecr_reg_number' => 'string',
         'fiscal_document_number' => 'int',
         'fiscal_document_attribute' => 'int',
-        'receipt' => '\Roxl\TBankApi\Models\NotificationFiscalizationReceipt',
+        'receipt' => '\ArtSchekoff\TBankApi\Models\NotificationFiscalizationReceipt',
         'type' => 'string',
         'token' => 'string',
         'ofd' => 'string',
@@ -925,7 +925,7 @@ class NotificationFiscalization implements ModelInterface, ArrayAccess, \JsonSer
     /**
      * Gets receipt
      *
-     * @return \Roxl\TBankApi\Models\NotificationFiscalizationReceipt|null
+     * @return \ArtSchekoff\TBankApi\Models\NotificationFiscalizationReceipt|null
      */
     public function getReceipt()
     {
@@ -935,7 +935,7 @@ class NotificationFiscalization implements ModelInterface, ArrayAccess, \JsonSer
     /**
      * Sets receipt
      *
-     * @param \Roxl\TBankApi\Models\NotificationFiscalizationReceipt|null $receipt receipt
+     * @param \ArtSchekoff\TBankApi\Models\NotificationFiscalizationReceipt|null $receipt receipt
      *
      * @return self
      */

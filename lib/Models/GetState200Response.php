@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  Roxl\TBankApi
+ * @package  ArtSchekoff\TBankApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace Roxl\TBankApi\Models;
+namespace ArtSchekoff\TBankApi\Models;
 
 use \ArrayAccess;
-use \Roxl\TBankApi\ObjectSerializer;
+use \ArtSchekoff\TBankApi\ObjectSerializer;
 
 /**
  * GetState200Response Class Doc Comment
  *
  * @category Class
- * @package  Roxl\TBankApi
+ * @package  ArtSchekoff\TBankApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -66,7 +66,7 @@ class GetState200Response implements ModelInterface, ArrayAccess, \JsonSerializa
         'error_code' => 'string',
         'message' => 'string',
         'details' => 'string',
-        'params' => '\Roxl\TBankApi\Models\ItemsParams[]'
+        'params' => '\ArtSchekoff\TBankApi\Models\ItemsParams[]'
     ];
 
     /**
@@ -679,7 +679,7 @@ class GetState200Response implements ModelInterface, ArrayAccess, \JsonSerializa
     /**
      * Gets params
      *
-     * @return \Roxl\TBankApi\Models\ItemsParams[]|null
+     * @return \ArtSchekoff\TBankApi\Models\ItemsParams[]|null
      */
     public function getParams()
     {
@@ -689,7 +689,7 @@ class GetState200Response implements ModelInterface, ArrayAccess, \JsonSerializa
     /**
      * Sets params
      *
-     * @param \Roxl\TBankApi\Models\ItemsParams[]|null $params Информация по способу оплаты или деталям для платежей в рассрочку.
+     * @param \ArtSchekoff\TBankApi\Models\ItemsParams[]|null $params Информация по способу оплаты или деталям для платежей в рассрочку.
      *
      * @return self
      */

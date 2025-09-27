@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  Roxl\TBankApi
+ * @package  ArtSchekoff\TBankApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,17 +26,17 @@
  * Do not edit the class manually.
  */
 
-namespace Roxl\TBankApi\Models;
+namespace ArtSchekoff\TBankApi\Models;
 
 use \ArrayAccess;
-use \Roxl\TBankApi\ObjectSerializer;
+use \ArtSchekoff\TBankApi\ObjectSerializer;
 
 /**
  * Link200ResponseParams Class Doc Comment
  *
  * @category Class
  * @description Параметры ответа
- * @package  Roxl\TBankApi
+ * @package  ArtSchekoff\TBankApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>

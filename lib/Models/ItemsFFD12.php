@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  Roxl\TBankApi
+ * @package  ArtSchekoff\TBankApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace Roxl\TBankApi\Models;
+namespace ArtSchekoff\TBankApi\Models;
 
 use \ArrayAccess;
-use \Roxl\TBankApi\ObjectSerializer;
+use \ArtSchekoff\TBankApi\ObjectSerializer;
 
 /**
  * ItemsFFD12 Class Doc Comment
  *
  * @category Class
- * @package  Roxl\TBankApi
+ * @package  ArtSchekoff\TBankApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,8 +57,8 @@ class ItemsFFD12 implements ModelInterface, ArrayAccess, \JsonSerializable
       * @var string[]
       */
     protected static $openAPITypes = [
-        'agent_data' => '\Roxl\TBankApi\Models\AgentData',
-        'supplier_info' => '\Roxl\TBankApi\Models\SupplierInfo',
+        'agent_data' => '\ArtSchekoff\TBankApi\Models\AgentData',
+        'supplier_info' => '\ArtSchekoff\TBankApi\Models\SupplierInfo',
         'name' => 'string',
         'price' => 'float',
         'quantity' => 'float',
@@ -72,9 +72,9 @@ class ItemsFFD12 implements ModelInterface, ArrayAccess, \JsonSerializable
         'declaration_number' => 'string',
         'measurement_unit' => 'string',
         'mark_processing_mode' => 'string',
-        'mark_code' => '\Roxl\TBankApi\Models\MarkCode',
-        'mark_quantity' => '\Roxl\TBankApi\Models\MarkQuantity',
-        'sectoral_item_props' => '\Roxl\TBankApi\Models\SectoralItemProps[]'
+        'mark_code' => '\ArtSchekoff\TBankApi\Models\MarkCode',
+        'mark_quantity' => '\ArtSchekoff\TBankApi\Models\MarkQuantity',
+        'sectoral_item_props' => '\ArtSchekoff\TBankApi\Models\SectoralItemProps[]'
     ];
 
     /**
@@ -603,7 +603,7 @@ class ItemsFFD12 implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets agent_data
      *
-     * @return \Roxl\TBankApi\Models\AgentData|null
+     * @return \ArtSchekoff\TBankApi\Models\AgentData|null
      */
     public function getAgentData()
     {
@@ -613,7 +613,7 @@ class ItemsFFD12 implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets agent_data
      *
-     * @param \Roxl\TBankApi\Models\AgentData|null $agent_data agent_data
+     * @param \ArtSchekoff\TBankApi\Models\AgentData|null $agent_data agent_data
      *
      * @return self
      */
@@ -632,7 +632,7 @@ class ItemsFFD12 implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets supplier_info
      *
-     * @return \Roxl\TBankApi\Models\SupplierInfo|null
+     * @return \ArtSchekoff\TBankApi\Models\SupplierInfo|null
      */
     public function getSupplierInfo()
     {
@@ -642,7 +642,7 @@ class ItemsFFD12 implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets supplier_info
      *
-     * @param \Roxl\TBankApi\Models\SupplierInfo|null $supplier_info supplier_info
+     * @param \ArtSchekoff\TBankApi\Models\SupplierInfo|null $supplier_info supplier_info
      *
      * @return self
      */
@@ -1084,7 +1084,7 @@ class ItemsFFD12 implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets mark_code
      *
-     * @return \Roxl\TBankApi\Models\MarkCode|null
+     * @return \ArtSchekoff\TBankApi\Models\MarkCode|null
      */
     public function getMarkCode()
     {
@@ -1094,7 +1094,7 @@ class ItemsFFD12 implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets mark_code
      *
-     * @param \Roxl\TBankApi\Models\MarkCode|null $mark_code mark_code
+     * @param \ArtSchekoff\TBankApi\Models\MarkCode|null $mark_code mark_code
      *
      * @return self
      */
@@ -1113,7 +1113,7 @@ class ItemsFFD12 implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets mark_quantity
      *
-     * @return \Roxl\TBankApi\Models\MarkQuantity|null
+     * @return \ArtSchekoff\TBankApi\Models\MarkQuantity|null
      */
     public function getMarkQuantity()
     {
@@ -1123,7 +1123,7 @@ class ItemsFFD12 implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets mark_quantity
      *
-     * @param \Roxl\TBankApi\Models\MarkQuantity|null $mark_quantity mark_quantity
+     * @param \ArtSchekoff\TBankApi\Models\MarkQuantity|null $mark_quantity mark_quantity
      *
      * @return self
      */
@@ -1142,7 +1142,7 @@ class ItemsFFD12 implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets sectoral_item_props
      *
-     * @return \Roxl\TBankApi\Models\SectoralItemProps[]|null
+     * @return \ArtSchekoff\TBankApi\Models\SectoralItemProps[]|null
      */
     public function getSectoralItemProps()
     {
@@ -1152,7 +1152,7 @@ class ItemsFFD12 implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets sectoral_item_props
      *
-     * @param \Roxl\TBankApi\Models\SectoralItemProps[]|null $sectoral_item_props Отраслевой реквизит предмета расчета. Указывается только для товаров подлежащих обязательной маркировке средством идентификации. Включение этого реквизита предусмотрено НПА отраслевого регулирования для соответствующей товарной группы.
+     * @param \ArtSchekoff\TBankApi\Models\SectoralItemProps[]|null $sectoral_item_props Отраслевой реквизит предмета расчета. Указывается только для товаров подлежащих обязательной маркировке средством идентификации. Включение этого реквизита предусмотрено НПА отраслевого регулирования для соответствующей товарной группы.
      *
      * @return self
      */

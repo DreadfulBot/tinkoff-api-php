@@ -12,6 +12,6 @@ Name | Type | Description | Notes
 **error_code** | **string** | Код ошибки. &#x60;0&#x60; в случае успеха. |
 **message** | **string** | Краткое описание ошибки. | [optional]
 **details** | **string** | Подробное описание ошибки. | [optional]
-**params** | [**\Roxl\TBankApi\Models\ItemsParams[]**](ItemsParams.md) | Детали для платежей в рассрочку. | [optional]
+**params** | [**\ArtSchekoff\TBankApi\Models\ItemsParams[]**](ItemsParams.md) | Детали для платежей в рассрочку. | [optional]
 
 [[Back to Model list]](../../README.md#models) [[Back to API list]](../../README.md#endpoints) [[Back to README]](../../README.md)

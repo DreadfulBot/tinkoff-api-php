@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  Roxl\TBankApi
+ * @package  ArtSchekoff\TBankApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,17 +26,17 @@
  * Do not edit the class manually.
  */
 
-namespace Roxl\TBankApi\Models;
+namespace ArtSchekoff\TBankApi\Models;
 
 use \ArrayAccess;
-use \Roxl\TBankApi\ObjectSerializer;
+use \ArtSchekoff\TBankApi\ObjectSerializer;
 
 /**
  * ChallengeRequestCReq1 Class Doc Comment
  *
  * @category Class
  * @description JSON/JWE object с параметрами закодированный в формат base-64. Ответ отправляется на URL, который был указан в методе FinishAuthorize. После получения на NotificationUrl Мерчанта ответа ACS(CRes) с результатами прохождения 3-D Secure v2 необходимо сформировать запрос к методу Submit3DSAuthorizationV2.
- * @package  Roxl\TBankApi
+ * @package  ArtSchekoff\TBankApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>

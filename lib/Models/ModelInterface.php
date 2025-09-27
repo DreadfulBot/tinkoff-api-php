@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  Roxl\TBankApi\Models
+ * @package  ArtSchekoff\TBankApi\Models
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,12 +26,12 @@
  * Do not edit the class manually.
  */
 
-namespace Roxl\TBankApi\Models;
+namespace ArtSchekoff\TBankApi\Models;
 
 /**
  * Interface abstracting model access.
  *
- * @package Roxl\TBankApi\Models
+ * @package ArtSchekoff\TBankApi\Models
  * @author  OpenAPI Generator team
  */
 interface ModelInterface

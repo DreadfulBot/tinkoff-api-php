@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  Roxl\TBankApi
+ * @package  ArtSchekoff\TBankApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,17 +26,17 @@
  * Do not edit the class manually.
  */
 
-namespace Roxl\TBankApi\Models;
+namespace ArtSchekoff\TBankApi\Models;
 
 use \ArrayAccess;
-use \Roxl\TBankApi\ObjectSerializer;
+use \ArtSchekoff\TBankApi\ObjectSerializer;
 
 /**
  * LongPay Class Doc Comment
  *
  * @category Class
  * @description Расширенный набор параметров авиабилета передается при создании платежа (метод **Init**) в параметре &#x60;DATA&#x60;.
- * @package  Roxl\TBankApi
+ * @package  ArtSchekoff\TBankApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -58,9 +58,9 @@ class LongPay implements ModelInterface, ArrayAccess, \JsonSerializable
       * @var string[]
       */
     protected static $openAPITypes = [
-        '_' => '\Roxl\TBankApi\Models\LongPay1',
-        '_' => '\Roxl\TBankApi\Models\LongPay2',
-        '_' => '\Roxl\TBankApi\Models\LongPay3'
+        '_' => '\ArtSchekoff\TBankApi\Models\LongPay1',
+        '_' => '\ArtSchekoff\TBankApi\Models\LongPay2',
+        '_' => '\ArtSchekoff\TBankApi\Models\LongPay3'
     ];
 
     /**
@@ -307,7 +307,7 @@ class LongPay implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets _
      *
-     * @return \Roxl\TBankApi\Models\LongPay1|null
+     * @return \ArtSchekoff\TBankApi\Models\LongPay1|null
      */
     public function get()
     {
@@ -317,7 +317,7 @@ class LongPay implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets _
      *
-     * @param \Roxl\TBankApi\Models\LongPay1|null $_ _
+     * @param \ArtSchekoff\TBankApi\Models\LongPay1|null $_ _
      *
      * @return self
      */
@@ -336,7 +336,7 @@ class LongPay implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets _
      *
-     * @return \Roxl\TBankApi\Models\LongPay2|null
+     * @return \ArtSchekoff\TBankApi\Models\LongPay2|null
      */
     public function get()
     {
@@ -346,7 +346,7 @@ class LongPay implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets _
      *
-     * @param \Roxl\TBankApi\Models\LongPay2|null $_ _
+     * @param \ArtSchekoff\TBankApi\Models\LongPay2|null $_ _
      *
      * @return self
      */
@@ -365,7 +365,7 @@ class LongPay implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets _
      *
-     * @return \Roxl\TBankApi\Models\LongPay3|null
+     * @return \ArtSchekoff\TBankApi\Models\LongPay3|null
      */
     public function get()
     {
@@ -375,7 +375,7 @@ class LongPay implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets _
      *
-     * @param \Roxl\TBankApi\Models\LongPay3|null $_ _
+     * @param \ArtSchekoff\TBankApi\Models\LongPay3|null $_ _
      *
      * @return self
      */

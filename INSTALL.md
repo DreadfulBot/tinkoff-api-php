@@ -3,7 +3,7 @@
 ## Чтобы добавить библиотеку в ваш проект
 
 ```bash
-composer require vendor/package-name:dev-main --prefer-source
+composer require DreadfulBot/tbankapi:dev-main --prefer-source
 ```
 
 ## Собрать под другую версию php из исходников

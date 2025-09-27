@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  Roxl\TBankApi
+ * @package  ArtSchekoff\TBankApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,17 +26,17 @@
  * Do not edit the class manually.
  */
 
-namespace Roxl\TBankApi\Models;
+namespace ArtSchekoff\TBankApi\Models;
 
 use \ArrayAccess;
-use \Roxl\TBankApi\ObjectSerializer;
+use \ArtSchekoff\TBankApi\ObjectSerializer;
 
 /**
  * NotificationPayment Class Doc Comment
  *
  * @category Class
  * @description **Уведомление о платеже**
- * @package  Roxl\TBankApi
+ * @package  ArtSchekoff\TBankApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -72,7 +72,7 @@ class NotificationPayment implements ModelInterface, ArrayAccess, \JsonSerializa
         'pan' => 'string',
         'exp_date' => 'string',
         'token' => 'string',
-        'data' => '\Roxl\TBankApi\Models\DataNotification'
+        'data' => '\ArtSchekoff\TBankApi\Models\DataNotification'
     ];
 
     /**
@@ -835,7 +835,7 @@ class NotificationPayment implements ModelInterface, ArrayAccess, \JsonSerializa
     /**
      * Gets data
      *
-     * @return \Roxl\TBankApi\Models\DataNotification|null
+     * @return \ArtSchekoff\TBankApi\Models\DataNotification|null
      */
     public function getData()
     {
@@ -845,7 +845,7 @@ class NotificationPayment implements ModelInterface, ArrayAccess, \JsonSerializa
     /**
      * Sets data
      *
-     * @param \Roxl\TBankApi\Models\DataNotification|null $data data
+     * @param \ArtSchekoff\TBankApi\Models\DataNotification|null $data data
      *
      * @return self
      */

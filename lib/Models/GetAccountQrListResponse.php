@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  Roxl\TBankApi
+ * @package  ArtSchekoff\TBankApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace Roxl\TBankApi\Models;
+namespace ArtSchekoff\TBankApi\Models;
 
 use \ArrayAccess;
-use \Roxl\TBankApi\ObjectSerializer;
+use \ArtSchekoff\TBankApi\ObjectSerializer;
 
 /**
  * GetAccountQrListResponse Class Doc Comment
  *
  * @category Class
- * @package  Roxl\TBankApi
+ * @package  ArtSchekoff\TBankApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -61,7 +61,7 @@ class GetAccountQrListResponse implements ModelInterface, ArrayAccess, \JsonSeri
         'success' => 'bool',
         'error_code' => 'string',
         'message' => 'string',
-        'account_tokens' => '\Roxl\TBankApi\Models\GetAccountQrListResponseAccountTokensInner[]'
+        'account_tokens' => '\ArtSchekoff\TBankApi\Models\GetAccountQrListResponseAccountTokensInner[]'
     ];
 
     /**
@@ -469,7 +469,7 @@ class GetAccountQrListResponse implements ModelInterface, ArrayAccess, \JsonSeri
     /**
      * Gets account_tokens
      *
-     * @return \Roxl\TBankApi\Models\GetAccountQrListResponseAccountTokensInner[]|null
+     * @return \ArtSchekoff\TBankApi\Models\GetAccountQrListResponseAccountTokensInner[]|null
      */
     public function getAccountTokens()
     {
@@ -479,7 +479,7 @@ class GetAccountQrListResponse implements ModelInterface, ArrayAccess, \JsonSeri
     /**
      * Sets account_tokens
      *
-     * @param \Roxl\TBankApi\Models\GetAccountQrListResponseAccountTokensInner[]|null $account_tokens Список привязанных счетов покупателя по магазину.
+     * @param \ArtSchekoff\TBankApi\Models\GetAccountQrListResponseAccountTokensInner[]|null $account_tokens Список привязанных счетов покупателя по магазину.
      *
      * @return self
      */

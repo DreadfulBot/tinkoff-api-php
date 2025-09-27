@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  Roxl\TBankApi
+ * @package  ArtSchekoff\TBankApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace Roxl\TBankApi\Models;
+namespace ArtSchekoff\TBankApi\Models;
 
 use \ArrayAccess;
-use \Roxl\TBankApi\ObjectSerializer;
+use \ArtSchekoff\TBankApi\ObjectSerializer;
 
 /**
  * QrMembersList200Response Class Doc Comment
  *
  * @category Class
- * @package  Roxl\TBankApi
+ * @package  ArtSchekoff\TBankApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,7 +57,7 @@ class QrMembersList200Response implements ModelInterface, ArrayAccess, \JsonSeri
       * @var string[]
       */
     protected static $openAPITypes = [
-        'members' => '\Roxl\TBankApi\Models\Member[]',
+        'members' => '\ArtSchekoff\TBankApi\Models\Member[]',
         'order_id' => 'string',
         'success' => 'bool',
         'error_code' => 'string',
@@ -337,7 +337,7 @@ class QrMembersList200Response implements ModelInterface, ArrayAccess, \JsonSeri
     /**
      * Gets members
      *
-     * @return \Roxl\TBankApi\Models\Member[]|null
+     * @return \ArtSchekoff\TBankApi\Models\Member[]|null
      */
     public function getMembers()
     {
@@ -347,7 +347,7 @@ class QrMembersList200Response implements ModelInterface, ArrayAccess, \JsonSeri
     /**
      * Sets members
      *
-     * @param \Roxl\TBankApi\Models\Member[]|null $members Массив списка участников. Возвращается, только если возврат возможен.
+     * @param \ArtSchekoff\TBankApi\Models\Member[]|null $members Массив списка участников. Возвращается, только если возврат возможен.
      *
      * @return self
      */

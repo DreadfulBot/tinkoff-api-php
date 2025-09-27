@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  Roxl\TBankApi
+ * @package  ArtSchekoff\TBankApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace Roxl\TBankApi\Models;
+namespace ArtSchekoff\TBankApi\Models;
 
 use \ArrayAccess;
-use \Roxl\TBankApi\ObjectSerializer;
+use \ArtSchekoff\TBankApi\ObjectSerializer;
 
 /**
  * ItemsFFD105 Class Doc Comment
  *
  * @category Class
- * @package  Roxl\TBankApi
+ * @package  ArtSchekoff\TBankApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -66,8 +66,8 @@ class ItemsFFD105 implements ModelInterface, ArrayAccess, \JsonSerializable
         'tax' => 'string',
         'ean13' => 'string',
         'shop_code' => 'string',
-        'agent_data' => '\Roxl\TBankApi\Models\AgentData',
-        'supplier_info' => '\Roxl\TBankApi\Models\SupplierInfo'
+        'agent_data' => '\ArtSchekoff\TBankApi\Models\AgentData',
+        'supplier_info' => '\ArtSchekoff\TBankApi\Models\SupplierInfo'
     ];
 
     /**
@@ -808,7 +808,7 @@ class ItemsFFD105 implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets agent_data
      *
-     * @return \Roxl\TBankApi\Models\AgentData|null
+     * @return \ArtSchekoff\TBankApi\Models\AgentData|null
      */
     public function getAgentData()
     {
@@ -818,7 +818,7 @@ class ItemsFFD105 implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets agent_data
      *
-     * @param \Roxl\TBankApi\Models\AgentData|null $agent_data agent_data
+     * @param \ArtSchekoff\TBankApi\Models\AgentData|null $agent_data agent_data
      *
      * @return self
      */
@@ -837,7 +837,7 @@ class ItemsFFD105 implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets supplier_info
      *
-     * @return \Roxl\TBankApi\Models\SupplierInfo|null
+     * @return \ArtSchekoff\TBankApi\Models\SupplierInfo|null
      */
     public function getSupplierInfo()
     {
@@ -847,7 +847,7 @@ class ItemsFFD105 implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets supplier_info
      *
-     * @param \Roxl\TBankApi\Models\SupplierInfo|null $supplier_info supplier_info
+     * @param \ArtSchekoff\TBankApi\Models\SupplierInfo|null $supplier_info supplier_info
      *
      * @return self
      */

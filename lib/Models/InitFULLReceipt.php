@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  Roxl\TBankApi
+ * @package  ArtSchekoff\TBankApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,17 +26,17 @@
  * Do not edit the class manually.
  */
 
-namespace Roxl\TBankApi\Models;
+namespace ArtSchekoff\TBankApi\Models;
 
 use \ArrayAccess;
-use \Roxl\TBankApi\ObjectSerializer;
+use \ArtSchekoff\TBankApi\ObjectSerializer;
 
 /**
  * InitFULLReceipt Class Doc Comment
  *
  * @category Class
  * @description JSON-объект с данными чека. Обязателен, если подключена онлайн-касса.
- * @package  Roxl\TBankApi
+ * @package  ArtSchekoff\TBankApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -58,13 +58,13 @@ class InitFULLReceipt implements ModelInterface, ArrayAccess, \JsonSerializable
       * @var string[]
       */
     protected static $openAPITypes = [
-        'items' => '\Roxl\TBankApi\Models\ItemsFFD12[]',
+        'items' => '\ArtSchekoff\TBankApi\Models\ItemsFFD12[]',
         'ffd_version' => 'string',
         'email' => 'string',
         'phone' => 'string',
         'taxation' => 'string',
-        'payments' => '\Roxl\TBankApi\Models\Payments',
-        'client_info' => '\Roxl\TBankApi\Models\ClientInfo',
+        'payments' => '\ArtSchekoff\TBankApi\Models\Payments',
+        'client_info' => '\ArtSchekoff\TBankApi\Models\ClientInfo',
         'customer' => 'string',
         'customer_inn' => 'string'
     ];
@@ -396,7 +396,7 @@ class InitFULLReceipt implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets items
      *
-     * @return \Roxl\TBankApi\Models\ItemsFFD12[]
+     * @return \ArtSchekoff\TBankApi\Models\ItemsFFD12[]
      */
     public function getItems()
     {
@@ -406,7 +406,7 @@ class InitFULLReceipt implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets items
      *
-     * @param \Roxl\TBankApi\Models\ItemsFFD12[] $items Массив, содержащий в себе информацию о товарах (не более 100 позиций).   Атрибуты, предусмотренные в протоколе для отправки чеков по маркируемым товарам, не являются обязательными для товаров без маркировки. Если используется ФФД 1.2, но реализуемый товар не подлежит маркировке, поля можно не отправлять или отправить со значением null.
+     * @param \ArtSchekoff\TBankApi\Models\ItemsFFD12[] $items Массив, содержащий в себе информацию о товарах (не более 100 позиций).   Атрибуты, предусмотренные в протоколе для отправки чеков по маркируемым товарам, не являются обязательными для товаров без маркировки. Если используется ФФД 1.2, но реализуемый товар не подлежит маркировке, поля можно не отправлять или отправить со значением null.
      *
      * @return self
      */
@@ -559,7 +559,7 @@ class InitFULLReceipt implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets payments
      *
-     * @return \Roxl\TBankApi\Models\Payments|null
+     * @return \ArtSchekoff\TBankApi\Models\Payments|null
      */
     public function getPayments()
     {
@@ -569,7 +569,7 @@ class InitFULLReceipt implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets payments
      *
-     * @param \Roxl\TBankApi\Models\Payments|null $payments payments
+     * @param \ArtSchekoff\TBankApi\Models\Payments|null $payments payments
      *
      * @return self
      */
@@ -588,7 +588,7 @@ class InitFULLReceipt implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets client_info
      *
-     * @return \Roxl\TBankApi\Models\ClientInfo|null
+     * @return \ArtSchekoff\TBankApi\Models\ClientInfo|null
      */
     public function getClientInfo()
     {
@@ -598,7 +598,7 @@ class InitFULLReceipt implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets client_info
      *
-     * @param \Roxl\TBankApi\Models\ClientInfo|null $client_info client_info
+     * @param \ArtSchekoff\TBankApi\Models\ClientInfo|null $client_info client_info
      *
      * @return self
      */

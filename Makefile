@@ -13,8 +13,8 @@ generate:
 		-i openapi.json \
 		-g php \
 		-o . \
-		--invoker-package Roxl\\\\TBankApi \
-		--package-name roxl/tbankapi \
+		--invoker-package ArtSchekoff\\\\TBankApi \
+		--package-name artschekoff/tbankapi \
 		--api-package Api \
 		--model-package Models \
 		--skip-validate-spec
@@ -23,7 +23,7 @@ generate:
 	make update-gitignore
 	
 update-composer:
-	jq '.name = "roxl\/tbankapi" | .homepage = "https://roxl.net/tbank-openapi-php" | .description = "OpenApi client for TBankApi on PHP language" | .license = "MIT" | .authors = [{name:"Roxl",homepage:"https://roxl.net"}] | .keywords = ["php","openapi","tbank","tinkoff"]' \
+	jq '.name = "artschekoff\/tbankapi" | .homepage = "https://roxl.net/tbank-openapi-php" | .description = "OpenApi client for TBankApi on PHP language" | .license = "MIT" | .authors = [{name:"Artem Krivoshchekov",homepage:"https://roxl.net"}] | .keywords = ["php","openapi","tbank","tinkoff"]' \
 	composer.json > composer.json.tmp && mv composer.json.tmp composer.json
 
 update-gitignore:

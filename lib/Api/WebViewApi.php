@@ -4,7 +4,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  Roxl\TBankApi
+ * @package  ArtSchekoff\TBankApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -25,7 +25,7 @@
  * Do not edit the class manually.
  */
 
-namespace Roxl\TBankApi\Api;
+namespace ArtSchekoff\TBankApi\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use Roxl\TBankApi\ApiException;
-use Roxl\TBankApi\Configuration;
-use Roxl\TBankApi\HeaderSelector;
-use Roxl\TBankApi\ObjectSerializer;
+use ArtSchekoff\TBankApi\ApiException;
+use ArtSchekoff\TBankApi\Configuration;
+use ArtSchekoff\TBankApi\HeaderSelector;
+use ArtSchekoff\TBankApi\ObjectSerializer;
 
 /**
  * WebViewApi Class Doc Comment
  *
  * @category Class
- * @package  Roxl\TBankApi
+ * @package  ArtSchekoff\TBankApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -133,12 +133,12 @@ class WebViewApi
      *
      * Получить статус заказа
      *
-     * @param  \Roxl\TBankApi\Models\CheckOrder $check_order check_order (required)
+     * @param  \ArtSchekoff\TBankApi\Models\CheckOrder $check_order check_order (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['checkOrder'] to see the possible values for this operation
      *
-     * @throws \Roxl\TBankApi\ApiException on non-2xx response
+     * @throws \ArtSchekoff\TBankApi\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Roxl\TBankApi\Models\CheckOrder2
+     * @return \ArtSchekoff\TBankApi\Models\CheckOrder2
      */
     public function checkOrder($check_order, string $contentType = self::contentTypes['checkOrder'][0])
     {
@@ -151,12 +151,12 @@ class WebViewApi
      *
      * Получить статус заказа
      *
-     * @param  \Roxl\TBankApi\Models\CheckOrder $check_order (required)
+     * @param  \ArtSchekoff\TBankApi\Models\CheckOrder $check_order (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['checkOrder'] to see the possible values for this operation
      *
-     * @throws \Roxl\TBankApi\ApiException on non-2xx response
+     * @throws \ArtSchekoff\TBankApi\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Roxl\TBankApi\Models\CheckOrder2, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \ArtSchekoff\TBankApi\Models\CheckOrder2, HTTP status code, HTTP response headers (array of strings)
      */
     public function checkOrderWithHttpInfo($check_order, string $contentType = self::contentTypes['checkOrder'][0])
     {
@@ -199,23 +199,23 @@ class WebViewApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\Roxl\TBankApi\Models\CheckOrder2' === '\SplFileObject') {
+                    if ('\ArtSchekoff\TBankApi\Models\CheckOrder2' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\Roxl\TBankApi\Models\CheckOrder2' !== 'string') {
+                        if ('\ArtSchekoff\TBankApi\Models\CheckOrder2' !== 'string') {
                             $content = json_decode($content);
                         }
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\Roxl\TBankApi\Models\CheckOrder2', []),
+                        ObjectSerializer::deserialize($content, '\ArtSchekoff\TBankApi\Models\CheckOrder2', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\Roxl\TBankApi\Models\CheckOrder2';
+            $returnType = '\ArtSchekoff\TBankApi\Models\CheckOrder2';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -236,7 +236,7 @@ class WebViewApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Roxl\TBankApi\Models\CheckOrder2',
+                        '\ArtSchekoff\TBankApi\Models\CheckOrder2',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -251,7 +251,7 @@ class WebViewApi
      *
      * Получить статус заказа
      *
-     * @param  \Roxl\TBankApi\Models\CheckOrder $check_order (required)
+     * @param  \ArtSchekoff\TBankApi\Models\CheckOrder $check_order (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['checkOrder'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -272,7 +272,7 @@ class WebViewApi
      *
      * Получить статус заказа
      *
-     * @param  \Roxl\TBankApi\Models\CheckOrder $check_order (required)
+     * @param  \ArtSchekoff\TBankApi\Models\CheckOrder $check_order (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['checkOrder'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -280,7 +280,7 @@ class WebViewApi
      */
     public function checkOrderAsyncWithHttpInfo($check_order, string $contentType = self::contentTypes['checkOrder'][0])
     {
-        $returnType = '\Roxl\TBankApi\Models\CheckOrder2';
+        $returnType = '\ArtSchekoff\TBankApi\Models\CheckOrder2';
         $request = $this->checkOrderRequest($check_order, $contentType);
 
         return $this->client
@@ -322,7 +322,7 @@ class WebViewApi
     /**
      * Create request for operation 'checkOrder'
      *
-     * @param  \Roxl\TBankApi\Models\CheckOrder $check_order (required)
+     * @param  \ArtSchekoff\TBankApi\Models\CheckOrder $check_order (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['checkOrder'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -415,12 +415,12 @@ class WebViewApi
      *
      * Получить статуса платежа
      *
-     * @param  \Roxl\TBankApi\Models\GetStateFULL $get_state_full get_state_full (required)
+     * @param  \ArtSchekoff\TBankApi\Models\GetStateFULL $get_state_full get_state_full (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getState'] to see the possible values for this operation
      *
-     * @throws \Roxl\TBankApi\ApiException on non-2xx response
+     * @throws \ArtSchekoff\TBankApi\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Roxl\TBankApi\Models\GetState200Response
+     * @return \ArtSchekoff\TBankApi\Models\GetState200Response
      */
     public function getState($get_state_full, string $contentType = self::contentTypes['getState'][0])
     {
@@ -433,12 +433,12 @@ class WebViewApi
      *
      * Получить статуса платежа
      *
-     * @param  \Roxl\TBankApi\Models\GetStateFULL $get_state_full (required)
+     * @param  \ArtSchekoff\TBankApi\Models\GetStateFULL $get_state_full (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getState'] to see the possible values for this operation
      *
-     * @throws \Roxl\TBankApi\ApiException on non-2xx response
+     * @throws \ArtSchekoff\TBankApi\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Roxl\TBankApi\Models\GetState200Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \ArtSchekoff\TBankApi\Models\GetState200Response, HTTP status code, HTTP response headers (array of strings)
      */
     public function getStateWithHttpInfo($get_state_full, string $contentType = self::contentTypes['getState'][0])
     {
@@ -481,23 +481,23 @@ class WebViewApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\Roxl\TBankApi\Models\GetState200Response' === '\SplFileObject') {
+                    if ('\ArtSchekoff\TBankApi\Models\GetState200Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\Roxl\TBankApi\Models\GetState200Response' !== 'string') {
+                        if ('\ArtSchekoff\TBankApi\Models\GetState200Response' !== 'string') {
                             $content = json_decode($content);
                         }
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\Roxl\TBankApi\Models\GetState200Response', []),
+                        ObjectSerializer::deserialize($content, '\ArtSchekoff\TBankApi\Models\GetState200Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\Roxl\TBankApi\Models\GetState200Response';
+            $returnType = '\ArtSchekoff\TBankApi\Models\GetState200Response';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -518,7 +518,7 @@ class WebViewApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Roxl\TBankApi\Models\GetState200Response',
+                        '\ArtSchekoff\TBankApi\Models\GetState200Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -533,7 +533,7 @@ class WebViewApi
      *
      * Получить статуса платежа
      *
-     * @param  \Roxl\TBankApi\Models\GetStateFULL $get_state_full (required)
+     * @param  \ArtSchekoff\TBankApi\Models\GetStateFULL $get_state_full (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getState'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -554,7 +554,7 @@ class WebViewApi
      *
      * Получить статуса платежа
      *
-     * @param  \Roxl\TBankApi\Models\GetStateFULL $get_state_full (required)
+     * @param  \ArtSchekoff\TBankApi\Models\GetStateFULL $get_state_full (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getState'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -562,7 +562,7 @@ class WebViewApi
      */
     public function getStateAsyncWithHttpInfo($get_state_full, string $contentType = self::contentTypes['getState'][0])
     {
-        $returnType = '\Roxl\TBankApi\Models\GetState200Response';
+        $returnType = '\ArtSchekoff\TBankApi\Models\GetState200Response';
         $request = $this->getStateRequest($get_state_full, $contentType);
 
         return $this->client
@@ -604,7 +604,7 @@ class WebViewApi
     /**
      * Create request for operation 'getState'
      *
-     * @param  \Roxl\TBankApi\Models\GetStateFULL $get_state_full (required)
+     * @param  \ArtSchekoff\TBankApi\Models\GetStateFULL $get_state_full (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getState'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -697,12 +697,12 @@ class WebViewApi
      *
      * Инициировать платеж
      *
-     * @param  \Roxl\TBankApi\Models\InitFULL $init_full init_full (required)
+     * @param  \ArtSchekoff\TBankApi\Models\InitFULL $init_full init_full (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['init'] to see the possible values for this operation
      *
-     * @throws \Roxl\TBankApi\ApiException on non-2xx response
+     * @throws \ArtSchekoff\TBankApi\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Roxl\TBankApi\Models\Response
+     * @return \ArtSchekoff\TBankApi\Models\Response
      */
     public function init($init_full, string $contentType = self::contentTypes['init'][0])
     {
@@ -715,12 +715,12 @@ class WebViewApi
      *
      * Инициировать платеж
      *
-     * @param  \Roxl\TBankApi\Models\InitFULL $init_full (required)
+     * @param  \ArtSchekoff\TBankApi\Models\InitFULL $init_full (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['init'] to see the possible values for this operation
      *
-     * @throws \Roxl\TBankApi\ApiException on non-2xx response
+     * @throws \ArtSchekoff\TBankApi\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Roxl\TBankApi\Models\Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \ArtSchekoff\TBankApi\Models\Response, HTTP status code, HTTP response headers (array of strings)
      */
     public function initWithHttpInfo($init_full, string $contentType = self::contentTypes['init'][0])
     {
@@ -763,23 +763,23 @@ class WebViewApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\Roxl\TBankApi\Models\Response' === '\SplFileObject') {
+                    if ('\ArtSchekoff\TBankApi\Models\Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\Roxl\TBankApi\Models\Response' !== 'string') {
+                        if ('\ArtSchekoff\TBankApi\Models\Response' !== 'string') {
                             $content = json_decode($content);
                         }
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\Roxl\TBankApi\Models\Response', []),
+                        ObjectSerializer::deserialize($content, '\ArtSchekoff\TBankApi\Models\Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\Roxl\TBankApi\Models\Response';
+            $returnType = '\ArtSchekoff\TBankApi\Models\Response';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -800,7 +800,7 @@ class WebViewApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Roxl\TBankApi\Models\Response',
+                        '\ArtSchekoff\TBankApi\Models\Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -815,7 +815,7 @@ class WebViewApi
      *
      * Инициировать платеж
      *
-     * @param  \Roxl\TBankApi\Models\InitFULL $init_full (required)
+     * @param  \ArtSchekoff\TBankApi\Models\InitFULL $init_full (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['init'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -836,7 +836,7 @@ class WebViewApi
      *
      * Инициировать платеж
      *
-     * @param  \Roxl\TBankApi\Models\InitFULL $init_full (required)
+     * @param  \ArtSchekoff\TBankApi\Models\InitFULL $init_full (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['init'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -844,7 +844,7 @@ class WebViewApi
      */
     public function initAsyncWithHttpInfo($init_full, string $contentType = self::contentTypes['init'][0])
     {
-        $returnType = '\Roxl\TBankApi\Models\Response';
+        $returnType = '\ArtSchekoff\TBankApi\Models\Response';
         $request = $this->initRequest($init_full, $contentType);
 
         return $this->client
@@ -886,7 +886,7 @@ class WebViewApi
     /**
      * Create request for operation 'init'
      *
-     * @param  \Roxl\TBankApi\Models\InitFULL $init_full (required)
+     * @param  \ArtSchekoff\TBankApi\Models\InitFULL $init_full (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['init'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException

@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  Roxl\TBankApi
+ * @package  ArtSchekoff\TBankApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,17 +26,17 @@
  * Do not edit the class manually.
  */
 
-namespace Roxl\TBankApi\Models;
+namespace ArtSchekoff\TBankApi\Models;
 
 use \ArrayAccess;
-use \Roxl\TBankApi\ObjectSerializer;
+use \ArtSchekoff\TBankApi\ObjectSerializer;
 
 /**
  * FinishAuthorizeFULLDATA Class Doc Comment
  *
  * @category Class
  * @description JSON-объект, который содержит дополнительные параметры в виде &#x60;ключ&#x60;:&#x60;значение&#x60;. Эти параметры будут переданы на страницу оплаты, если она кастомизирована.   Максимальная длина для каждого передаваемого параметра: * ключ — 20 знаков, * значение — 100 знаков.    Максимальное количество пар &#x60;ключ&#x60;:&#x60;значение&#x60; — не больше 20.
- * @package  Roxl\TBankApi
+ * @package  ArtSchekoff\TBankApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>

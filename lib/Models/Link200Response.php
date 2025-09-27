@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  Roxl\TBankApi
+ * @package  ArtSchekoff\TBankApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace Roxl\TBankApi\Models;
+namespace ArtSchekoff\TBankApi\Models;
 
 use \ArrayAccess;
-use \Roxl\TBankApi\ObjectSerializer;
+use \ArtSchekoff\TBankApi\ObjectSerializer;
 
 /**
  * Link200Response Class Doc Comment
  *
  * @category Class
- * @package  Roxl\TBankApi
+ * @package  ArtSchekoff\TBankApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,7 +57,7 @@ class Link200Response implements ModelInterface, ArrayAccess, \JsonSerializable
       * @var string[]
       */
     protected static $openAPITypes = [
-        'params' => '\Roxl\TBankApi\Models\Link200ResponseParams',
+        'params' => '\ArtSchekoff\TBankApi\Models\Link200ResponseParams',
         'success' => 'bool',
         'error_code' => 'string',
         'message' => 'string',
@@ -333,7 +333,7 @@ class Link200Response implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets params
      *
-     * @return \Roxl\TBankApi\Models\Link200ResponseParams
+     * @return \ArtSchekoff\TBankApi\Models\Link200ResponseParams
      */
     public function getParams()
     {
@@ -343,7 +343,7 @@ class Link200Response implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets params
      *
-     * @param \Roxl\TBankApi\Models\Link200ResponseParams $params params
+     * @param \ArtSchekoff\TBankApi\Models\Link200ResponseParams $params params
      *
      * @return self
      */

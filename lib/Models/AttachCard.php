@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  Roxl\TBankApi
+ * @package  ArtSchekoff\TBankApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace Roxl\TBankApi\Models;
+namespace ArtSchekoff\TBankApi\Models;
 
 use \ArrayAccess;
-use \Roxl\TBankApi\ObjectSerializer;
+use \ArtSchekoff\TBankApi\ObjectSerializer;
 
 /**
  * AttachCard Class Doc Comment
  *
  * @category Class
- * @package  Roxl\TBankApi
+ * @package  ArtSchekoff\TBankApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -60,7 +60,7 @@ class AttachCard implements ModelInterface, ArrayAccess, \JsonSerializable
         'terminal_key' => 'string',
         'request_key' => 'string',
         'card_data' => 'string',
-        'data' => '\Roxl\TBankApi\Models\AttachCardDATA',
+        'data' => '\ArtSchekoff\TBankApi\Models\AttachCardDATA',
         'token' => 'string'
     ];
 
@@ -427,7 +427,7 @@ class AttachCard implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets data
      *
-     * @return \Roxl\TBankApi\Models\AttachCardDATA|null
+     * @return \ArtSchekoff\TBankApi\Models\AttachCardDATA|null
      */
     public function getData()
     {
@@ -437,7 +437,7 @@ class AttachCard implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets data
      *
-     * @param \Roxl\TBankApi\Models\AttachCardDATA|null $data data
+     * @param \ArtSchekoff\TBankApi\Models\AttachCardDATA|null $data data
      *
      * @return self
      */

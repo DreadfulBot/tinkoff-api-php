@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  Roxl\TBankApi
+ * @package  ArtSchekoff\TBankApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace Roxl\TBankApi\Models;
+namespace ArtSchekoff\TBankApi\Models;
 
 use \ArrayAccess;
-use \Roxl\TBankApi\ObjectSerializer;
+use \ArtSchekoff\TBankApi\ObjectSerializer;
 
 /**
  * Confirm Class Doc Comment
  *
  * @category Class
- * @package  Roxl\TBankApi
+ * @package  ArtSchekoff\TBankApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -62,8 +62,8 @@ class Confirm implements ModelInterface, ArrayAccess, \JsonSerializable
         'token' => 'string',
         'ip' => 'string',
         'amount' => 'float',
-        'receipt' => '\Roxl\TBankApi\Models\ConfirmReceipt',
-        'shops' => '\Roxl\TBankApi\Models\Shops[]',
+        'receipt' => '\ArtSchekoff\TBankApi\Models\ConfirmReceipt',
+        'shops' => '\ArtSchekoff\TBankApi\Models\Shops[]',
         'route' => 'string',
         'source' => 'string'
     ];
@@ -558,7 +558,7 @@ class Confirm implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets receipt
      *
-     * @return \Roxl\TBankApi\Models\ConfirmReceipt|null
+     * @return \ArtSchekoff\TBankApi\Models\ConfirmReceipt|null
      */
     public function getReceipt()
     {
@@ -568,7 +568,7 @@ class Confirm implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets receipt
      *
-     * @param \Roxl\TBankApi\Models\ConfirmReceipt|null $receipt receipt
+     * @param \ArtSchekoff\TBankApi\Models\ConfirmReceipt|null $receipt receipt
      *
      * @return self
      */
@@ -587,7 +587,7 @@ class Confirm implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets shops
      *
-     * @return \Roxl\TBankApi\Models\Shops[]|null
+     * @return \ArtSchekoff\TBankApi\Models\Shops[]|null
      */
     public function getShops()
     {
@@ -597,7 +597,7 @@ class Confirm implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets shops
      *
-     * @param \Roxl\TBankApi\Models\Shops[]|null $shops Обязательный для маркетплейсов. JSON-объект с данными маркетплейса.
+     * @param \ArtSchekoff\TBankApi\Models\Shops[]|null $shops Обязательный для маркетплейсов. JSON-объект с данными маркетплейса.
      *
      * @return self
      */

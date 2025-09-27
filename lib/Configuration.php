@@ -4,7 +4,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  Roxl\TBankApi
+ * @package  ArtSchekoff\TBankApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -25,14 +25,14 @@
  * Do not edit the class manually.
  */
 
-namespace Roxl\TBankApi;
+namespace ArtSchekoff\TBankApi;
 
 /**
  * Configuration Class Doc Comment
  * PHP version 7.4
  *
  * @category Class
- * @package  Roxl\TBankApi
+ * @package  ArtSchekoff\TBankApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -429,7 +429,7 @@ class Configuration
      */
     public static function toDebugReport()
     {
-        $report  = 'PHP SDK (Roxl\TBankApi) Debug Report:' . PHP_EOL;
+        $report  = 'PHP SDK (ArtSchekoff\TBankApi) Debug Report:' . PHP_EOL;
         $report .= '    OS: ' . php_uname() . PHP_EOL;
         $report .= '    PHP Version: ' . PHP_VERSION . PHP_EOL;
         $report .= '    The version of the OpenAPI document: 1.80' . PHP_EOL;

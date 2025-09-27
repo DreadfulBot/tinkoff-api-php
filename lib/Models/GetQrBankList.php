@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  Roxl\TBankApi
+ * @package  ArtSchekoff\TBankApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace Roxl\TBankApi\Models;
+namespace ArtSchekoff\TBankApi\Models;
 
 use \ArrayAccess;
-use \Roxl\TBankApi\ObjectSerializer;
+use \ArtSchekoff\TBankApi\ObjectSerializer;
 
 /**
  * GetQrBankList Class Doc Comment
  *
  * @category Class
- * @package  Roxl\TBankApi
+ * @package  ArtSchekoff\TBankApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -59,7 +59,7 @@ class GetQrBankList implements ModelInterface, ArrayAccess, \JsonSerializable
     protected static $openAPITypes = [
         'terminal_key' => 'string',
         'scenario_type' => 'string',
-        'device' => '\Roxl\TBankApi\Models\GetQrBankListDevice',
+        'device' => '\ArtSchekoff\TBankApi\Models\GetQrBankListDevice',
         'token' => 'string'
     ];
 
@@ -426,7 +426,7 @@ class GetQrBankList implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets device
      *
-     * @return \Roxl\TBankApi\Models\GetQrBankListDevice
+     * @return \ArtSchekoff\TBankApi\Models\GetQrBankListDevice
      */
     public function getDevice()
     {
@@ -436,7 +436,7 @@ class GetQrBankList implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets device
      *
-     * @param \Roxl\TBankApi\Models\GetQrBankListDevice $device device
+     * @param \ArtSchekoff\TBankApi\Models\GetQrBankListDevice $device device
      *
      * @return self
      */

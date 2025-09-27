@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  Roxl\TBankApi
+ * @package  ArtSchekoff\TBankApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace Roxl\TBankApi\Models;
+namespace ArtSchekoff\TBankApi\Models;
 
 use \ArrayAccess;
-use \Roxl\TBankApi\ObjectSerializer;
+use \ArtSchekoff\TBankApi\ObjectSerializer;
 
 /**
  * GetTerminalPayMethodsResponse Class Doc Comment
  *
  * @category Class
- * @package  Roxl\TBankApi
+ * @package  ArtSchekoff\TBankApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -62,7 +62,7 @@ class GetTerminalPayMethodsResponse implements ModelInterface, ArrayAccess, \Jso
         'message' => 'string',
         'details' => 'string',
         'terminal_info' => 'object',
-        'terminal_info_paymethods' => '\Roxl\TBankApi\Models\Paymethod[]',
+        'terminal_info_paymethods' => '\ArtSchekoff\TBankApi\Models\Paymethod[]',
         'terminal_info_add_card_scheme' => 'bool',
         'terminal_info_token_required' => 'bool',
         'terminal_info_init_token_required' => 'bool'
@@ -617,7 +617,7 @@ class GetTerminalPayMethodsResponse implements ModelInterface, ArrayAccess, \Jso
     /**
      * Gets terminal_info_paymethods
      *
-     * @return \Roxl\TBankApi\Models\Paymethod[]|null
+     * @return \ArtSchekoff\TBankApi\Models\Paymethod[]|null
      */
     public function getTerminalInfoPaymethods()
     {
@@ -627,7 +627,7 @@ class GetTerminalPayMethodsResponse implements ModelInterface, ArrayAccess, \Jso
     /**
      * Sets terminal_info_paymethods
      *
-     * @param \Roxl\TBankApi\Models\Paymethod[]|null $terminal_info_paymethods Перечень доступных методов оплаты.
+     * @param \ArtSchekoff\TBankApi\Models\Paymethod[]|null $terminal_info_paymethods Перечень доступных методов оплаты.
      *
      * @return self
      */

@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  Roxl\TBankApi
+ * @package  ArtSchekoff\TBankApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,17 +26,17 @@
  * Do not edit the class manually.
  */
 
-namespace Roxl\TBankApi\Models;
+namespace ArtSchekoff\TBankApi\Models;
 
 use \ArrayAccess;
-use \Roxl\TBankApi\ObjectSerializer;
+use \ArtSchekoff\TBankApi\ObjectSerializer;
 
 /**
  * ReceiptFFD1052 Class Doc Comment
  *
  * @category Class
  * @description Объект с информацией о видах суммы платежа.
- * @package  Roxl\TBankApi
+ * @package  ArtSchekoff\TBankApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -58,12 +58,12 @@ class ReceiptFFD1052 implements ModelInterface, ArrayAccess, \JsonSerializable
       * @var string[]
       */
     protected static $openAPITypes = [
-        'items' => '\Roxl\TBankApi\Models\ItemsFFD105[]',
+        'items' => '\ArtSchekoff\TBankApi\Models\ItemsFFD105[]',
         'ffd_version' => 'string',
         'email' => 'string',
         'phone' => 'string',
         'taxation' => 'string',
-        'payments' => '\Roxl\TBankApi\Models\Payments[]'
+        'payments' => '\ArtSchekoff\TBankApi\Models\Payments[]'
     ];
 
     /**
@@ -368,7 +368,7 @@ class ReceiptFFD1052 implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets items
      *
-     * @return \Roxl\TBankApi\Models\ItemsFFD105[]|null
+     * @return \ArtSchekoff\TBankApi\Models\ItemsFFD105[]|null
      */
     public function getItems()
     {
@@ -378,7 +378,7 @@ class ReceiptFFD1052 implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets items
      *
-     * @param \Roxl\TBankApi\Models\ItemsFFD105[]|null $items Массив позиций чека с информацией о товарах.
+     * @param \ArtSchekoff\TBankApi\Models\ItemsFFD105[]|null $items Массив позиций чека с информацией о товарах.
      *
      * @return self
      */
@@ -531,7 +531,7 @@ class ReceiptFFD1052 implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets payments
      *
-     * @return \Roxl\TBankApi\Models\Payments[]|null
+     * @return \ArtSchekoff\TBankApi\Models\Payments[]|null
      */
     public function getPayments()
     {
@@ -541,7 +541,7 @@ class ReceiptFFD1052 implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets payments
      *
-     * @param \Roxl\TBankApi\Models\Payments[]|null $payments Объект c информацией о видах суммы платежа. * Если объект не передан, будет автоматически указана итоговая сумма чека с видом оплаты  «Безналичный». * Если передан объект `receipt.Payments`, значение в `Electronic` должно быть равно итоговому значению Amount в методе **Init**. При этом сумма введенных значений по всем видам оплат, включая `Electronic`, должна быть равна сумме (`Amount`) всех товаров, переданных в объекте `receipt.Items`.
+     * @param \ArtSchekoff\TBankApi\Models\Payments[]|null $payments Объект c информацией о видах суммы платежа. * Если объект не передан, будет автоматически указана итоговая сумма чека с видом оплаты  «Безналичный». * Если передан объект `receipt.Payments`, значение в `Electronic` должно быть равно итоговому значению Amount в методе **Init**. При этом сумма введенных значений по всем видам оплат, включая `Electronic`, должна быть равна сумме (`Amount`) всех товаров, переданных в объекте `receipt.Items`.
      *
      * @return self
      */

@@ -4,7 +4,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  Roxl\TBankApi
+ * @package  ArtSchekoff\TBankApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -25,18 +25,18 @@
  * Please update the test case below to test the endpoint.
  */
 
-namespace Roxl\TBankApi\Test\Api;
+namespace ArtSchekoff\TBankApi\Test\Api;
 
-use \Roxl\TBankApi\Configuration;
-use \Roxl\TBankApi\ApiException;
-use \Roxl\TBankApi\ObjectSerializer;
+use \ArtSchekoff\TBankApi\Configuration;
+use \ArtSchekoff\TBankApi\ApiException;
+use \ArtSchekoff\TBankApi\ObjectSerializer;
 use PHPUnit\Framework\TestCase;
 
 /**
  * WebViewApiTest Class Doc Comment
  *
  * @category Class
- * @package  Roxl\TBankApi
+ * @package  ArtSchekoff\TBankApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */

@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  Roxl\TBankApi
+ * @package  ArtSchekoff\TBankApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,17 +26,17 @@
  * Do not edit the class manually.
  */
 
-namespace Roxl\TBankApi\Models;
+namespace ArtSchekoff\TBankApi\Models;
 
 use \ArrayAccess;
-use \Roxl\TBankApi\ObjectSerializer;
+use \ArtSchekoff\TBankApi\ObjectSerializer;
 
 /**
  * InitFULLDATA Class Doc Comment
  *
  * @category Class
  * @description JSON-объект, который позволяет передавать дополнительные параметры по операции и задавать определенные настройки в  формате &#x60;ключ:значение&#x60;.  Максимальная длина для каждого передаваемого параметра:   * ключ — 20 знаков;   * значение — 100 знаков.  Максимальное количество пар &#x60;ключ:значение&#x60; — 20.  1. Если у терминала включена опция привязки клиента после  успешной оплаты и передается параметр &#x60;CustomerKey&#x60;, в передаваемых  параметрах &#x60;DATA&#x60; могут быть параметры метода **AddCustomer**.  Если они есть, они автоматически привязываются к клиенту.  Например, если указать &#x60;\&quot;DATA\&quot;:{\&quot;Phone\&quot;:\&quot;+71234567890\&quot;, \&quot;Email\&quot;:\&quot;a@test.com\&quot;}&#x60;, к клиенту автоматически будут привязаны данные электронной почты и телефон,  и они будут возвращаться при вызове метода **GetCustomer**.  Для МСС 4814 обязательно передать значение в параметре &#x60;Phone&#x60;. Требования по заполнению:     * минимум — 7 символов,   * максимум — 20 символов,   * разрешены только цифры, исключение — первый символ может быть &#x60;+&#x60;.  Для МСС 6051 и 6050 обязательно передавать параметр &#x60;account&#x60; — номер электронного кошелька, не должен превышать 30 символов.   Пример: &#x60;\&quot;DATA\&quot;: {\&quot;account\&quot;:\&quot;123456789\&quot;}&#x60;.  2. Если используется функционал сохранения карт на платежной форме,  при помощи опционального параметра &#x60;DefaultCard&#x60; можно задать,  какая карта будет выбираться по умолчанию.       Возможные варианты:          * Оставить платежную форму пустой. Пример:            &#x60;&#x60;&#x60;       \&quot;DATA\&quot;:{\&quot;DefaultCard\&quot;:\&quot;none\&quot;}       &#x60;&#x60;&#x60;          * Заполнить параметр данными передаваемой карты. В этом случае передается &#x60;CardId&#x60;. Пример:            &#x60;&#x60;&#x60;        \&quot;DATA\&quot;:{\&quot;DefaultCard\&quot;:\&quot;894952\&quot;}       &#x60;&#x60;&#x60;          * Заполнить параметр данными последней сохраненной карты. Применяется, если параметр &#x60;DefaultCard&#x60; не передан,      передан с некорректным значением или в значении &#x60;null&#x60;.     По умолчанию возможность сохранение карт на платежной форме может быть отключена. Для активации обратитесь в      техническую поддержку.  3. Если вы подключаете оплату через T‑Pay, то вы можете передавать параметры устройства, с которого будет осуществлен переход в объекте &#x60;Data&#x60;. Пример:    &#x60;&#x60;&#x60;   \&quot;DATA\&quot;: {     \&quot;TinkoffPayWeb\&quot;: \&quot;true\&quot;,     \&quot;Device\&quot;: \&quot;Desktop\&quot;,     \&quot;DeviceOs\&quot;: \&quot;iOS\&quot;,     \&quot;DeviceWebView\&quot;: \&quot;true\&quot;,     \&quot;DeviceBrowser\&quot;: \&quot;Safari\&quot;    }   &#x60;&#x60;&#x60;  Рекомендации для заполнения поля &#x60;Device&#x60;:    * Mobile  — при оплате c мобильного устройства;   * Desktop — при оплате c десктопного устройства.  Рекомендации для заполнения поля &#x60;DeviceOs&#x60;:    * iOS,   * Android,   * macOS,   * Windows,   * Linux.  Рекомендации для заполнения поля &#x60;DeviceBrowser&#x60;:    * Chrome,   * Firefox,   * JivoMobile,   * Microsoft Edge,   * Miui,   * Opera,   * Safari,   * Samsung,   * WebKit,   * WeChat,   * Yandex.  4. Параметр &#x60;notificationEnableSource&#x60; позволяет отправлять нотификации, только если Source платежа входит в перечень указанных в параметре — он также есть в параметрах сессии. Возможные значения — T‑Pay, sbpqr. Пример:   &#x60;&#x60;&#x60;  notificationEnableSource&#x3D;TinkoffPay  &#x60;&#x60;&#x60;   5. Для привязки и одновременной оплаты по CБП передавайте параметр &#x60;QR &#x3D; true&#x60;.  6. При передаче в объекте &#x60;DATA&#x60; атрибута &#x60;OperationInitiatorType&#x60; учитывайте взаимосвязь его значений:     * Со значением атрибута &#x60;Recurrent&#x60; в методе **_/Init**.    * Со значением атрибута &#x60;RebillId&#x60; в методе **_/Charge**.    * С типом терминала, который используется для проведения операций — ECOM/AFT.      [Подробная таблица — передача признака инициатора операции](#section/Peredacha-priznaka-iniciatora-operacii)    Если передавать значения атрибутов, которые не соответствуют таблице, MAPI вернет ошибку 1126 —   несопоставимые значения &#x60;rebillId&#x60; или &#x60;Recurrent&#x60; с переданным значением &#x60;OperationInitiatorType&#x60;.
- * @package  Roxl\TBankApi
+ * @package  ArtSchekoff\TBankApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -65,9 +65,9 @@ class InitFULLDATA implements ModelInterface, ArrayAccess, \JsonSerializable
         'device_web_view' => 'bool',
         'device_browser' => 'string',
         'tinkoff_pay_web' => 'bool',
-        '_' => '\Roxl\TBankApi\Models\LongPay1',
-        '_' => '\Roxl\TBankApi\Models\LongPay2',
-        '_' => '\Roxl\TBankApi\Models\LongPay3'
+        '_' => '\ArtSchekoff\TBankApi\Models\LongPay1',
+        '_' => '\ArtSchekoff\TBankApi\Models\LongPay2',
+        '_' => '\ArtSchekoff\TBankApi\Models\LongPay3'
     ];
 
     /**
@@ -635,7 +635,7 @@ class InitFULLDATA implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets _
      *
-     * @return \Roxl\TBankApi\Models\LongPay1|null
+     * @return \ArtSchekoff\TBankApi\Models\LongPay1|null
      */
     public function get()
     {
@@ -645,7 +645,7 @@ class InitFULLDATA implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets _
      *
-     * @param \Roxl\TBankApi\Models\LongPay1|null $_ _
+     * @param \ArtSchekoff\TBankApi\Models\LongPay1|null $_ _
      *
      * @return self
      */
@@ -664,7 +664,7 @@ class InitFULLDATA implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets _
      *
-     * @return \Roxl\TBankApi\Models\LongPay2|null
+     * @return \ArtSchekoff\TBankApi\Models\LongPay2|null
      */
     public function get()
     {
@@ -674,7 +674,7 @@ class InitFULLDATA implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets _
      *
-     * @param \Roxl\TBankApi\Models\LongPay2|null $_ _
+     * @param \ArtSchekoff\TBankApi\Models\LongPay2|null $_ _
      *
      * @return self
      */
@@ -693,7 +693,7 @@ class InitFULLDATA implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets _
      *
-     * @return \Roxl\TBankApi\Models\LongPay3|null
+     * @return \ArtSchekoff\TBankApi\Models\LongPay3|null
      */
     public function get()
     {
@@ -703,7 +703,7 @@ class InitFULLDATA implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets _
      *
-     * @param \Roxl\TBankApi\Models\LongPay3|null $_ _
+     * @param \ArtSchekoff\TBankApi\Models\LongPay3|null $_ _
      *
      * @return self
      */

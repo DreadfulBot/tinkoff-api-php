@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  Roxl\TBankApi
+ * @package  ArtSchekoff\TBankApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,17 +26,17 @@
  * Do not edit the class manually.
  */
 
-namespace Roxl\TBankApi\Models;
+namespace ArtSchekoff\TBankApi\Models;
 
 use \ArrayAccess;
-use \Roxl\TBankApi\ObjectSerializer;
+use \ArtSchekoff\TBankApi\ObjectSerializer;
 
 /**
  * NotificationFiscalizationReceipt Class Doc Comment
  *
  * @category Class
  * @description Состав чека
- * @package  Roxl\TBankApi
+ * @package  ArtSchekoff\TBankApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -59,14 +59,14 @@ class NotificationFiscalizationReceipt implements ModelInterface, ArrayAccess, \
       */
     protected static $openAPITypes = [
         'ffd_version' => 'string',
-        'client_info' => '\Roxl\TBankApi\Models\ClientInfo',
+        'client_info' => '\ArtSchekoff\TBankApi\Models\ClientInfo',
         'taxation' => 'string',
         'email' => 'string',
         'phone' => 'string',
         'customer' => 'string',
         'customer_inn' => 'string',
-        'items' => '\Roxl\TBankApi\Models\ItemsFFD105[]',
-        'payments' => '\Roxl\TBankApi\Models\Payments[]'
+        'items' => '\ArtSchekoff\TBankApi\Models\ItemsFFD105[]',
+        'payments' => '\ArtSchekoff\TBankApi\Models\Payments[]'
     ];
 
     /**
@@ -418,7 +418,7 @@ class NotificationFiscalizationReceipt implements ModelInterface, ArrayAccess, \
     /**
      * Gets client_info
      *
-     * @return \Roxl\TBankApi\Models\ClientInfo|null
+     * @return \ArtSchekoff\TBankApi\Models\ClientInfo|null
      */
     public function getClientInfo()
     {
@@ -428,7 +428,7 @@ class NotificationFiscalizationReceipt implements ModelInterface, ArrayAccess, \
     /**
      * Sets client_info
      *
-     * @param \Roxl\TBankApi\Models\ClientInfo|null $client_info client_info
+     * @param \ArtSchekoff\TBankApi\Models\ClientInfo|null $client_info client_info
      *
      * @return self
      */
@@ -610,7 +610,7 @@ class NotificationFiscalizationReceipt implements ModelInterface, ArrayAccess, \
     /**
      * Gets items
      *
-     * @return \Roxl\TBankApi\Models\ItemsFFD105[]|null
+     * @return \ArtSchekoff\TBankApi\Models\ItemsFFD105[]|null
      */
     public function getItems()
     {
@@ -620,7 +620,7 @@ class NotificationFiscalizationReceipt implements ModelInterface, ArrayAccess, \
     /**
      * Sets items
      *
-     * @param \Roxl\TBankApi\Models\ItemsFFD105[]|null $items Массив позиций чека с информацией о товарах.
+     * @param \ArtSchekoff\TBankApi\Models\ItemsFFD105[]|null $items Массив позиций чека с информацией о товарах.
      *
      * @return self
      */
@@ -639,7 +639,7 @@ class NotificationFiscalizationReceipt implements ModelInterface, ArrayAccess, \
     /**
      * Gets payments
      *
-     * @return \Roxl\TBankApi\Models\Payments[]|null
+     * @return \ArtSchekoff\TBankApi\Models\Payments[]|null
      */
     public function getPayments()
     {
@@ -649,7 +649,7 @@ class NotificationFiscalizationReceipt implements ModelInterface, ArrayAccess, \
     /**
      * Sets payments
      *
-     * @param \Roxl\TBankApi\Models\Payments[]|null $payments Объект c информацией о видах суммы платежа. * Если объект не передан, будет автоматически указана итоговая сумма чека с видом оплаты  «Безналичный». * Если передан объект `receipt.Payments`, значение в `Electronic` должно быть равно итоговому значению Amount в методе **Init**. При этом сумма введенных значений по всем видам оплат, включая `Electronic`, должна быть равна сумме (`Amount`) всех товаров, переданных в объекте `receipt.Items`.
+     * @param \ArtSchekoff\TBankApi\Models\Payments[]|null $payments Объект c информацией о видах суммы платежа. * Если объект не передан, будет автоматически указана итоговая сумма чека с видом оплаты  «Безналичный». * Если передан объект `receipt.Payments`, значение в `Electronic` должно быть равно итоговому значению Amount в методе **Init**. При этом сумма введенных значений по всем видам оплат, включая `Electronic`, должна быть равна сумме (`Amount`) всех товаров, переданных в объекте `receipt.Items`.
      *
      * @return self
      */

@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  Roxl\TBankApi
+ * @package  ArtSchekoff\TBankApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace Roxl\TBankApi\Models;
+namespace ArtSchekoff\TBankApi\Models;
 
 use \ArrayAccess;
-use \Roxl\TBankApi\ObjectSerializer;
+use \ArtSchekoff\TBankApi\ObjectSerializer;
 
 /**
  * Cancel Class Doc Comment
  *
  * @category Class
- * @package  Roxl\TBankApi
+ * @package  ArtSchekoff\TBankApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -62,8 +62,8 @@ class Cancel implements ModelInterface, ArrayAccess, \JsonSerializable
         'token' => 'string',
         'ip' => 'string',
         'amount' => 'float',
-        'receipt' => '\Roxl\TBankApi\Models\CancelReceipt',
-        'shops' => '\Roxl\TBankApi\Models\ShopsCancel[]',
+        'receipt' => '\ArtSchekoff\TBankApi\Models\CancelReceipt',
+        'shops' => '\ArtSchekoff\TBankApi\Models\ShopsCancel[]',
         'qr_member_id' => 'string',
         'route' => 'string',
         'source' => 'string',
@@ -568,7 +568,7 @@ class Cancel implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets receipt
      *
-     * @return \Roxl\TBankApi\Models\CancelReceipt|null
+     * @return \ArtSchekoff\TBankApi\Models\CancelReceipt|null
      */
     public function getReceipt()
     {
@@ -578,7 +578,7 @@ class Cancel implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets receipt
      *
-     * @param \Roxl\TBankApi\Models\CancelReceipt|null $receipt receipt
+     * @param \ArtSchekoff\TBankApi\Models\CancelReceipt|null $receipt receipt
      *
      * @return self
      */
@@ -597,7 +597,7 @@ class Cancel implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets shops
      *
-     * @return \Roxl\TBankApi\Models\ShopsCancel[]|null
+     * @return \ArtSchekoff\TBankApi\Models\ShopsCancel[]|null
      */
     public function getShops()
     {
@@ -607,7 +607,7 @@ class Cancel implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets shops
      *
-     * @param \Roxl\TBankApi\Models\ShopsCancel[]|null $shops Обязательный для маркетплейсов. JSON-объект с данными маркетплейса.
+     * @param \ArtSchekoff\TBankApi\Models\ShopsCancel[]|null $shops Обязательный для маркетплейсов. JSON-объект с данными маркетплейса.
      *
      * @return self
      */

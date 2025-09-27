@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  Roxl\TBankApi
+ * @package  ArtSchekoff\TBankApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace Roxl\TBankApi\Models;
+namespace ArtSchekoff\TBankApi\Models;
 
 use \ArrayAccess;
-use \Roxl\TBankApi\ObjectSerializer;
+use \ArtSchekoff\TBankApi\ObjectSerializer;
 
 /**
  * GetQrBankListResponse Class Doc Comment
  *
  * @category Class
- * @package  Roxl\TBankApi
+ * @package  ArtSchekoff\TBankApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -60,7 +60,7 @@ class GetQrBankListResponse implements ModelInterface, ArrayAccess, \JsonSeriali
         'success' => 'bool',
         'error_code' => 'string',
         'message' => 'string',
-        'bank_list' => '\Roxl\TBankApi\Models\BankList[]'
+        'bank_list' => '\ArtSchekoff\TBankApi\Models\BankList[]'
     ];
 
     /**
@@ -443,7 +443,7 @@ class GetQrBankListResponse implements ModelInterface, ArrayAccess, \JsonSeriali
     /**
      * Gets bank_list
      *
-     * @return \Roxl\TBankApi\Models\BankList[]
+     * @return \ArtSchekoff\TBankApi\Models\BankList[]
      */
     public function getBankList()
     {
@@ -453,7 +453,7 @@ class GetQrBankListResponse implements ModelInterface, ArrayAccess, \JsonSeriali
     /**
      * Sets bank_list
      *
-     * @param \Roxl\TBankApi\Models\BankList[] $bank_list Список банков от НСПК.
+     * @param \ArtSchekoff\TBankApi\Models\BankList[] $bank_list Список банков от НСПК.
      *
      * @return self
      */

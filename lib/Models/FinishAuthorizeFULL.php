@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  Roxl\TBankApi
+ * @package  ArtSchekoff\TBankApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace Roxl\TBankApi\Models;
+namespace ArtSchekoff\TBankApi\Models;
 
 use \ArrayAccess;
-use \Roxl\TBankApi\ObjectSerializer;
+use \ArtSchekoff\TBankApi\ObjectSerializer;
 
 /**
  * FinishAuthorizeFULL Class Doc Comment
  *
  * @category Class
- * @package  Roxl\TBankApi
+ * @package  ArtSchekoff\TBankApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -63,7 +63,7 @@ class FinishAuthorizeFULL implements ModelInterface, ArrayAccess, \JsonSerializa
         'ip' => 'string',
         'send_email' => 'bool',
         'source' => 'string',
-        'data' => '\Roxl\TBankApi\Models\FinishAuthorizeFULLDATA',
+        'data' => '\ArtSchekoff\TBankApi\Models\FinishAuthorizeFULLDATA',
         'info_email' => 'string',
         'encrypted_payment_data' => 'string',
         'card_data' => 'string',
@@ -642,7 +642,7 @@ class FinishAuthorizeFULL implements ModelInterface, ArrayAccess, \JsonSerializa
     /**
      * Gets data
      *
-     * @return \Roxl\TBankApi\Models\FinishAuthorizeFULLDATA|null
+     * @return \ArtSchekoff\TBankApi\Models\FinishAuthorizeFULLDATA|null
      */
     public function getData()
     {
@@ -652,7 +652,7 @@ class FinishAuthorizeFULL implements ModelInterface, ArrayAccess, \JsonSerializa
     /**
      * Sets data
      *
-     * @param \Roxl\TBankApi\Models\FinishAuthorizeFULLDATA|null $data data
+     * @param \ArtSchekoff\TBankApi\Models\FinishAuthorizeFULLDATA|null $data data
      *
      * @return self
      */

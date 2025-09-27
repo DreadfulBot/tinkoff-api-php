@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  Roxl\TBankApi
+ * @package  ArtSchekoff\TBankApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace Roxl\TBankApi\Models;
+namespace ArtSchekoff\TBankApi\Models;
 
 use \ArrayAccess;
-use \Roxl\TBankApi\ObjectSerializer;
+use \ArtSchekoff\TBankApi\ObjectSerializer;
 
 /**
  * InitFULL Class Doc Comment
  *
  * @category Class
- * @package  Roxl\TBankApi
+ * @package  ArtSchekoff\TBankApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -70,9 +70,9 @@ class InitFULL implements ModelInterface, ArrayAccess, \JsonSerializable
         'success_url' => 'string',
         'fail_url' => 'string',
         'redirect_due_date' => 'mixed',
-        'data' => '\Roxl\TBankApi\Models\InitFULLDATA',
-        'receipt' => '\Roxl\TBankApi\Models\InitFULLReceipt',
-        'shops' => '\Roxl\TBankApi\Models\Shops[]',
+        'data' => '\ArtSchekoff\TBankApi\Models\InitFULLDATA',
+        'receipt' => '\ArtSchekoff\TBankApi\Models\InitFULLReceipt',
+        'shops' => '\ArtSchekoff\TBankApi\Models\Shops[]',
         'descriptor' => 'string'
     ];
 
@@ -884,7 +884,7 @@ class InitFULL implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets data
      *
-     * @return \Roxl\TBankApi\Models\InitFULLDATA|null
+     * @return \ArtSchekoff\TBankApi\Models\InitFULLDATA|null
      */
     public function getData()
     {
@@ -894,7 +894,7 @@ class InitFULL implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets data
      *
-     * @param \Roxl\TBankApi\Models\InitFULLDATA|null $data data
+     * @param \ArtSchekoff\TBankApi\Models\InitFULLDATA|null $data data
      *
      * @return self
      */
@@ -913,7 +913,7 @@ class InitFULL implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets receipt
      *
-     * @return \Roxl\TBankApi\Models\InitFULLReceipt|null
+     * @return \ArtSchekoff\TBankApi\Models\InitFULLReceipt|null
      */
     public function getReceipt()
     {
@@ -923,7 +923,7 @@ class InitFULL implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets receipt
      *
-     * @param \Roxl\TBankApi\Models\InitFULLReceipt|null $receipt receipt
+     * @param \ArtSchekoff\TBankApi\Models\InitFULLReceipt|null $receipt receipt
      *
      * @return self
      */
@@ -942,7 +942,7 @@ class InitFULL implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets shops
      *
-     * @return \Roxl\TBankApi\Models\Shops[]|null
+     * @return \ArtSchekoff\TBankApi\Models\Shops[]|null
      */
     public function getShops()
     {
@@ -952,7 +952,7 @@ class InitFULL implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets shops
      *
-     * @param \Roxl\TBankApi\Models\Shops[]|null $shops JSON-объект с данными маркетплейса. Обязателен для маркетплейсов.
+     * @param \ArtSchekoff\TBankApi\Models\Shops[]|null $shops JSON-объект с данными маркетплейса. Обязателен для маркетплейсов.
      *
      * @return self
      */

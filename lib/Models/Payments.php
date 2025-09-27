@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  Roxl\TBankApi
+ * @package  ArtSchekoff\TBankApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,17 +26,17 @@
  * Do not edit the class manually.
  */
 
-namespace Roxl\TBankApi\Models;
+namespace ArtSchekoff\TBankApi\Models;
 
 use \ArrayAccess;
-use \Roxl\TBankApi\ObjectSerializer;
+use \ArtSchekoff\TBankApi\ObjectSerializer;
 
 /**
  * Payments Class Doc Comment
  *
  * @category Class
  * @description Детали платежа.   Если объект не передан, автоматически указывается итоговая сумма чека с видом оплаты «Безналичный».    Если передан объект &#x60;receipt.Payments&#x60;, значение в &#x60;Electronic&#x60; должно быть равно итоговому значению &#x60;Amount&#x60; в методе **Init**. При этом сумма введенных значений по всем видам оплат, включая &#x60;Electronic&#x60;, должна быть равна сумме (**Amount**) всех товаров, переданных в объекте &#x60;receipt.Items&#x60;.
- * @package  Roxl\TBankApi
+ * @package  ArtSchekoff\TBankApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>

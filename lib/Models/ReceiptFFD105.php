@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  Roxl\TBankApi
+ * @package  ArtSchekoff\TBankApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,17 +26,17 @@
  * Do not edit the class manually.
  */
 
-namespace Roxl\TBankApi\Models;
+namespace ArtSchekoff\TBankApi\Models;
 
 use \ArrayAccess;
-use \Roxl\TBankApi\ObjectSerializer;
+use \ArtSchekoff\TBankApi\ObjectSerializer;
 
 /**
  * ReceiptFFD105 Class Doc Comment
  *
  * @category Class
  * @description Объект с информацией о видах суммы платежа. Если объект не передан, автоматически указывается итоговая сумма чека с видом оплаты «Безналичная».
- * @package  Roxl\TBankApi
+ * @package  ArtSchekoff\TBankApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -58,12 +58,12 @@ class ReceiptFFD105 implements ModelInterface, ArrayAccess, \JsonSerializable
       * @var string[]
       */
     protected static $openAPITypes = [
-        'items' => '\Roxl\TBankApi\Models\ItemsFFD105[]',
+        'items' => '\ArtSchekoff\TBankApi\Models\ItemsFFD105[]',
         'ffd_version' => 'string',
         'email' => 'string',
         'phone' => 'string',
         'taxation' => 'string',
-        'payments' => '\Roxl\TBankApi\Models\Payments'
+        'payments' => '\ArtSchekoff\TBankApi\Models\Payments'
     ];
 
     /**
@@ -372,7 +372,7 @@ class ReceiptFFD105 implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets items
      *
-     * @return \Roxl\TBankApi\Models\ItemsFFD105[]
+     * @return \ArtSchekoff\TBankApi\Models\ItemsFFD105[]
      */
     public function getItems()
     {
@@ -382,7 +382,7 @@ class ReceiptFFD105 implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets items
      *
-     * @param \Roxl\TBankApi\Models\ItemsFFD105[] $items Массив позиций чека с информацией о товарах (не более 100 позиций).
+     * @param \ArtSchekoff\TBankApi\Models\ItemsFFD105[] $items Массив позиций чека с информацией о товарах (не более 100 позиций).
      *
      * @return self
      */
@@ -535,7 +535,7 @@ class ReceiptFFD105 implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets payments
      *
-     * @return \Roxl\TBankApi\Models\Payments|null
+     * @return \ArtSchekoff\TBankApi\Models\Payments|null
      */
     public function getPayments()
     {
@@ -545,7 +545,7 @@ class ReceiptFFD105 implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets payments
      *
-     * @param \Roxl\TBankApi\Models\Payments|null $payments payments
+     * @param \ArtSchekoff\TBankApi\Models\Payments|null $payments payments
      *
      * @return self
      */

@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  Roxl\TBankApi
+ * @package  ArtSchekoff\TBankApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,7 +26,7 @@
  * Please update the test case below to test the model.
  */
 
-namespace Roxl\TBankApi\Test\Model;
+namespace ArtSchekoff\TBankApi\Test\Model;
 
 use PHPUnit\Framework\TestCase;
 
@@ -35,7 +35,7 @@ use PHPUnit\Framework\TestCase;
  *
  * @category    Class
  * @description Параметры ответа
- * @package     Roxl\TBankApi
+ * @package     ArtSchekoff\TBankApi
  * @author      OpenAPI Generator team
  * @link        https://openapi-generator.tech
  */

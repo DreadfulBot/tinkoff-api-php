@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  Roxl\TBankApi
+ * @package  ArtSchekoff\TBankApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace Roxl\TBankApi\Models;
+namespace ArtSchekoff\TBankApi\Models;
 
 use \ArrayAccess;
-use \Roxl\TBankApi\ObjectSerializer;
+use \ArtSchekoff\TBankApi\ObjectSerializer;
 
 /**
  * ACSUrl200Response Class Doc Comment
  *
  * @category Class
- * @package  Roxl\TBankApi
+ * @package  ArtSchekoff\TBankApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -60,7 +60,7 @@ class ACSUrl200Response implements ModelInterface, ArrayAccess, \JsonSerializabl
         'md' => 'string',
         'pa_res' => 'string',
         'fallback_on_tds_v1' => 'string',
-        'cres' => '\Roxl\TBankApi\Models\ChallengeRequestCReq1'
+        'cres' => '\ArtSchekoff\TBankApi\Models\ChallengeRequestCReq1'
     ];
 
     /**
@@ -409,7 +409,7 @@ class ACSUrl200Response implements ModelInterface, ArrayAccess, \JsonSerializabl
     /**
      * Gets cres
      *
-     * @return \Roxl\TBankApi\Models\ChallengeRequestCReq1
+     * @return \ArtSchekoff\TBankApi\Models\ChallengeRequestCReq1
      */
     public function getCres()
     {
@@ -419,7 +419,7 @@ class ACSUrl200Response implements ModelInterface, ArrayAccess, \JsonSerializabl
     /**
      * Sets cres
      *
-     * @param \Roxl\TBankApi\Models\ChallengeRequestCReq1 $cres cres
+     * @param \ArtSchekoff\TBankApi\Models\ChallengeRequestCReq1 $cres cres
      *
      * @return self
      */

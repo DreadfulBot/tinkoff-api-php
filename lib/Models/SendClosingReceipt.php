@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  Roxl\TBankApi
+ * @package  ArtSchekoff\TBankApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace Roxl\TBankApi\Models;
+namespace ArtSchekoff\TBankApi\Models;
 
 use \ArrayAccess;
-use \Roxl\TBankApi\ObjectSerializer;
+use \ArtSchekoff\TBankApi\ObjectSerializer;
 
 /**
  * SendClosingReceipt Class Doc Comment
  *
  * @category Class
- * @package  Roxl\TBankApi
+ * @package  ArtSchekoff\TBankApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -59,7 +59,7 @@ class SendClosingReceipt implements ModelInterface, ArrayAccess, \JsonSerializab
     protected static $openAPITypes = [
         'terminal_key' => 'string',
         'payment_id' => 'string',
-        'receipt' => '\Roxl\TBankApi\Models\SendClosingReceiptReceipt',
+        'receipt' => '\ArtSchekoff\TBankApi\Models\SendClosingReceiptReceipt',
         'token' => 'string'
     ];
 
@@ -383,7 +383,7 @@ class SendClosingReceipt implements ModelInterface, ArrayAccess, \JsonSerializab
     /**
      * Gets receipt
      *
-     * @return \Roxl\TBankApi\Models\SendClosingReceiptReceipt
+     * @return \ArtSchekoff\TBankApi\Models\SendClosingReceiptReceipt
      */
     public function getReceipt()
     {
@@ -393,7 +393,7 @@ class SendClosingReceipt implements ModelInterface, ArrayAccess, \JsonSerializab
     /**
      * Sets receipt
      *
-     * @param \Roxl\TBankApi\Models\SendClosingReceiptReceipt $receipt receipt
+     * @param \ArtSchekoff\TBankApi\Models\SendClosingReceiptReceipt $receipt receipt
      *
      * @return self
      */

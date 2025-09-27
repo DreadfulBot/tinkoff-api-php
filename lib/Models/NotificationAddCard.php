@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  Roxl\TBankApi
+ * @package  ArtSchekoff\TBankApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,17 +26,17 @@
  * Do not edit the class manually.
  */
 
-namespace Roxl\TBankApi\Models;
+namespace ArtSchekoff\TBankApi\Models;
 
 use \ArrayAccess;
-use \Roxl\TBankApi\ObjectSerializer;
+use \ArtSchekoff\TBankApi\ObjectSerializer;
 
 /**
  * NotificationAddCard Class Doc Comment
  *
  * @category Class
  * @description **Уведомления о привязке**  Уведомления магазину о статусе выполнения метода привязки карты — **AttachCard**. После успешного выполнения метода **AttachCard** Т‑Бизнес отправляет POST-запрос с информацией о привязке карты. Уведомление отправляется на ресурс мерчанта на адрес &#x60;Notification URL&#x60; синхронно и ожидает ответа в течение 10 секунд.  После получения ответа или не получения его за заданное время сервис переадресует клиента на &#x60;Success AddCard URL&#x60;  или &#x60;Fail AddCard URL&#x60; — в зависимости от результата привязки карты. В случае успешной обработки нотификации мерчант должен вернуть ответ с телом сообщения &#x60;OK&#x60; — без тегов, заглавными английскими буквами.  Если тело сообщения отлично от &#x60;OK&#x60;, любая нотификация считается неуспешной, и сервис будет повторно отправлять нотификацию раз в час в течение 24 часов. Если за это время нотификация так и не доставлена, она складывается в дамп.
- * @package  Roxl\TBankApi
+ * @package  ArtSchekoff\TBankApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>

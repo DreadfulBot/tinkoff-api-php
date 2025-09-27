@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  Roxl\TBankApi
+ * @package  ArtSchekoff\TBankApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace Roxl\TBankApi\Models;
+namespace ArtSchekoff\TBankApi\Models;
 
 use \ArrayAccess;
-use \Roxl\TBankApi\ObjectSerializer;
+use \ArtSchekoff\TBankApi\ObjectSerializer;
 
 /**
  * NotificationRequest Class Doc Comment
  *
  * @category Class
- * @package  Roxl\TBankApi
+ * @package  ArtSchekoff\TBankApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -71,7 +71,7 @@ class NotificationRequest implements ModelInterface, ArrayAccess, \JsonSerializa
         'pan' => 'string',
         'exp_date' => 'string',
         'token' => 'string',
-        'data' => '\Roxl\TBankApi\Models\DataNotification',
+        'data' => '\ArtSchekoff\TBankApi\Models\DataNotification',
         'customer_key' => 'string',
         'request_key' => 'string',
         'error_message' => 'string',
@@ -82,7 +82,7 @@ class NotificationRequest implements ModelInterface, ArrayAccess, \JsonSerializa
         'ecr_reg_number' => 'string',
         'fiscal_document_number' => 'int',
         'fiscal_document_attribute' => 'int',
-        'receipt' => '\Roxl\TBankApi\Models\NotificationFiscalizationReceipt',
+        'receipt' => '\ArtSchekoff\TBankApi\Models\NotificationFiscalizationReceipt',
         'type' => 'string',
         'ofd' => 'string',
         'url' => 'string',
@@ -1003,7 +1003,7 @@ class NotificationRequest implements ModelInterface, ArrayAccess, \JsonSerializa
     /**
      * Gets data
      *
-     * @return \Roxl\TBankApi\Models\DataNotification|null
+     * @return \ArtSchekoff\TBankApi\Models\DataNotification|null
      */
     public function getData()
     {
@@ -1013,7 +1013,7 @@ class NotificationRequest implements ModelInterface, ArrayAccess, \JsonSerializa
     /**
      * Sets data
      *
-     * @param \Roxl\TBankApi\Models\DataNotification|null $data data
+     * @param \ArtSchekoff\TBankApi\Models\DataNotification|null $data data
      *
      * @return self
      */
@@ -1326,7 +1326,7 @@ class NotificationRequest implements ModelInterface, ArrayAccess, \JsonSerializa
     /**
      * Gets receipt
      *
-     * @return \Roxl\TBankApi\Models\NotificationFiscalizationReceipt|null
+     * @return \ArtSchekoff\TBankApi\Models\NotificationFiscalizationReceipt|null
      */
     public function getReceipt()
     {
@@ -1336,7 +1336,7 @@ class NotificationRequest implements ModelInterface, ArrayAccess, \JsonSerializa
     /**
      * Sets receipt
      *
-     * @param \Roxl\TBankApi\Models\NotificationFiscalizationReceipt|null $receipt receipt
+     * @param \ArtSchekoff\TBankApi\Models\NotificationFiscalizationReceipt|null $receipt receipt
      *
      * @return self
      */

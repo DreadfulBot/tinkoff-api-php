@@ -10,7 +10,7 @@
   "license": "MIT",
   "authors": [
     {
-      "name": "Roxl",
+      "name": "Artem Krivoshchekov",
       "homepage": "https://roxl.net"
     }
   ],
@@ -28,13 +28,13 @@
   },
   "autoload": {
     "psr-4": {
-      "Roxl\\TBankApi\\": "lib/"
+      "ArtSchekoff\\TBankApi\\": "lib/"
     }
   },
   "autoload-dev": {
     "psr-4": {
-      "Roxl\\TBankApi\\Test\\": "test/"
+      "ArtSchekoff\\TBankApi\\Test\\": "test/"
     }
   },
-  "name": "roxl/tbankapi"
+  "name": "artschekoff/tbankapi"
 }

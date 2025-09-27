@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  Roxl\TBankApi
+ * @package  ArtSchekoff\TBankApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace Roxl\TBankApi\Models;
+namespace ArtSchekoff\TBankApi\Models;
 
 use \ArrayAccess;
-use \Roxl\TBankApi\ObjectSerializer;
+use \ArtSchekoff\TBankApi\ObjectSerializer;
 
 /**
  * CheckOrder2 Class Doc Comment
  *
  * @category Class
- * @package  Roxl\TBankApi
+ * @package  ArtSchekoff\TBankApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -63,7 +63,7 @@ class CheckOrder2 implements ModelInterface, ArrayAccess, \JsonSerializable
         'error_code' => 'string',
         'message' => 'string',
         'details' => 'string',
-        'payments' => '\Roxl\TBankApi\Models\PaymentsCheckOrder[]'
+        'payments' => '\ArtSchekoff\TBankApi\Models\PaymentsCheckOrder[]'
     ];
 
     /**
@@ -531,7 +531,7 @@ class CheckOrder2 implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets payments
      *
-     * @return \Roxl\TBankApi\Models\PaymentsCheckOrder[]
+     * @return \ArtSchekoff\TBankApi\Models\PaymentsCheckOrder[]
      */
     public function getPayments()
     {
@@ -541,7 +541,7 @@ class CheckOrder2 implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets payments
      *
-     * @param \Roxl\TBankApi\Models\PaymentsCheckOrder[] $payments payments
+     * @param \ArtSchekoff\TBankApi\Models\PaymentsCheckOrder[] $payments payments
      *
      * @return self
      */

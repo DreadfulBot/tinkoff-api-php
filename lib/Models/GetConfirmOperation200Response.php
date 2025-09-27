@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  Roxl\TBankApi
+ * @package  ArtSchekoff\TBankApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace Roxl\TBankApi\Models;
+namespace ArtSchekoff\TBankApi\Models;
 
 use \ArrayAccess;
-use \Roxl\TBankApi\ObjectSerializer;
+use \ArtSchekoff\TBankApi\ObjectSerializer;
 
 /**
  * GetConfirmOperation200Response Class Doc Comment
  *
  * @category Class
- * @package  Roxl\TBankApi
+ * @package  ArtSchekoff\TBankApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -60,7 +60,7 @@ class GetConfirmOperation200Response implements ModelInterface, ArrayAccess, \Js
         'success' => 'bool',
         'error_code' => 'string',
         'message' => 'string',
-        'payment_id_list' => '\Roxl\TBankApi\Models\PaymentIdListForGCO[]'
+        'payment_id_list' => '\ArtSchekoff\TBankApi\Models\PaymentIdListForGCO[]'
     ];
 
     /**
@@ -409,7 +409,7 @@ class GetConfirmOperation200Response implements ModelInterface, ArrayAccess, \Js
     /**
      * Gets payment_id_list
      *
-     * @return \Roxl\TBankApi\Models\PaymentIdListForGCO[]
+     * @return \ArtSchekoff\TBankApi\Models\PaymentIdListForGCO[]
      */
     public function getPaymentIdList()
     {
@@ -419,7 +419,7 @@ class GetConfirmOperation200Response implements ModelInterface, ArrayAccess, \Js
     /**
      * Sets payment_id_list
      *
-     * @param \Roxl\TBankApi\Models\PaymentIdListForGCO[] $payment_id_list payment_id_list
+     * @param \ArtSchekoff\TBankApi\Models\PaymentIdListForGCO[] $payment_id_list payment_id_list
      *
      * @return self
      */
