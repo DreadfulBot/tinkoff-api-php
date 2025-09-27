@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  RoxlTBankApi
+ * @package  Roxl\TBankApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,7 +26,7 @@
  * Please update the test case below to test the model.
  */
 
-namespace RoxlTBankApi\Test\Model;
+namespace Roxl\TBankApi\Test\Model;
 
 use PHPUnit\Framework\TestCase;
 
@@ -35,7 +35,7 @@ use PHPUnit\Framework\TestCase;
  *
  * @category    Class
  * @description В объекте передаются дополнительные параметры в формате &#x60;ключ:значение&#x60;. Например, меняем на JSON-объект, который содержит дополнительные параметры в виде &#x60;ключ:значение&#x60;.  Если ключи или значения содержат в себе специальные символы, получившееся значение должно быть закодировано функцией &#x60;urlencode&#x60;. Максимальная длина для каждого передаваемого параметра: * ключ — 20 знаков, * значение — 100 знаков.   Максимальное количество пар &#x60;ключ:значение&#x60; — не больше 20.  &gt;**Важно** Для 3DS второй версии в &#x60;DATA&#x60; передаются параметры, описанные в объекте &#x60;3DSv2&#x60;. В &#x60;HttpHeaders&#x60; запроса обязательны заголовки &#x60;User-Agent&#x60; и &#x60;Accept&#x60;.
- * @package     RoxlTBankApi
+ * @package     Roxl\TBankApi
  * @author      OpenAPI Generator team
  * @link        https://openapi-generator.tech
  */

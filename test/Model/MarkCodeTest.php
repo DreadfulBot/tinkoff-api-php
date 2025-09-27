@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  RoxlTBankApi
+ * @package  Roxl\TBankApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,7 +26,7 @@
  * Please update the test case below to test the model.
  */
 
-namespace RoxlTBankApi\Test\Model;
+namespace Roxl\TBankApi\Test\Model;
 
 use PHPUnit\Framework\TestCase;
 
@@ -35,7 +35,7 @@ use PHPUnit\Framework\TestCase;
  *
  * @category    Class
  * @description Код маркировки в машиночитаемой форме, представленный в виде одного из видов кодов, формируемых в соответствии с требованиями, предусмотренными правилами, для нанесения на потребительскую упаковку, или на товары, или на товарный ярлык   Включается в чек, если предметом расчета является товар, подлежащий обязательной маркировке средством идентификации — соответствующий  код в поле &#x60;paymentObject&#x60;.   С 01.09.2025 для чеков с маркированными товарами обязательна передача часовой зоны места расчета (тег 1011). По умолчанию — Москва. Для изменения напишите на acq_help@tbank.ru.
- * @package     RoxlTBankApi
+ * @package     Roxl\TBankApi
  * @author      OpenAPI Generator team
  * @link        https://openapi-generator.tech
  */

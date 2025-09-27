@@ -1,4 +1,4 @@
-# RoxlTBankApi\MirPayApi
+# Roxl\TBankApi\MirPayApi
 
 All URIs are relative to https://securepay.tinkoff.ru, except if the operation defines another base path.
 
@@ -10,7 +10,7 @@ All URIs are relative to https://securepay.tinkoff.ru, except if the operation d
 ## `getDeepLink()`
 
 ```php
-getDeepLink($get_deep_link): \RoxlTBankApi\Model\GetDeepLinkResponse
+getDeepLink($get_deep_link): \Roxl\TBankApi\Models\GetDeepLinkResponse
 ```
 
 Получить DeepLink
@@ -25,12 +25,12 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new RoxlTBankApi\Api\MirPayApi(
+$apiInstance = new Roxl\TBankApi\Api\MirPayApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$get_deep_link = new \RoxlTBankApi\Model\GetDeepLink(); // \RoxlTBankApi\Model\GetDeepLink
+$get_deep_link = new \Roxl\TBankApi\Models\GetDeepLink(); // \Roxl\TBankApi\Models\GetDeepLink
 
 try {
     $result = $apiInstance->getDeepLink($get_deep_link);
@@ -44,11 +44,11 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **get_deep_link** | [**\RoxlTBankApi\Model\GetDeepLink**](../Model/GetDeepLink.md)|  | |
+| **get_deep_link** | [**\Roxl\TBankApi\Models\GetDeepLink**](../Model/GetDeepLink.md)|  | |
 
 ### Return type
 
-[**\RoxlTBankApi\Model\GetDeepLinkResponse**](../Model/GetDeepLinkResponse.md)
+[**\Roxl\TBankApi\Models\GetDeepLinkResponse**](../Model/GetDeepLinkResponse.md)
 
 ### Authorization
 

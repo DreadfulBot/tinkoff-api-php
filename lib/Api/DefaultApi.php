@@ -4,7 +4,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  RoxlTBankApi
+ * @package  Roxl\TBankApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -25,7 +25,7 @@
  * Do not edit the class manually.
  */
 
-namespace RoxlTBankApi\Api;
+namespace Roxl\TBankApi\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use RoxlTBankApi\ApiException;
-use RoxlTBankApi\Configuration;
-use RoxlTBankApi\HeaderSelector;
-use RoxlTBankApi\ObjectSerializer;
+use Roxl\TBankApi\ApiException;
+use Roxl\TBankApi\Configuration;
+use Roxl\TBankApi\HeaderSelector;
+use Roxl\TBankApi\ObjectSerializer;
 
 /**
  * DefaultApi Class Doc Comment
  *
  * @category Class
- * @package  RoxlTBankApi
+ * @package  Roxl\TBankApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -127,12 +127,12 @@ class DefaultApi
      *
      * Проверить доступность методов на SDK
      *
-     * @param  \RoxlTBankApi\Model\GetTerminalPayMethods $get_terminal_pay_methods get_terminal_pay_methods (required)
+     * @param  \Roxl\TBankApi\Models\GetTerminalPayMethods $get_terminal_pay_methods get_terminal_pay_methods (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getTerminalPayMethods'] to see the possible values for this operation
      *
-     * @throws \RoxlTBankApi\ApiException on non-2xx response
+     * @throws \Roxl\TBankApi\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \RoxlTBankApi\Model\GetTerminalPayMethodsResponse
+     * @return \Roxl\TBankApi\Models\GetTerminalPayMethodsResponse
      */
     public function getTerminalPayMethods($get_terminal_pay_methods, string $contentType = self::contentTypes['getTerminalPayMethods'][0])
     {
@@ -145,12 +145,12 @@ class DefaultApi
      *
      * Проверить доступность методов на SDK
      *
-     * @param  \RoxlTBankApi\Model\GetTerminalPayMethods $get_terminal_pay_methods (required)
+     * @param  \Roxl\TBankApi\Models\GetTerminalPayMethods $get_terminal_pay_methods (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getTerminalPayMethods'] to see the possible values for this operation
      *
-     * @throws \RoxlTBankApi\ApiException on non-2xx response
+     * @throws \Roxl\TBankApi\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \RoxlTBankApi\Model\GetTerminalPayMethodsResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Roxl\TBankApi\Models\GetTerminalPayMethodsResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function getTerminalPayMethodsWithHttpInfo($get_terminal_pay_methods, string $contentType = self::contentTypes['getTerminalPayMethods'][0])
     {
@@ -193,23 +193,23 @@ class DefaultApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\RoxlTBankApi\Model\GetTerminalPayMethodsResponse' === '\SplFileObject') {
+                    if ('\Roxl\TBankApi\Models\GetTerminalPayMethodsResponse' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\RoxlTBankApi\Model\GetTerminalPayMethodsResponse' !== 'string') {
+                        if ('\Roxl\TBankApi\Models\GetTerminalPayMethodsResponse' !== 'string') {
                             $content = json_decode($content);
                         }
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\RoxlTBankApi\Model\GetTerminalPayMethodsResponse', []),
+                        ObjectSerializer::deserialize($content, '\Roxl\TBankApi\Models\GetTerminalPayMethodsResponse', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\RoxlTBankApi\Model\GetTerminalPayMethodsResponse';
+            $returnType = '\Roxl\TBankApi\Models\GetTerminalPayMethodsResponse';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -230,7 +230,7 @@ class DefaultApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\RoxlTBankApi\Model\GetTerminalPayMethodsResponse',
+                        '\Roxl\TBankApi\Models\GetTerminalPayMethodsResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -245,7 +245,7 @@ class DefaultApi
      *
      * Проверить доступность методов на SDK
      *
-     * @param  \RoxlTBankApi\Model\GetTerminalPayMethods $get_terminal_pay_methods (required)
+     * @param  \Roxl\TBankApi\Models\GetTerminalPayMethods $get_terminal_pay_methods (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getTerminalPayMethods'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -266,7 +266,7 @@ class DefaultApi
      *
      * Проверить доступность методов на SDK
      *
-     * @param  \RoxlTBankApi\Model\GetTerminalPayMethods $get_terminal_pay_methods (required)
+     * @param  \Roxl\TBankApi\Models\GetTerminalPayMethods $get_terminal_pay_methods (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getTerminalPayMethods'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -274,7 +274,7 @@ class DefaultApi
      */
     public function getTerminalPayMethodsAsyncWithHttpInfo($get_terminal_pay_methods, string $contentType = self::contentTypes['getTerminalPayMethods'][0])
     {
-        $returnType = '\RoxlTBankApi\Model\GetTerminalPayMethodsResponse';
+        $returnType = '\Roxl\TBankApi\Models\GetTerminalPayMethodsResponse';
         $request = $this->getTerminalPayMethodsRequest($get_terminal_pay_methods, $contentType);
 
         return $this->client
@@ -316,7 +316,7 @@ class DefaultApi
     /**
      * Create request for operation 'getTerminalPayMethods'
      *
-     * @param  \RoxlTBankApi\Model\GetTerminalPayMethods $get_terminal_pay_methods (required)
+     * @param  \Roxl\TBankApi\Models\GetTerminalPayMethods $get_terminal_pay_methods (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getTerminalPayMethods'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException

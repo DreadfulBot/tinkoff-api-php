@@ -1,4 +1,4 @@
-# RoxlTBankApi\SberPayApi
+# Roxl\TBankApi\SberPayApi
 
 All URIs are relative to https://securepay.tinkoff.ru, except if the operation defines another base path.
 
@@ -26,7 +26,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new RoxlTBankApi\Api\SberPayApi(
+$apiInstance = new Roxl\TBankApi\Api\SberPayApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -67,7 +67,7 @@ No authorization required
 ## `sberPaylink()`
 
 ```php
-sberPaylink($payment_id): \RoxlTBankApi\Model\SberPaylink200Response
+sberPaylink($payment_id): \Roxl\TBankApi\Models\SberPaylink200Response
 ```
 
 Получить ссылку
@@ -82,7 +82,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new RoxlTBankApi\Api\SberPayApi(
+$apiInstance = new Roxl\TBankApi\Api\SberPayApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -105,7 +105,7 @@ try {
 
 ### Return type
 
-[**\RoxlTBankApi\Model\SberPaylink200Response**](../Model/SberPaylink200Response.md)
+[**\Roxl\TBankApi\Models\SberPaylink200Response**](../Model/SberPaylink200Response.md)
 
 ### Authorization
 

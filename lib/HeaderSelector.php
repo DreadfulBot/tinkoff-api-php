@@ -4,7 +4,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  RoxlTBankApi
+ * @package  Roxl\TBankApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -25,13 +25,13 @@
  * Do not edit the class manually.
  */
 
-namespace RoxlTBankApi;
+namespace Roxl\TBankApi;
 
 /**
  * HeaderSelector Class Doc Comment
  *
  * @category Class
- * @package  RoxlTBankApi
+ * @package  Roxl\TBankApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */

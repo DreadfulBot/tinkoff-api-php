@@ -4,7 +4,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  RoxlTBankApi
+ * @package  Roxl\TBankApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -25,7 +25,7 @@
  * Do not edit the class manually.
  */
 
-namespace RoxlTBankApi\Api;
+namespace Roxl\TBankApi\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use RoxlTBankApi\ApiException;
-use RoxlTBankApi\Configuration;
-use RoxlTBankApi\HeaderSelector;
-use RoxlTBankApi\ObjectSerializer;
+use Roxl\TBankApi\ApiException;
+use Roxl\TBankApi\Configuration;
+use Roxl\TBankApi\HeaderSelector;
+use Roxl\TBankApi\ObjectSerializer;
 
 /**
  * SberPayApi Class Doc Comment
  *
  * @category Class
- * @package  RoxlTBankApi
+ * @package  Roxl\TBankApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -133,7 +133,7 @@ class SberPayApi
      * @param  string $payment_id Уникальный идентификатор транзакции в системе Т‑Бизнес. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['sberPayQR'] to see the possible values for this operation
      *
-     * @throws \RoxlTBankApi\ApiException on non-2xx response
+     * @throws \Roxl\TBankApi\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return \SplFileObject
      */
@@ -151,7 +151,7 @@ class SberPayApi
      * @param  string $payment_id Уникальный идентификатор транзакции в системе Т‑Бизнес. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['sberPayQR'] to see the possible values for this operation
      *
-     * @throws \RoxlTBankApi\ApiException on non-2xx response
+     * @throws \Roxl\TBankApi\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of \SplFileObject, HTTP status code, HTTP response headers (array of strings)
      */
@@ -416,9 +416,9 @@ class SberPayApi
      * @param  float $payment_id Уникальный идентификатор транзакции в системе Т‑Бизнес. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['sberPaylink'] to see the possible values for this operation
      *
-     * @throws \RoxlTBankApi\ApiException on non-2xx response
+     * @throws \Roxl\TBankApi\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \RoxlTBankApi\Model\SberPaylink200Response
+     * @return \Roxl\TBankApi\Models\SberPaylink200Response
      */
     public function sberPaylink($payment_id, string $contentType = self::contentTypes['sberPaylink'][0])
     {
@@ -434,9 +434,9 @@ class SberPayApi
      * @param  float $payment_id Уникальный идентификатор транзакции в системе Т‑Бизнес. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['sberPaylink'] to see the possible values for this operation
      *
-     * @throws \RoxlTBankApi\ApiException on non-2xx response
+     * @throws \Roxl\TBankApi\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \RoxlTBankApi\Model\SberPaylink200Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Roxl\TBankApi\Models\SberPaylink200Response, HTTP status code, HTTP response headers (array of strings)
      */
     public function sberPaylinkWithHttpInfo($payment_id, string $contentType = self::contentTypes['sberPaylink'][0])
     {
@@ -479,23 +479,23 @@ class SberPayApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\RoxlTBankApi\Model\SberPaylink200Response' === '\SplFileObject') {
+                    if ('\Roxl\TBankApi\Models\SberPaylink200Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\RoxlTBankApi\Model\SberPaylink200Response' !== 'string') {
+                        if ('\Roxl\TBankApi\Models\SberPaylink200Response' !== 'string') {
                             $content = json_decode($content);
                         }
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\RoxlTBankApi\Model\SberPaylink200Response', []),
+                        ObjectSerializer::deserialize($content, '\Roxl\TBankApi\Models\SberPaylink200Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\RoxlTBankApi\Model\SberPaylink200Response';
+            $returnType = '\Roxl\TBankApi\Models\SberPaylink200Response';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -516,7 +516,7 @@ class SberPayApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\RoxlTBankApi\Model\SberPaylink200Response',
+                        '\Roxl\TBankApi\Models\SberPaylink200Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -560,7 +560,7 @@ class SberPayApi
      */
     public function sberPaylinkAsyncWithHttpInfo($payment_id, string $contentType = self::contentTypes['sberPaylink'][0])
     {
-        $returnType = '\RoxlTBankApi\Model\SberPaylink200Response';
+        $returnType = '\Roxl\TBankApi\Models\SberPaylink200Response';
         $request = $this->sberPaylinkRequest($payment_id, $contentType);
 
         return $this->client

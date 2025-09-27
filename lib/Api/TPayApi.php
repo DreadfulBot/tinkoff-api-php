@@ -4,7 +4,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  RoxlTBankApi
+ * @package  Roxl\TBankApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -25,7 +25,7 @@
  * Do not edit the class manually.
  */
 
-namespace RoxlTBankApi\Api;
+namespace Roxl\TBankApi\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use RoxlTBankApi\ApiException;
-use RoxlTBankApi\Configuration;
-use RoxlTBankApi\HeaderSelector;
-use RoxlTBankApi\ObjectSerializer;
+use Roxl\TBankApi\ApiException;
+use Roxl\TBankApi\Configuration;
+use Roxl\TBankApi\HeaderSelector;
+use Roxl\TBankApi\ObjectSerializer;
 
 /**
  * TPayApi Class Doc Comment
  *
  * @category Class
- * @package  RoxlTBankApi
+ * @package  Roxl\TBankApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -137,9 +137,9 @@ class TPayApi
      * @param  string $version Версия T‑Pay, доступная на терминале: * 2.0 (T‑Pay) (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['link'] to see the possible values for this operation
      *
-     * @throws \RoxlTBankApi\ApiException on non-2xx response
+     * @throws \Roxl\TBankApi\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \RoxlTBankApi\Model\Link200Response
+     * @return \Roxl\TBankApi\Models\Link200Response
      */
     public function link($payment_id, $version, string $contentType = self::contentTypes['link'][0])
     {
@@ -156,9 +156,9 @@ class TPayApi
      * @param  string $version Версия T‑Pay, доступная на терминале: * 2.0 (T‑Pay) (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['link'] to see the possible values for this operation
      *
-     * @throws \RoxlTBankApi\ApiException on non-2xx response
+     * @throws \Roxl\TBankApi\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \RoxlTBankApi\Model\Link200Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Roxl\TBankApi\Models\Link200Response, HTTP status code, HTTP response headers (array of strings)
      */
     public function linkWithHttpInfo($payment_id, $version, string $contentType = self::contentTypes['link'][0])
     {
@@ -201,23 +201,23 @@ class TPayApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\RoxlTBankApi\Model\Link200Response' === '\SplFileObject') {
+                    if ('\Roxl\TBankApi\Models\Link200Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\RoxlTBankApi\Model\Link200Response' !== 'string') {
+                        if ('\Roxl\TBankApi\Models\Link200Response' !== 'string') {
                             $content = json_decode($content);
                         }
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\RoxlTBankApi\Model\Link200Response', []),
+                        ObjectSerializer::deserialize($content, '\Roxl\TBankApi\Models\Link200Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\RoxlTBankApi\Model\Link200Response';
+            $returnType = '\Roxl\TBankApi\Models\Link200Response';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -238,7 +238,7 @@ class TPayApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\RoxlTBankApi\Model\Link200Response',
+                        '\Roxl\TBankApi\Models\Link200Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -284,7 +284,7 @@ class TPayApi
      */
     public function linkAsyncWithHttpInfo($payment_id, $version, string $contentType = self::contentTypes['link'][0])
     {
-        $returnType = '\RoxlTBankApi\Model\Link200Response';
+        $returnType = '\Roxl\TBankApi\Models\Link200Response';
         $request = $this->linkRequest($payment_id, $version, $contentType);
 
         return $this->client
@@ -439,7 +439,7 @@ class TPayApi
      * @param  float $payment_id Уникальный идентификатор транзакции в системе Т‑Бизнес. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['qR'] to see the possible values for this operation
      *
-     * @throws \RoxlTBankApi\ApiException on non-2xx response
+     * @throws \Roxl\TBankApi\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return \SplFileObject
      */
@@ -457,7 +457,7 @@ class TPayApi
      * @param  float $payment_id Уникальный идентификатор транзакции в системе Т‑Бизнес. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['qR'] to see the possible values for this operation
      *
-     * @throws \RoxlTBankApi\ApiException on non-2xx response
+     * @throws \Roxl\TBankApi\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of \SplFileObject, HTTP status code, HTTP response headers (array of strings)
      */
@@ -722,9 +722,9 @@ class TPayApi
      * @param  string $terminal_key Платежный ключ, выдается мерчанту при заведении терминала. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['status'] to see the possible values for this operation
      *
-     * @throws \RoxlTBankApi\ApiException on non-2xx response
+     * @throws \Roxl\TBankApi\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \RoxlTBankApi\Model\Status200Response
+     * @return \Roxl\TBankApi\Models\Status200Response
      */
     public function status($terminal_key, string $contentType = self::contentTypes['status'][0])
     {
@@ -740,9 +740,9 @@ class TPayApi
      * @param  string $terminal_key Платежный ключ, выдается мерчанту при заведении терминала. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['status'] to see the possible values for this operation
      *
-     * @throws \RoxlTBankApi\ApiException on non-2xx response
+     * @throws \Roxl\TBankApi\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \RoxlTBankApi\Model\Status200Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Roxl\TBankApi\Models\Status200Response, HTTP status code, HTTP response headers (array of strings)
      */
     public function statusWithHttpInfo($terminal_key, string $contentType = self::contentTypes['status'][0])
     {
@@ -785,23 +785,23 @@ class TPayApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\RoxlTBankApi\Model\Status200Response' === '\SplFileObject') {
+                    if ('\Roxl\TBankApi\Models\Status200Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\RoxlTBankApi\Model\Status200Response' !== 'string') {
+                        if ('\Roxl\TBankApi\Models\Status200Response' !== 'string') {
                             $content = json_decode($content);
                         }
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\RoxlTBankApi\Model\Status200Response', []),
+                        ObjectSerializer::deserialize($content, '\Roxl\TBankApi\Models\Status200Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\RoxlTBankApi\Model\Status200Response';
+            $returnType = '\Roxl\TBankApi\Models\Status200Response';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -822,7 +822,7 @@ class TPayApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\RoxlTBankApi\Model\Status200Response',
+                        '\Roxl\TBankApi\Models\Status200Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -866,7 +866,7 @@ class TPayApi
      */
     public function statusAsyncWithHttpInfo($terminal_key, string $contentType = self::contentTypes['status'][0])
     {
-        $returnType = '\RoxlTBankApi\Model\Status200Response';
+        $returnType = '\Roxl\TBankApi\Models\Status200Response';
         $request = $this->statusRequest($terminal_key, $contentType);
 
         return $this->client

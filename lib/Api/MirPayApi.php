@@ -4,7 +4,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  RoxlTBankApi
+ * @package  Roxl\TBankApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -25,7 +25,7 @@
  * Do not edit the class manually.
  */
 
-namespace RoxlTBankApi\Api;
+namespace Roxl\TBankApi\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use RoxlTBankApi\ApiException;
-use RoxlTBankApi\Configuration;
-use RoxlTBankApi\HeaderSelector;
-use RoxlTBankApi\ObjectSerializer;
+use Roxl\TBankApi\ApiException;
+use Roxl\TBankApi\Configuration;
+use Roxl\TBankApi\HeaderSelector;
+use Roxl\TBankApi\ObjectSerializer;
 
 /**
  * MirPayApi Class Doc Comment
  *
  * @category Class
- * @package  RoxlTBankApi
+ * @package  Roxl\TBankApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -127,12 +127,12 @@ class MirPayApi
      *
      * Получить DeepLink
      *
-     * @param  \RoxlTBankApi\Model\GetDeepLink $get_deep_link get_deep_link (required)
+     * @param  \Roxl\TBankApi\Models\GetDeepLink $get_deep_link get_deep_link (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getDeepLink'] to see the possible values for this operation
      *
-     * @throws \RoxlTBankApi\ApiException on non-2xx response
+     * @throws \Roxl\TBankApi\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \RoxlTBankApi\Model\GetDeepLinkResponse
+     * @return \Roxl\TBankApi\Models\GetDeepLinkResponse
      */
     public function getDeepLink($get_deep_link, string $contentType = self::contentTypes['getDeepLink'][0])
     {
@@ -145,12 +145,12 @@ class MirPayApi
      *
      * Получить DeepLink
      *
-     * @param  \RoxlTBankApi\Model\GetDeepLink $get_deep_link (required)
+     * @param  \Roxl\TBankApi\Models\GetDeepLink $get_deep_link (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getDeepLink'] to see the possible values for this operation
      *
-     * @throws \RoxlTBankApi\ApiException on non-2xx response
+     * @throws \Roxl\TBankApi\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \RoxlTBankApi\Model\GetDeepLinkResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Roxl\TBankApi\Models\GetDeepLinkResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function getDeepLinkWithHttpInfo($get_deep_link, string $contentType = self::contentTypes['getDeepLink'][0])
     {
@@ -193,23 +193,23 @@ class MirPayApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\RoxlTBankApi\Model\GetDeepLinkResponse' === '\SplFileObject') {
+                    if ('\Roxl\TBankApi\Models\GetDeepLinkResponse' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\RoxlTBankApi\Model\GetDeepLinkResponse' !== 'string') {
+                        if ('\Roxl\TBankApi\Models\GetDeepLinkResponse' !== 'string') {
                             $content = json_decode($content);
                         }
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\RoxlTBankApi\Model\GetDeepLinkResponse', []),
+                        ObjectSerializer::deserialize($content, '\Roxl\TBankApi\Models\GetDeepLinkResponse', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\RoxlTBankApi\Model\GetDeepLinkResponse';
+            $returnType = '\Roxl\TBankApi\Models\GetDeepLinkResponse';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -230,7 +230,7 @@ class MirPayApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\RoxlTBankApi\Model\GetDeepLinkResponse',
+                        '\Roxl\TBankApi\Models\GetDeepLinkResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -245,7 +245,7 @@ class MirPayApi
      *
      * Получить DeepLink
      *
-     * @param  \RoxlTBankApi\Model\GetDeepLink $get_deep_link (required)
+     * @param  \Roxl\TBankApi\Models\GetDeepLink $get_deep_link (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getDeepLink'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -266,7 +266,7 @@ class MirPayApi
      *
      * Получить DeepLink
      *
-     * @param  \RoxlTBankApi\Model\GetDeepLink $get_deep_link (required)
+     * @param  \Roxl\TBankApi\Models\GetDeepLink $get_deep_link (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getDeepLink'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -274,7 +274,7 @@ class MirPayApi
      */
     public function getDeepLinkAsyncWithHttpInfo($get_deep_link, string $contentType = self::contentTypes['getDeepLink'][0])
     {
-        $returnType = '\RoxlTBankApi\Model\GetDeepLinkResponse';
+        $returnType = '\Roxl\TBankApi\Models\GetDeepLinkResponse';
         $request = $this->getDeepLinkRequest($get_deep_link, $contentType);
 
         return $this->client
@@ -316,7 +316,7 @@ class MirPayApi
     /**
      * Create request for operation 'getDeepLink'
      *
-     * @param  \RoxlTBankApi\Model\GetDeepLink $get_deep_link (required)
+     * @param  \Roxl\TBankApi\Models\GetDeepLink $get_deep_link (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getDeepLink'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException

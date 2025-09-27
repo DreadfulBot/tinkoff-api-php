@@ -1,4 +1,4 @@
-# roxltbank-openapi
+# roxl/tbankapi
 
 # Начало работы
 
@@ -451,7 +451,7 @@ Download the files and include `autoload.php`:
 
 ```php
 <?php
-require_once('/path/to/roxltbank-openapi/vendor/autoload.php');
+require_once('/path/to/roxl/tbankapi/vendor/autoload.php');
 ```
 
 ## Getting Started
@@ -465,7 +465,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new RoxlTBankApi\Api\DefaultApi(
+$apiInstance = new Roxl\TBankApi\Api\DefaultApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -473,7 +473,7 @@ $apiInstance = new RoxlTBankApi\Api\DefaultApi(
 $md = 'md_example'; // string | Уникальный идентификатор транзакции в системе Банка (возвращается в ответе на FinishAuthorize)
 $pa_req = 'pa_req_example'; // string | Результат аутентификации 3-D Secure (возвращается в ответе на FinishAuthorize)
 $term_url = 'term_url_example'; // string | Адрес перенаправления после аутентификации 3-D Secure (URL обработчик на стороне Мерчанта, принимающий результаты прохождения 3-D Secure)
-$creq = new \RoxlTBankApi\Model\ChallengeRequestCReq(); // \RoxlTBankApi\Model\ChallengeRequestCReq
+$creq = new \Roxl\TBankApi\Models\ChallengeRequestCReq(); // \Roxl\TBankApi\Models\ChallengeRequestCReq
 
 try {
     $result = $apiInstance->aCSUrl($md, $pa_req, $term_url, $creq);

@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  RoxlTBankApi
+ * @package  Roxl\TBankApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,7 +26,7 @@
  * Please update the test case below to test the model.
  */
 
-namespace RoxlTBankApi\Test\Model;
+namespace Roxl\TBankApi\Test\Model;
 
 use PHPUnit\Framework\TestCase;
 
@@ -35,7 +35,7 @@ use PHPUnit\Framework\TestCase;
  *
  * @category    Class
  * @description **Уведомление о статусе привязки счета по QR**  После привязки счета по QR магазину отправляется статус привязки и токен. Уведомление будет приходить по статусам &#x60;ACTIVE&#x60; и &#x60;INACTIVE&#x60;.
- * @package     RoxlTBankApi
+ * @package     Roxl\TBankApi
  * @author      OpenAPI Generator team
  * @link        https://openapi-generator.tech
  */

@@ -1,4 +1,4 @@
-# RoxlTBankApi\DefaultApi
+# Roxl\TBankApi\DefaultApi
 
 All URIs are relative to https://securepay.tinkoff.ru, except if the operation defines another base path.
 
@@ -10,7 +10,7 @@ All URIs are relative to https://securepay.tinkoff.ru, except if the operation d
 ## `getTerminalPayMethods()`
 
 ```php
-getTerminalPayMethods($get_terminal_pay_methods): \RoxlTBankApi\Model\GetTerminalPayMethodsResponse
+getTerminalPayMethods($get_terminal_pay_methods): \Roxl\TBankApi\Models\GetTerminalPayMethodsResponse
 ```
 
 Проверить доступность методов на SDK
@@ -25,12 +25,12 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new RoxlTBankApi\Api\DefaultApi(
+$apiInstance = new Roxl\TBankApi\Api\DefaultApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$get_terminal_pay_methods = new \RoxlTBankApi\Model\GetTerminalPayMethods(); // \RoxlTBankApi\Model\GetTerminalPayMethods
+$get_terminal_pay_methods = new \Roxl\TBankApi\Models\GetTerminalPayMethods(); // \Roxl\TBankApi\Models\GetTerminalPayMethods
 
 try {
     $result = $apiInstance->getTerminalPayMethods($get_terminal_pay_methods);
@@ -44,11 +44,11 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **get_terminal_pay_methods** | [**\RoxlTBankApi\Model\GetTerminalPayMethods**](../Model/GetTerminalPayMethods.md)|  | |
+| **get_terminal_pay_methods** | [**\Roxl\TBankApi\Models\GetTerminalPayMethods**](../Model/GetTerminalPayMethods.md)|  | |
 
 ### Return type
 
-[**\RoxlTBankApi\Model\GetTerminalPayMethodsResponse**](../Model/GetTerminalPayMethodsResponse.md)
+[**\Roxl\TBankApi\Models\GetTerminalPayMethodsResponse**](../Model/GetTerminalPayMethodsResponse.md)
 
 ### Authorization
 

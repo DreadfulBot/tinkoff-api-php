@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  RoxlTBankApi
+ * @package  Roxl\TBankApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,7 +26,7 @@
  * Please update the test case below to test the model.
  */
 
-namespace RoxlTBankApi\Test\Model;
+namespace Roxl\TBankApi\Test\Model;
 
 use PHPUnit\Framework\TestCase;
 
@@ -35,7 +35,7 @@ use PHPUnit\Framework\TestCase;
  *
  * @category    Class
  * @description JSON-объект, который содержит дополнительные параметры в виде &#x60;ключ&#x60;:&#x60;значение&#x60;. Эти параметры будут переданы на страницу оплаты, если она кастомизирована.   Максимальная длина для каждого передаваемого параметра: * ключ — 20 знаков, * значение — 100 знаков.    Максимальное количество пар &#x60;ключ&#x60;:&#x60;значение&#x60; — не больше 20.
- * @package     RoxlTBankApi
+ * @package     Roxl\TBankApi
  * @author      OpenAPI Generator team
  * @link        https://openapi-generator.tech
  */

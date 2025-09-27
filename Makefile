@@ -13,15 +13,18 @@ generate:
 		-i openapi.json \
 		-g php \
 		-o . \
-		--invoker-package="Roxl\TBankApi" \
-		--package-name="roxl\tbank-openapi" \
+		--invoker-package Roxl\\\\TBankApi \
+		--package-name roxl/tbankapi \
+		--api-package Api \
+		--model-package Models \
 		--skip-validate-spec
 	
-format_json:
-	jq --arg homepage "https://roxl.net/tbank-openapi-php" \
-		--arg description "OpenApi client for TBankApi on PHP language" \
-		--argjson keywords '["php","openapi","tbank","tinkoff"]' \
-		--arg license "MIT" \
-		--argjson authors '[{"name":"Roxl","homepage":"https://roxl.net"}]' \
-		'.homepage = $$homepage | .keywords = $$keywords | .license = $$license | .authors = $$authors' \
-		composer.json > composer.json.tmp && mv composer.json.tmp composer.json
+	make update-composer
+	make update-gitignore
+	
+update-composer:
+	jq '.name = "roxl\/tbankapi" | .homepage = "https://roxl.net/tbank-openapi-php" | .description = "OpenApi client for TBankApi on PHP language" | .license = "MIT" | .authors = [{name:"Roxl",homepage:"https://roxl.net"}] | .keywords = ["php","openapi","tbank","tinkoff"]' \
+	composer.json > composer.json.tmp && mv composer.json.tmp composer.json
+
+update-gitignore:
+	echo "node_modules" >> .gitignore
