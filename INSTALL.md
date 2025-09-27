@@ -3,7 +3,8 @@
 ## Чтобы добавить библиотеку в ваш проект
 
 ```bash
-composer require DreadfulBot/tbankapi:dev-main --prefer-source
+composer config repositories.artschekoff/tbankapi vcs https://github.com/artschekoff/tbankapi-php.git
+composer require artschekoff/tbankapi:dev-master --prefer-source
 ```
 
 ## Собрать под другую версию php из исходников
